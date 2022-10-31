@@ -1,0 +1,63 @@
+<div class="header-container layout-13 sticky-header">
+	<div class="topbar hidden-xs hidden-sticky">
+		<div class="container">
+			<div class="topbar-inner">
+				<div class="flex-layout space-between center_vertical center-mobile">
+                    <div class="header-left-title col-xl-6">
+						<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('bluesky_dukamarket_market_01_title')->toHtml(); ?>
+                    </div>
+					<div class="col-right col-top-link flex-layout col-xl-6 col-sm-12 col-xs-12">
+						<div class="topbar-menu hozital-menu">
+                            <ul class="container-setting-language-currency flex-layout center_vertical">
+								<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('bluesky_dukamarket_market_01_topbar')->toHtml(); ?>
+								<li class= "store_language"><?php echo $this->getChildHtml("store_language"); ?></li>
+								<li><?php echo $this->getChildHtml("currency"); ?></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header panel flex-layout-sticky center_vertical no-wrap-desktop">
+		<div class="flex-layout space-between center_vertical no-wrap-desktop header-middle">
+			<div class="logo-container">
+				<div class="logo-site">
+					<?php echo $this->getChildHtml('logo'); ?>
+				</div>
+			</div>
+            <div class="hotline"><?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('bluesky_dukamarket_market_01_hotline')->toHtml(); ?></div>
+			<div class="top-search-not-dropdown">
+				<?php echo $this->getChildHtml("mageworx-search-autocomplete-wrapper"); ?>
+			</div> 
+			<div class="col-action col-right">
+				<ul class="flex-layout action-header center_vertical no-wrap-desktop">
+					<li class="wrap-support">
+						<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('bluesky_dukamarket_market_01_contact')->toHtml(); ?>
+					</li>
+					<li class="account-link-header wishlist hidden-xs">
+						<?php echo $this->getChildHtml("top.links"); ?>
+					</li>
+					<li class="minicart-li-content-show-hide">
+						<?php echo $this->getChildHtml('minicart'); ?>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="menu-bottom hidden-sticky">
+		<div class="flex-layout for-full-width-menu space-between center_vertical no-wrap-desktop container">
+			<div class="col-menu-on-left flex-layout col-menu center_vertical no-wrap-desktop vertical-hozital-menu">
+				<div class="rokan-vertical-menu d-none d-xl-block">
+					<?php echo $this->getChildHtml("rokanthemes.vertical.menu"); ?>
+				</div>
+				<div class="hidden-sticky">
+					<?php echo $this->getChildHtml("rokanthemes.horizontal.menu"); ?>
+				</div>
+			</div>
+			<div class="header-static-text d-none d-xl-block hidden-sticky">
+					<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('bluesky_dukamarket_digital_06_header_static_text')->toHtml(); ?> 
+			</div>
+		</div>
+	</div>
+</div>

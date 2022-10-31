@@ -1,0 +1,22 @@
+<?php
+/**
+ * @var $block \Magento\Catalog\Block\Product\View
+ */
+$_product = $block->getProduct();
+?>
+<div class="pop-up-success">
+	<?php echo $block->getChildHtml('product_image'); ?> 
+	<div class="product-name">
+		<div class="product-name">
+			<?php
+			$success = __(
+				'<strong>%1</strong>added to your Comparision list.',
+				$_product->getName()
+			);
+			echo $success ?></div>
+	</div>
+	<div class="ajaxsuite-buttons">
+		<button type="button" id="ajaxcompare" class="action primary" onclick="window.location = '<?= $block->getUrl('catalog/product_compare')?>'"><span><?= __('View Compare List') ?></span></button>
+	</div>
+</div>
+

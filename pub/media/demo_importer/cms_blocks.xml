@@ -1,0 +1,412 @@
+<?xml version="1.0"?>
+<root>
+  <blocks>
+    <item>
+      <title><![CDATA[Default - Hotline header]]></title>
+      <identifier><![CDATA[default_hotline]]></identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;p&gt;Brauchen Sie Hilfe? &lt;a title="+001 123 456 789" href="tel:+41326230053"&gt;032 623 00 53&lt;/a&gt;&lt;/p&gt;</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Topbar menu]]></title>
+      <identifier><![CDATA[default_topbar_menu]]></identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;ul class="hozital-menu"&gt;
+&lt;li&gt;&lt;a title="Order Tracking" href="{{store url=''}}customer/account"&gt;Mein Account&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a title="About Us" href="{{store url=''}}standorte/"&gt;Standorte&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a title="Contact Us" href="{{store url=''}}kontakt/"&gt;Kontakt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a title="FAQs" href="{{store url=''}}kontakt/"&gt;FAQ&lt;/a&gt;&lt;/li&gt;
+
+&lt;/ul&gt;</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Custom menu before]]></title>
+      <identifier><![CDATA[default_rokanthemes_custom_menu_before]]></identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;ul&gt;
+&lt;li class="ui-menu-item level0 classic "&gt;&lt;a class="level-top" href="{{store url=''}}"&gt;Home&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Menu block after]]></title>
+      <identifier><![CDATA[default_rokanthemes_custom_menu]]></identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;ul&gt;
+&lt;li class="ui-menu-item level0  classic menu-item-has-children parent"&gt;&lt;a class="level-top"&gt;Page&lt;/a&gt;
+&lt;div class="open-children-toggle"&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div class="level0 submenu"&gt;
+&lt;div class="row"&gt;
+&lt;ul class="subchildmenu "&gt;
+&lt;li class="ui-menu-item level2 "&gt;&lt;a href="{{store url=''}}store-locator/"&gt;Store Locator&lt;/a&gt;&lt;/li&gt;
+&lt;li class="ui-menu-item level2 "&gt;&lt;a href="{{store url=''}}rokanthemes-brand.html"&gt;Shop By Brand&lt;/a&gt;&lt;/li&gt;
+&lt;li class="ui-menu-item level2 "&gt;&lt;a href="{{store url=''}}rokanfaq"&gt;Faq&lt;/a&gt;&lt;/li&gt;
+&lt;li class="ui-menu-item level2 "&gt;&lt;a href="{{store url=''}}404/"&gt;404 Page&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li class="ui-menu-item level0"&gt;&lt;a class="level-top" href="{{store url=''}}blog/"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li class="ui-menu-item level0 classic "&gt;&lt;a class="level-top" href="{{store url=''}}contact/"&gt;Contact us&lt;/a&gt;&lt;/li&gt;
+&lt;li class="ui-menu-item level0 classic "&gt;&lt;a class="level-top" href="{{store url=''}}about-us/"&gt;About us&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Header static text]]></title>
+      <identifier><![CDATA[default_header_static_text]]></identifier>
+      <content><![CDATA[<p>Spend $120 more and get free shipping!</p>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[N - Default - Shipping support]]></title>
+      <identifier><![CDATA[default_shipping_support]]></identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="shipping-support"&gt;
+&lt;div class="row space-around"&gt;
+&lt;div class="col-auto col-lg-3 col-6"&gt;
+&lt;div class="col-content flex-layout center_hozital no-wrap"&gt;&lt;em class="icon icon-shipping" aria-hidden="true"&gt;&lt;span class="hidden"&gt;icon icon-tracking&lt;/span&gt;&lt;/em&gt;
+&lt;div class="content"&gt;
+&lt;h6 class="footer-title uppercase"&gt;Kostenloser Versand&lt;/h6&gt;
+&lt;p&gt;Für alle Bestellungen über CHF 150&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="col-auto col-lg-3 col-6"&gt;
+&lt;div class="col-content flex-layout center_hozital no-wrap"&gt;&lt;em class="icon icon-payment" aria-hidden="true"&gt;&lt;span class="hidden"&gt;icon icon-payment&lt;/span&gt;&lt;/em&gt;
+&lt;div class="content"&gt;
+&lt;h6 class="footer-title uppercase"&gt;Sichere Zahlung&lt;/h6&gt;
+&lt;p&gt;100% sichere Zahlung&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="col-auto col-lg-3 col-6"&gt;
+&lt;div class="col-content flex-layout center_hozital no-wrap"&gt;&lt;em class="icon icon-help-center" aria-hidden="true"&gt;&lt;span class="hidden"&gt;icon icon-help-center&lt;/span&gt;&lt;/em&gt;
+&lt;div class="content"&gt;
+&lt;h6 class="footer-title uppercase"&gt;Kundendienst&lt;/h6&gt;
+&lt;p&gt;Rufen Sie uns unter 032 623 00 53 an&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="col-auto col-lg-3 col-6"&gt;
+&lt;div class="col-content flex-layout center_hozital no-wrap"&gt;&lt;em class="icon icon-confidence" aria-hidden="true"&gt;&lt;span class="hidden"&gt;icon icon-friendly-services&lt;/span&gt;&lt;/em&gt;
+&lt;div class="content"&gt;
+&lt;h6 class="footer-title uppercase"&gt;Geld-zurück-Garantie&lt;/h6&gt;
+&lt;p&gt;Wenn Waren Probleme haben&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="col-auto col-lg-3 col-6 hidden-xl"&gt;
+&lt;div class="col-content flex-layout center_hozital no-wrap"&gt;&lt;em class="icon icon-friendly-services" aria-hidden="true"&gt;&lt;span class="hidden"&gt;icon icon-help-center&lt;/span&gt;&lt;/em&gt;
+&lt;div class="content"&gt;
+&lt;h6 class="footer-title uppercase"&gt;Friendly Services&lt;/h6&gt;
+&lt;p&gt;30 day satisfaction&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Footer - Kundenservice]]></title>
+      <identifier><![CDATA[default_footer_customer_care]]></identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;h4 class="footer-title"&gt;Kundenservice&lt;/h4&gt;
+&lt;ul class="footer-contents"&gt;
+&lt;li&gt;&lt;a href="/kontakt/"&gt;Kontakt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://orthopunkt.ch/"&gt;orthopunkt.ch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/widerrufsbelehrung/"&gt;Widerrufsbelehrung&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/agb/"&gt;AGB's&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/impressum/"&gt;Impressum&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Footer - Über uns]]></title>
+      <identifier><![CDATA[default_footer_myaccount]]></identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;h4 class="footer-title"&gt;Über uns&lt;/h4&gt;
+&lt;ul class="footer-contents"&gt;
+&lt;li&gt;&lt;a href="https://orthopunkt.ch/unternehmung"&gt;Über orthopunkt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://orthopunkt.ch/angebot"&gt;Dachmarken&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://orthopunkt.ch/kompetenz"&gt;Kompetenz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/blog/"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://orthopunkt.ch/unternehmung/karriere"&gt;Karriere&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Footer - Dachmarken]]></title>
+      <identifier><![CDATA[default_footer_quicklink]]></identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;h4 class="footer-title"&gt;Dachmarken&lt;/h4&gt;
+&lt;ul class="footer-contents"&gt;
+&lt;li&gt;&lt;a href="https://orthopunkt24.ch/eigenmarken/orthopunktorthocare"&gt;orthopunkt orthocare®&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://orthopunkt.ch/angebot/orthopunktrehacare"&gt;orthopunkt rehacare®&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://orthopunkt.ch/angebot/orthopunktfeetcare"&gt;orthopunkt feetcare®&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://orthopunkt.ch/angebot/orthopunktsportcare"&gt;orthopunkt sportcare®&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://orthopunkt.ch/angebot/orthopunktmedicare"&gt;orthopunkt medicare®&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Footer - Standorte]]></title>
+      <identifier><![CDATA[default_footer_customer_service]]></identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;h4 class="footer-title"&gt;Standorte&lt;/h4&gt;
+&lt;ul class="footer-contents"&gt;
+&lt;li&gt;&lt;a href="/standorte/"&gt;Solothurn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/standorte/"&gt;Rothrist&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/standorte/"&gt;Burgdorf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Footer - Newsletter]]></title>
+      <identifier><![CDATA[default_footer_subscriber]]></identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="footer-contents"&gt;{{block class="Magento\Newsletter\Block\Subscribe" template="Magento_Newsletter::subscribe.phtml"}}
+&lt;p style="color: #666;" class="margin_0"&gt;
+Indem Sie Ihre E-Mail-Adresse angeben, stimmen Sie unsere &lt;a title="AGB's" href="#"&gt;&lt;span style="text-decoration: underline;"&gt;&lt;em&gt;AGB's&lt;/em&gt;&lt;/span&gt;&lt;/a&gt; zu.&lt;/em&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Footer -  Menu]]></title>
+      <identifier><![CDATA[default_footer_bottom_link]]></identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://orthopunkt.ch/"&gt;Über uns&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/standorte/"&gt;Standorte&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/kontakt/"&gt;FAQ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/impressum/"&gt;Impressum&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/kontakt/"&gt;Kontakt&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Footer - Payment Methodes]]></title>
+      <identifier><![CDATA[default_footer_payment]]></identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;img src="{{media url=wysiwyg/payment.png}}" alt="Payment method"&gt;</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Default - Contact us addition]]></title>
+      <identifier><![CDATA[default_contact_additional]]></identifier>
+      <content><![CDATA[<div class="container-min">
+<p class="margin_0" style="text-align: center;">Hi, friends!</p>
+<h1 class="regular size-60" style="text-align: center;">Contact Us</h1>
+<p style="text-align: center;">The most important part of improving at photography has been sharing it. Sign up for an Exposure account,<br>or post regularly to Tumblr, or both. Tell people you’re trying to get better at photography. When you talk about it, other <br>people get excited about it. There are few plugins and apps available for this purpose.</p>
+</div>
+<section class="full-width"><img style="display: block; margin-left: auto; margin-right: auto;" src="{{media url="wysiwyg/cotact-banner.jpg"}}" alt=""></section>
+<section>
+<div class="container-min">
+<h4 class="size-14 color_primary uppercase" style="text-align: center; margin-bottom: 1.5rem;">Contact Us</h4>
+<h3 class="size-36 margin_0" style="text-align: center;"><span class="regular">Hello, We are Dukamarket.</span></h3>
+<h3 class="size-36" style="text-align: center;">Contact Us For Any Questions</h3>
+<p style="text-align: center;">The perfect way to enjoy brewing tea on low hanging fruit to identify. Duis autem vel eum iriure dolor in hendrerit in vulputate velit<br>esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. For me, the most important part of improving at photography has been sharing it. <br>Sign up for an Exposure account, or post regularly to Tumblr, or both.</p>
+<div class="our-store">
+<div class="store-list owl-carousel owl-theme" data-items="4" data-bigdesktop="4" data-smalldesktop="3" data-bigtablet="3" data-tablet="2" data-smalltablet="2" data-mobile="1" data-margin="30" data-dots="false" data-autoplay="true" data-speed="500">
+<div class="col-content">
+<div class="store-picture"><img src="{{media url="wysiwyg/contact-us-1.jpg"}}" alt=""></div>
+<div class="store-info">
+<div class="company flex-layout center_vertical">
+<div class="col-img"><img src="{{media url="wysiwyg/flag1.png"}}" alt=""></div>
+<div class="col-content">
+<p class="size-12 grey margin_0" style="line-height: 1.5;">Dukanmarekt Digital Store</p>
+<h4 class="margin_0 size-14">FRANCE</h4>
+</div>
+<hr></div>
+</div>
+<div class="store-address">
+<p class="margin_0">Add: S9 Heaven Stress, Beverly Hill, USA.</p>
+<p class="margin_0">Phone: +1 (800) 123 456 789</p>
+<p class="margin_0">Email: Contact@erentheme.com</p>
+</div>
+</div>
+<div class="col-content">
+<div class="store-picture"><img src="{{media url="wysiwyg/contact-us-2.jpg"}}" alt=""></div>
+<div class="store-info">
+<div class="company flex-layout center_vertical">
+<div class="col-img"><img src="{{media url="wysiwyg/flag2.png"}}" alt=""></div>
+<div class="col-content">
+<p class="size-12 grey margin_0" style="line-height: 1.5;">Dukanmarekt Digital Store</p>
+<h4 class="margin_0 size-14">FRANCE</h4>
+</div>
+<hr></div>
+</div>
+<div class="store-address">
+<p class="margin_0">Add: S9 Heaven Stress, Beverly Hill, USA.</p>
+<p class="margin_0">Phone: +1 (800) 123 456 789</p>
+<p class="margin_0">Email: Contact@erentheme.com</p>
+</div>
+</div>
+<div class="col-content">
+<div class="store-picture"><img src="{{media url="wysiwyg/contact-us-3.jpg"}}" alt=""></div>
+<div class="store-info">
+<div class="company flex-layout center_vertical">
+<div class="col-img"><img src="{{media url="wysiwyg/flag3.png"}}" alt=""></div>
+<div class="col-content">
+<p class="size-12 grey margin_0" style="line-height: 1.5;">Dukanmarekt Digital Store</p>
+<h4 class="margin_0 size-14">FRANCE</h4>
+</div>
+<hr></div>
+</div>
+<div class="store-address">
+<p class="margin_0">Add: S9 Heaven Stress, Beverly Hill, USA.</p>
+<p class="margin_0">Phone: +1 (800) 123 456 789</p>
+<p class="margin_0">Email: Contact@erentheme.com</p>
+</div>
+</div>
+<div class="col-content">
+<div class="store-picture"><img src="{{media url="wysiwyg/contact-us-4.jpg"}}" alt=""></div>
+<div class="store-info">
+<div class="company flex-layout center_vertical">
+<div class="col-img"><img src="{{media url="wysiwyg/flag4.png"}}" alt=""></div>
+<div class="col-content">
+<p class="size-12 grey margin_0" style="line-height: 1.5;">Dukanmarekt Digital Store</p>
+<h4 class="margin_0 size-14">FRANCE</h4>
+</div>
+<hr></div>
+</div>
+<div class="store-address">
+<p class="margin_0">Add: S9 Heaven Stress, Beverly Hill, USA.</p>
+<p class="margin_0">Phone: +1 (800) 123 456 789</p>
+<p class="margin_0">Email: Contact@erentheme.com</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="full-width"><iframe src="https://maps.google.com/maps?q=London%20Eye%2C%20London%2C%20United%20Kingdom&amp;t=m&amp;z=13&amp;output=embed&amp;iwloc=near" width="100%" height="500" frameborder="0" marginwidth="0" scrolling="no" aria-label="London Eye, London, United Kingdom"></iframe></section>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Kontakt - FAQ]]></title>
+      <identifier><![CDATA[default_cms_beside_form]]></identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;p class="size-18"&gt;Informationsfragen&lt;/p&gt;
+&lt;h2&gt;Häufig gestellte Fragen&lt;/h2&gt;
+&lt;div class="panel-group"&gt;
+&lt;div class="panel"&gt;
+&lt;div class="panel-heading"&gt;
+&lt;h5&gt;Welche Zahlungsmöglichkeiten habe ich?&lt;/h5&gt;
+&lt;/div&gt;
+&lt;div class="panel-collapse collapse"&gt;
+&lt;p&gt;Consectetur cras scelerisque dis nec mi vestibulum ullamcorper turpis enim natoque tempus a malesuada suspendisse iaculis adipiscing himenaeos tincidunt.Tellus pharetra dis nostra urna a scelerisque id parturient ullamcorper ullamcorper class ad consectetur tristique et.&lt;/p&gt;
+&lt;p&gt;Hendrerit mollis facilisi odio a montes scelerisque a scelerisque justo a praesent conubia aenean mi tempor.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="panel"&gt;
+&lt;div class="panel-heading"&gt;
+&lt;h5&gt;Wie lange ist die Lieferzeit?&lt;/h5&gt;
+&lt;/div&gt;
+&lt;div class="panel-collapse collapse"&gt;
+&lt;p&gt;Consectetur cras scelerisque dis nec mi vestibulum ullamcorper turpis enim natoque tempus a malesuada suspendisse iaculis adipiscing himenaeos tincidunt.Tellus pharetra dis nostra urna a scelerisque id parturient ullamcorper ullamcorper class ad consectetur tristique et.&lt;/p&gt;
+&lt;p&gt;Hendrerit mollis facilisi odio a montes scelerisque a scelerisque justo a praesent conubia aenean mi tempor.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="panel"&gt;
+&lt;div class="panel-heading"&gt;
+&lt;h5&gt;Liefert orthopunkt auch ausserhalb der Schweiz?&lt;/h5&gt;
+&lt;/div&gt;
+&lt;div class="panel-collapse collapse"&gt;
+&lt;p&gt;Consectetur cras scelerisque dis nec mi vestibulum ullamcorper turpis enim natoque tempus a malesuada suspendisse iaculis adipiscing himenaeos tincidunt.Tellus pharetra dis nostra urna a scelerisque id parturient ullamcorper ullamcorper class ad consectetur tristique et.&lt;/p&gt;
+&lt;p&gt;Hendrerit mollis facilisi odio a montes scelerisque a scelerisque justo a praesent conubia aenean mi tempor.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="panel"&gt;
+&lt;div class="panel-heading"&gt;
+&lt;h5&gt;Gibt es auch die Möglichkeit sich beraten zu lassen?&lt;/h5&gt;
+&lt;/div&gt;
+&lt;div class="panel-collapse collapse"&gt;
+&lt;p&gt;Consectetur cras scelerisque dis nec mi vestibulum ullamcorper turpis enim natoque tempus a malesuada suspendisse iaculis adipiscing himenaeos tincidunt.Tellus pharetra dis nostra urna a scelerisque id parturient ullamcorper ullamcorper class ad consectetur tristique et.&lt;/p&gt;
+&lt;p&gt;Hendrerit mollis facilisi odio a montes scelerisque a scelerisque justo a praesent conubia aenean mi tempor.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="panel"&gt;
+&lt;div class="panel-heading"&gt;
+&lt;h5&gt;Wie kann ich orthopunkt am besten erreichen?&lt;/h5&gt;
+&lt;/div&gt;
+&lt;div class="panel-collapse collapse"&gt;
+&lt;p&gt;Consectetur cras scelerisque dis nec mi vestibulum ullamcorper turpis enim natoque tempus a malesuada suspendisse iaculis adipiscing himenaeos tincidunt.Tellus pharetra dis nostra urna a scelerisque id parturient ullamcorper ullamcorper class ad consectetur tristique et.&lt;/p&gt;
+&lt;p&gt;Hendrerit mollis facilisi odio a montes scelerisque a scelerisque justo a praesent conubia aenean mi tempor.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Default - Footer about store]]></title>
+      <identifier><![CDATA[default_footer_about_store]]></identifier>
+      <content><![CDATA[<h4 class="footer-title">About The Store</h4>
+<div class="footer-contents">
+<p>Our mission statement is to provide the absolute best<br>customer experience available in the Electronic industry<br>without exception.</p>
+<div class="flex-layout">
+<div class="image_hotline color_primary"><em class="icon icon-earphones" aria-hidden="true"><span class="hidden">icon icon-help-center</span></em></div>
+<div class="wrap">
+<p class="margin_0">Got Question? Call us 24/7!</p>
+<h2 class="margin_0 size-24 regular color_primary">+001 123 456 789</h2>
+</div>
+</div>
+<p class="margin_0">Add: Walls Street 68, Mahattan, New York, USA</p>
+</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Home - Vorteile]]></title>
+      <identifier><![CDATA[default_digital_04_05_06_shipping_support]]></identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="shipping-support"&gt;
+&lt;div class="row space-between"&gt;
+&lt;div class="col-auto col-lg-3 col-6"&gt;
+&lt;div class="col-content flex-layout center_hozital no-wrap"&gt;&lt;em class="icon icon-shipping" aria-hidden="true"&gt;&lt;span class="hidden"&gt;icon icon-tracking&lt;/span&gt;&lt;/em&gt;
+&lt;div class="content"&gt;
+&lt;h6 class="footer-title uppercase"&gt;Kostenloser Versand&lt;/h6&gt;
+&lt;p&gt;Für alle Bestellungen über CHF 150&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="col-auto col-lg-3 col-6"&gt;
+&lt;div class="col-content flex-layout center_hozital no-wrap"&gt;&lt;em class="icon icon-payment" aria-hidden="true"&gt;&lt;span class="hidden"&gt;icon icon-payment&lt;/span&gt;&lt;/em&gt;
+&lt;div class="content"&gt;
+&lt;h6 class="footer-title uppercase"&gt;Sichere Zahlung&lt;/h6&gt;
+&lt;p&gt;100% sichere Zahlung&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="col-auto col-lg-3 col-6"&gt;
+&lt;div class="col-content flex-layout center_hozital no-wrap"&gt;&lt;em class="icon icon-help-center" aria-hidden="true"&gt;&lt;span class="hidden"&gt;icon icon-help-center&lt;/span&gt;&lt;/em&gt;
+&lt;div class="content"&gt;
+&lt;h6 class="footer-title uppercase"&gt;Kundendienst&lt;/h6&gt;
+&lt;p&gt;Rufen Sie uns an 032 623 00 53&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="col-auto col-lg-3 col-6"&gt;
+&lt;div class="col-content flex-layout center_hozital no-wrap"&gt;&lt;em class="icon icon-confidence" aria-hidden="true"&gt;&lt;span class="hidden"&gt;icon icon-friendly-services&lt;/span&gt;&lt;/em&gt;
+&lt;div class="content"&gt;
+&lt;h6 class="footer-title uppercase"&gt;Beste Preise&lt;/h6&gt;
+&lt;p&gt;Top Marken zu fairen Preisen&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Default Menu Link Bottom Footer]]></title>
+      <identifier><![CDATA[default_menu_link_bottom_footer]]></identifier>
+      <content><![CDATA[<ul>
+<li><a href="#">Online Shopping</a></li>
+<li><a href="#">Promotions</a></li>
+<li><a href="#">My Orders</a></li>
+<li><a href="#">Help</a></li>
+<li><a href="#">Customer Service</a></li>
+<li><a href="#">Support</a></li>
+<li><a href="#">New Arrivals</a></li>
+<li><a href="#">Customer Service</a></li>
+<li><a href="#">Special Products</a></li>
+<li><a href="#">Manufacturers</a></li>
+</ul>
+<ul>
+<li><a href="#">Our Stores</a></li>
+<li><a href="#">Shipping</a></li>
+<li><a href="#">Payments</a></li>
+<li><a href="#">Checkout</a></li>
+<li><a href="#">Discount</a></li>
+<li><a href="#">Terms &amp; Conditions</a></li>
+<li><a href="#">Policy Shipping</a></li>
+<li><a href="#">Returns</a></li>
+<li><a href="#">Refunds</a></li>
+</ul>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[N - Social link]]></title>
+      <identifier><![CDATA[default_social_link]]></identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;ul class="social-link flex-layout"&gt;
+&lt;li&gt;&lt;a style="background-color: #3c5b9b;" href="https://facebook.com/" target="_blank" rel="noopener"&gt; &lt;span class="fab fa-facebook-f"&gt;&lt;span class="text"&gt;Facebook&lt;/span&gt;&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a style="background-color: #40c1df;" href="https://twitter.com/" target="_blank" rel="noopener"&gt; &lt;span class="fab fa-twitter"&gt;&lt;span class="text"&gt;Twitter&lt;/span&gt;&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a style="background-color: #c619b8;" href="https://instagram.com/" target="_blank" rel="noopener"&gt; &lt;span class="fab fa-instagram"&gt;&lt;span class="text"&gt;Instagram&lt;/span&gt;&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a style="background-color: #ed3c32;" href="https://dribbble.com/" target="_blank" rel="noopener"&gt; &lt;span class="fab fab fa-google-plus-g"&gt;&lt;span class="text"&gt;google&lt;/span&gt;&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a style="background-color: #eb8314;" href="https://dribbble.com/" target="_blank" rel="noopener"&gt; &lt;span class="fas fa-rss"&gt;&lt;span class="text"&gt;rss&lt;/span&gt;&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a style="background-color: #c72982;" href="https://dribbble.com/" target="_blank" rel="noopener"&gt; &lt;span class="fab fa-dribbble"&gt;&lt;span class="text"&gt;Dribbble&lt;/span&gt;&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</div>]]></content>
+    </item>
+  </blocks>
+</root>

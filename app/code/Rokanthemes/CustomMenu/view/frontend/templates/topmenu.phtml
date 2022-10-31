@@ -1,0 +1,65 @@
+<?php
+/**
+ * Copyright © 2016 TuanHatay. All rights reserved.
+ */
+
+?>
+<?php
+/**
+ * Top menu for store
+ *
+ * @see \Rokanthemes\CustomMenu\Block\Topmenu
+ */
+?>
+<?php
+    $_helper = $this->helper('Rokanthemes\CustomMenu\Helper\Data');
+    $_config = $_helper->getConfig('custommenu');
+    $columnsLimit = 0;
+    if($_config['general']['enable']) {
+?>
+<?php $_menu = $block->getCustomMenuHtml(); ?>
+<div class="primary-menu-container <?php if(isset($_config['general']['enable_mobile_menu_on_desktop']) && $_config['general']['enable_mobile_menu_on_desktop'] == 1): ?>mobile-style<?php endif; ?>">
+	<span data-action="toggle-nav" class="action nav-toggle d-xl-none sticky-toggle"><span><?php echo __('Toggle Nav') ?></span></span> 
+	<div class="navigation custommenu main-nav nav-sections <?php if(isset($_config['general']['enable_mobile_menu_on_desktop']) && $_config['general']['enable_mobile_menu_on_desktop'] == 1): ?>mobile-style<?php endif; ?>" role="navigation">
+		<div class="close-menu-mobile"><a href="#" id="close-menu"><?= $block->escapeHtml(__('Close')) ?></a></div>
+		<div class="menu-mobile-title d-block d-xl-none"><a class="active" data-menu="custommenu-list" href="#"><?= $block->escapeHtml(__('Menu')) ?></a></div>
+		<ul class="custommenu-list menu">
+			<?php echo $_menu; ?> 
+			<li class="my_account_link_custom ui-menu-item level0 classic"><a href="<?php echo $this->getUrl('customer/account');?>" title="<?php echo __('My Account'); ?>" class="level-top"><?php echo __('My Account'); ?></a></li>
+		</ul>
+	</div>
+</div>
+<script>
+    require([
+        'jquery',
+        'rokanthemes/custommenu'
+    ], function ($) {
+        $(".custommenu").CustomMenu();
+		$( document ).ready(function() {
+			$(document).on('click', '.custommenu .menu-mobile-title a', function(){
+				var data = $(this).data('menu');
+				$('.custommenu .menu-mobile-title a').removeClass('active');
+				$(this).addClass('active');
+				$('.custommenu ul.menu').hide();
+				$(this).closest('.custommenu').find('ul.menu.'+data+'').show();
+				return false;
+			});
+		});
+    });
+</script>
+<?php
+    } else {
+?>
+<?php $_menu = $block->getHtml('level-top', 'submenu', $columnsLimit); ?>
+
+<div class="navigation custommenu main-nav nav-sections" role="navigation">
+	<div class="close-menu-mobile"><a href="#" id="close-menu"><?= $block->escapeHtml(__('Close')) ?></a></div> 
+	<div class="menu-mobile-title d-block d-xl-none"><a class="active" data-menu="custommenu-list" href="#"><?= $block->escapeHtml(__('Menu')) ?></a></div>
+    <ul class="custommenu-list menu" data-mage-init='{"menu":{"responsive":true, "expanded":true, "position":{"my":"left top","at":"left bottom"}}}'>
+        <?php /* @escapeNotVerified */ echo $_menu; ?>
+    </ul>
+</div>
+
+<?php
+    }
+?>

@@ -1,0 +1,280 @@
+<?php
+	use Magento\Framework\App\Action\Action;
+	$_helper = $this->helper(Magento\Catalog\Helper\Output::class);
+	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+	$storeManager = $objectManager->get('\Magento\Store\Model\StoreManagerInterface');
+	$templateType = \Magento\Catalog\Block\Product\ReviewRendererInterface::FULL_VIEW;
+    $owl_item_default = $block->getConfig('owl_item_default');
+    $owl_item_desktop = $block->getConfig('owl_item_desktop');
+    $owl_item_small_desktop = $block->getConfig('owl_item_small_desktop');
+    $owl_item_big_tablet = $block->getConfig('owl_item_big_tablet');
+    $owl_item_tablet = $block->getConfig('owl_item_tablet');
+    $owl_item_small_tablet = $block->getConfig('owl_item_small_tablet');
+    $owl_item_mobile = $block->getConfig('owl_item_mobile');
+    $rows = $block->getConfig('number_row');
+	$mode_view = $this->getConfig('mode_view');
+	$owl_margin = $this->getConfig('owl_margin');
+	$auto = (1 == $this->getConfig('auto')) ? 'true' : 'false';
+	$hide_tocart = (1 == $this->getConfig('hide_tocart')) ? 'hide_tocart' : '';
+	$hide_tocompare = (1 == $this->getConfig('hide_tocompare')) ? 'hide_tocompare' : '';
+	$hide_towishlist = (1 == $this->getConfig('hide_towishlist')) ? 'hide_towishlist' : '';
+	$hide_quickview = (1 == $this->getConfig('hide_quickview')) ? 'hide_quickview' : '';
+	$owl_rtl = (1 == $this->getConfig('owl_rtl')) ? 'true' : 'false';
+	$next_back = (1 == $this->getConfig('next_back')) ? 'true' : 'false';
+	$owl_dots = (1 == $this->getConfig('owl_dots')) ? 'true' : 'false';
+	$owl_loop = (1 == $this->getConfig('owl_loop')) ? 'true' : 'false';
+	$owl_center = (1 == $this->getConfig('owl_center')) ? 'true' : 'false';	
+	$image = 'category_page_grid';
+	$width = $block->getConfig('image_width');
+	if(!$width){
+		$width = 550;
+	}
+	$height = $block->getConfig('image_height');
+	if(!$height){
+		$height = 550;
+	}
+	$imageUrl = '';
+	if($this->getConfig('banner_image')){
+		$path = $this->getConfig('banner_image');
+		$imageUrl = $storeManager->getStore()->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA).$path;
+	}
+	$position_banner = ($this->getConfig('position_banner')) ? $this->getConfig('position_banner') : 3;
+	$image_type = $block->getConfig('product_image');
+	$image_type_hover = $block->getConfig('product_image_hover');
+	$products =  $block->_getProductCollection();
+?>
+<div class="section section-product-banner-gird wrapper_product_banner <?= $hide_tocart ?> <?= $hide_tocompare ?> <?= $hide_towishlist ?> <?= $hide_quickview ?>">
+	<?php if($block->getData('title') || $block->getData('short_description') || $block->getData('see_all')): ?>
+		<div class="rokan-title <?php if($block->getData('short_description')): ?>has-short-des<?php endif; ?> <?php if($block->getData('see_all')): ?>has-see-all<?php endif; ?>">
+			<?php if($block->getData('title')): ?><h3 class="module-title"><span><?= $block->escapeHtml($block->getData('title')) ?></span><?php if($block->getData('see_all')): ?><a class="see-all" href="<?php echo $block->getData('see_all')?>"><?= __('See All') ?></a><?php endif; ?></h3><?php endif; ?>
+			<?php if($block->getData('short_description')): ?><div class="short_description"><?= $block->escapeHtml($block->getData('short_description')) ?></div><?php endif; ?>
+		</div>
+	<?php endif; ?>
+    <div class="widget-product">
+		<?php if(count($products) == 0){ ?>
+			<div class="alert alert-danger">
+				<p><?= __('Products does not exist.'); ?></p>
+			</div>
+        <?php }else{ ?>
+			<div class="products wrapper <?= $mode_view ?> products-<?= $mode_view ?>">
+				<div class="products list items product-items"> 
+					<div class="item-load group-rows-fixed item-row item-left">
+						<?php 
+							$i=0;
+							foreach($products as $_item) { 
+							$resizedImageUrl = $block->resizeImage($_item, $image_type, $width, $height)->getUrl();
+							$i ++;
+							?>
+								<div class="item product product-item">
+									<div class="product-item-info">
+										<a href="<?php /* @escapeNotVerified */ echo $_item->getProductUrl() ?>" class="product photo product-item-photo" tabindex="-1">
+											<span class="image0 image-switch product-image-container">
+												<img class="product-image" src="<?= $resizedImageUrl ?>" width="<?= $width ?>" height="<?= $height ?>" alt="<?php echo $_item->getName();?>">
+											</span>
+											<?php
+												$resizedImageHoverUrl = $block->resizeImage($_item, $image_type_hover, $width, $height)->getUrl();
+											?>	
+											<span class="image1 image_hover">
+												<img class="product-image" src="<?= $resizedImageHoverUrl ?>" width="<?= $width ?>" height="<?= $height ?>" alt="<?php echo $_item->getName();?>">
+											</span>
+										</a>
+										<?php if ( $_item->getFinalPrice() < $_item->getPrice() ): ?>
+										<div class="product-label">
+											<span class="onsale">
+												<span class="value"><?= 100 - round(($_item->getFinalPrice() / $_item->getPrice() * 100)) ?>%</span>
+											</span>
+										</div>
+										<?php endif; ?>
+										<div class="product details product-item-details">	
+											<strong class="product name product-item-name">
+												<a class="product-item-link"
+												   href="<?= $block->escapeUrl($_item->getProductUrl()) ?>">
+													<?php echo $_item->getName(); ?>
+												</a>
+											</strong>	
+											<?= $block->getReviewsSummaryHtml($_item, $templateType, true) ?>							
+											<?php /* @escapeNotVerified */ echo $this->helper('Rokanthemes\Themeoption\Helper\Data')->getPriceDisplayCustom($block->getProductPrice($_item)) ?>
+											<?php if ( 1 == $this->getConfig('show_description') ): ?>
+											<div class="product description product-item-description">
+												<?= /* @noEscape */ $_helper->productAttribute($_item, $_item->getShortDescription(), 'short_description') ?>
+											</div>
+											<?php endif; ?>
+											<div class="product-item-inner">
+												<div class="product actions product-item-actions">
+													<div class="actions-primary">
+														<?php if ($_item->isSaleable()) :?>
+															<?php $postParams = $block->getAddToCartPostParams($_item); ?>
+															<form data-role="tocart-form"
+																  data-product-sku="<?= $block->escapeHtmlAttr($_item->getSku()) ?>"
+																  action="<?= $block->escapeUrl($postParams['action']) ?>"
+																  method="post">
+																<input type="hidden"
+																	   name="product"
+																	   value="<?= /* @noEscape */ $postParams['data']['product'] ?>">
+																<input type="hidden" name="<?= /* @noEscape */ Action::PARAM_NAME_URL_ENCODED ?>"
+																	   value="<?= /* @noEscape */ $postParams['data'][Action::PARAM_NAME_URL_ENCODED] ?>">
+																<?= $block->getBlockHtml('formkey') ?>
+																<button type="submit"
+																		title="<?= $block->escapeHtmlAttr(__('Add to Cart')) ?>"
+																		class="action tocart primary">
+																	<span><?= $block->escapeHtml(__('Add to Cart')) ?></span>
+																</button>
+															</form>
+														<?php else :?>
+															<?php if ($_item->isAvailable()) :?>
+																<div class="stock available"><span><?= $block->escapeHtml(__('In stock')) ?></span></div>
+															<?php else :?>
+																<div class="stock unavailable"><span><?= $block->escapeHtml(__('Out of stock')) ?></span></div>
+															<?php endif; ?>
+														<?php endif; ?>
+													</div>
+													<div data-role="add-to-links" class="actions-secondary">
+														<?php if ($this->helper('Magento\Wishlist\Helper\Data')->isAllow()): ?>
+															<a href="#" class="action towishlist"
+																title=""
+																aria-label="<?php echo $block->escapeHtml(__('Add to Wish List')); ?>"
+																data-post='<?php /* @escapeNotVerified */ echo $block->getAddToWishlistParams($_item); ?>'
+																data-action="add-to-wishlist"
+																role="button">
+																<span><?php echo $block->escapeHtml(__('Wish List')); ?></span>
+															</a>
+														<?php endif; ?>
+														<?php $compareHelper = $this->helper('Magento\Catalog\Helper\Product\Compare'); ?>
+														<a href="#"
+														   class="action tocompare"
+														   title="<?php echo $block->escapeHtml(__('Add to Compare')); ?>"
+														   aria-label="<?php echo $block->escapeHtml(__('Add to Compare')); ?>"
+														   data-post='<?php /* @escapeNotVerified */ echo $compareHelper->getPostDataParams($_item); ?>'
+														   role="button">
+															<span><?php /* @escapeNotVerified */ echo __('Add to Compare') ?></span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<?php 
+									if($i == 4){
+										break;
+									} 
+								?>
+						<?php } ?>	
+					</div>
+					<div class="item-load group-rows-fixed item-row item-center">
+						<div class="item product product-item">
+							<div class="product-item-info">
+								<a href="<?= ($this->getConfig('banner_url')) ? $this->getConfig('banner_url') : '#' ?>"><img src="<?= $imageUrl ?>" alt="img-banner-grid"></a>
+							</div>
+						</div>
+					</div>
+					<div class="item-load group-rows-fixed item-row item-right">
+						<?php 
+							$i=0;
+							foreach($products as $_item) {
+								$resizedImageUrl = $block->resizeImage($_item, $image_type, $width, $height)->getUrl();
+								$i ++;
+								if($i >= 5){
+							?>
+								<div class="item product product-item">
+									<div class="product-item-info">
+										<a href="<?php /* @escapeNotVerified */ echo $_item->getProductUrl() ?>" class="product photo product-item-photo" tabindex="-1">
+											<span class="image0 image-switch product-image-container">
+												<img class="product-image" src="<?= $resizedImageUrl ?>" width="<?= $width ?>" height="<?= $height ?>" alt="<?php echo $_item->getName();?>">
+											</span>
+											<?php
+												$resizedImageHoverUrl = $block->resizeImage($_item, $image_type_hover, $width, $height)->getUrl();
+											?>	
+											<span class="image1 image_hover">
+												<img class="product-image" src="<?= $resizedImageHoverUrl ?>" width="<?= $width ?>" height="<?= $height ?>" alt="<?php echo $_item->getName();?>">
+											</span>
+										</a>
+										<?php if ( $_item->getFinalPrice() < $_item->getPrice() ): ?>
+										<div class="product-label">
+											<span class="onsale">
+												<span class="value"><?= 100 - round(($_item->getFinalPrice() / $_item->getPrice() * 100)) ?>%</span>
+											</span>
+										</div>
+										<?php endif; ?>
+										<div class="product details product-item-details">	
+											<strong class="product name product-item-name">
+												<a class="product-item-link"
+												   href="<?= $block->escapeUrl($_item->getProductUrl()) ?>">
+													<?php echo $_item->getName(); ?>
+												</a>
+											</strong>	
+											<?= $block->getReviewsSummaryHtml($_item, $templateType, true) ?>							
+											<?php /* @escapeNotVerified */ echo $this->helper('Rokanthemes\Themeoption\Helper\Data')->getPriceDisplayCustom($block->getProductPrice($_item)) ?>
+											<?php if ( 1 == $this->getConfig('show_description') ): ?>
+											<div class="product description product-item-description">
+												<?= /* @noEscape */ $_helper->productAttribute($_item, $_item->getShortDescription(), 'short_description') ?>
+											</div>
+											<?php endif; ?>
+											<div class="product-item-inner">
+												<div class="product actions product-item-actions">
+													<div class="actions-primary">
+														<?php if ($_item->isSaleable()) :?>
+															<?php $postParams = $block->getAddToCartPostParams($_item); ?>
+															<form data-role="tocart-form"
+																  data-product-sku="<?= $block->escapeHtmlAttr($_item->getSku()) ?>"
+																  action="<?= $block->escapeUrl($postParams['action']) ?>"
+																  method="post">
+																<input type="hidden"
+																	   name="product"
+																	   value="<?= /* @noEscape */ $postParams['data']['product'] ?>">
+																<input type="hidden" name="<?= /* @noEscape */ Action::PARAM_NAME_URL_ENCODED ?>"
+																	   value="<?= /* @noEscape */ $postParams['data'][Action::PARAM_NAME_URL_ENCODED] ?>">
+																<?= $block->getBlockHtml('formkey') ?>
+																<button type="submit"
+																		title="<?= $block->escapeHtmlAttr(__('Add to Cart')) ?>"
+																		class="action tocart primary">
+																	<span><?= $block->escapeHtml(__('Add to Cart')) ?></span>
+																</button>
+															</form>
+														<?php else :?>
+															<?php if ($_item->isAvailable()) :?>
+																<div class="stock available"><span><?= $block->escapeHtml(__('In stock')) ?></span></div>
+															<?php else :?>
+																<div class="stock unavailable"><span><?= $block->escapeHtml(__('Out of stock')) ?></span></div>
+															<?php endif; ?>
+														<?php endif; ?>
+													</div>
+													<div data-role="add-to-links" class="actions-secondary">
+														<?php if ($this->helper('Magento\Wishlist\Helper\Data')->isAllow()): ?>
+															<a href="#" class="action towishlist"
+																title=""
+																aria-label="<?php echo $block->escapeHtml(__('Add to Wish List')); ?>"
+																data-post='<?php /* @escapeNotVerified */ echo $block->getAddToWishlistParams($_item); ?>'
+																data-action="add-to-wishlist"
+																role="button">
+																<span><?php echo $block->escapeHtml(__('Wish List')); ?></span>
+															</a>
+														<?php endif; ?>
+														<?php $compareHelper = $this->helper('Magento\Catalog\Helper\Product\Compare'); ?>
+														<a href="#"
+														   class="action tocompare"
+														   title="<?php echo $block->escapeHtml(__('Add to Compare')); ?>"
+														   aria-label="<?php echo $block->escapeHtml(__('Add to Compare')); ?>"
+														   data-post='<?php /* @escapeNotVerified */ echo $compareHelper->getPostDataParams($_item); ?>'
+														   role="button">
+															<span><?php /* @escapeNotVerified */ echo __('Add to Compare') ?></span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<?php 
+									}
+									if($i == 8){
+										break;
+									} 
+								?>
+						<?php } ?>	
+					</div>
+				</div>
+			</div>
+		<?php } ?>
+    </div>
+</div>

@@ -1,0 +1,100 @@
+& when (@media-common = true) {
+	.quickview{
+		.modal-header{
+			padding: 0;
+			.modal-title{
+				display: none;
+			}
+		}
+		.modal-inner-wrap{
+			width: 70%;
+			max-width: 910px;
+			.modal-footer{
+				display: none;
+			}
+		}
+		.product-info-main {
+			.price-box {
+				.price-wrapper {
+					.price{
+						.lib-font-size(18);
+					}
+				}
+			}
+		}
+	}
+	.quickviewContainer{
+		padding: 3rem 0;
+	}
+	.quickview-popup-wrapper{
+		.product-info-main {
+			.page-title-wrapper{
+				display: block;
+				text-align: left;
+			}
+			.box-tocart {
+				margin-bottom: 0;
+				.field.qty,
+				.actions{
+					margin-bottom: 1.3rem;
+				}
+			}
+		}
+
+	}
+	.quickviewContainer {
+		.magnifier-preview,
+		.magnify-lens{
+			display: none !important;
+		}
+	}
+	.quickview-popup-wrapper{
+		.fotorama__nav-wrap--vertical .fotorama__nav__shaft .fotorama__nav__frame--thumb{
+			&:nth-of-type(5),
+			&:nth-of-type(6),
+			&:nth-of-type(7),
+			&:nth-of-type(8),
+			&:nth-of-type(9),
+			&:nth-of-type(10),
+			&:nth-of-type(11),
+			&:nth-of-type(12){
+				display: none;
+			}
+		}
+	}
+}
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+	.quickview-popup-wrapper.modal-popup.modal-slide{
+		.modal-inner-wrap{
+			max-height: 85vh;
+		}
+	}
+	.quickview{
+		&.modal-popup{
+			display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+			display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+			display: -ms-flexbox;      /* TWEENER - IE 10 */
+			display: -webkit-flex;   
+			flex-wrap: nowrap;
+			align-items: center;
+		}
+	}
+}
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+	.quickview-popup-wrapper.modal-popup.modal-slide{
+		.modal-inner-wrap{
+			background-color: @modal__background-color;
+			margin-left: auto;
+			max-width: 52rem;
+			.quickviewContainer{
+				display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+				display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+				display: -ms-flexbox;      /* TWEENER - IE 10 */
+				display: -webkit-flex;     /* NEW - Chrome */
+				display: flex;   
+				flex-wrap: wrap;
+				flex-direction: column-reverse;
+			}
+		}
+	}
+}

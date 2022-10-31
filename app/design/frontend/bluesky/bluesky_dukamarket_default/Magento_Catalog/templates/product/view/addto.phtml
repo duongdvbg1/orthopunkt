@@ -1,0 +1,22 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/** @var $block \Magento\Catalog\Block\Product\View*/
+?>
+<div class="product-addto-links" data-role="add-to-links">
+    <?= $block->getChildHtml() ?>
+</div>
+<div class="product-share-links">
+	<div class="share-links"><a href="#" class="share-links-click"><?= __('share') ?></a></div>
+	<div class="share-dialog" style="display:none;">
+		<a href="#" onclick=" window.open( 'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'facebook-share-dialog', 'width=436,height=436'); return false;"><span class="icon fab fa-facebook-f"><span class="text"><?= $block->escapeHtmlAttr(__('Facebook')) ?></span></span></a>
+		<a href="#" onclick=" window.open( 'http://twitter.com/home/?status='+encodeURIComponent(location.href), 'twitter-share-dialog', 'width=436,height=436'); return false;"><span class="icon fab fa-twitter"><span class="text"><?= $block->escapeHtmlAttr(__('Twitter')) ?></span></span></a>
+		<a href="#" onclick=" window.open( 'http://pinterest.com/pin/create/button/?url='+encodeURIComponent(location.href), 'pinterest-share-dialog', 'width=436,height=436'); return false;"><span class="icon fab fa-pinterest"><span class="text"><?= $block->escapeHtmlAttr(__('Pinterest')) ?></span></span></a>
+		<a href="#" onclick=" window.open( 'https://plus.google.com/share?url='+encodeURIComponent(location.href), 'twitter-share-dialog', 'width=436,height=436'); return false;"><span class="icon fab fa-google"><span class="text"><?= $block->escapeHtmlAttr(__('Google')) ?></span></span></a>
+	</div>
+</div>

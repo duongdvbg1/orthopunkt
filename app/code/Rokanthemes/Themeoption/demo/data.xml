@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<root>
+  <rokanthemes>
+    <item>
+        <id><![CDATA[31743563]]></id>
+        <name><![CDATA[Dukanmarket - Clean minimal Magento 2 theme!]]></name>
+        <des><![CDATA[You need install theme before use importer. Importing demo data is the easiest way to setup your theme. It will allow you to quickly edit everything. You can select import theme for each store view. Reload storefront after imported.]]></des>
+        <theme>
+            <title><![CDATA[Digital 01]]></title>
+            <identifier><![CDATA[bluesky_dukamarket_digital_01]]></identifier>
+            <image><![CDATA[bluesky_dukamarket_digital_01.jpg]]></image>
+            <linkpreview><![CDATA[mageblueskytech.com/dukamarket/en1]]></linkpreview>
+        </theme>
+        <theme>
+            <title><![CDATA[Digital 02]]></title>
+            <identifier><![CDATA[bluesky_dukamarket_digital_02]]></identifier>
+            <image><![CDATA[bluesky_dukamarket_digital_02.jpg]]></image>
+            <linkpreview><![CDATA[mageblueskytech.com/dukamarket/en2]]></linkpreview>
+        </theme>
+        <theme>
+            <title><![CDATA[Digital 03]]></title>
+            <identifier><![CDATA[bluesky_dukamarket_digital_03]]></identifier>
+            <image><![CDATA[bluesky_dukamarket_digital_03.jpg]]></image>
+            <linkpreview><![CDATA[mageblueskytech.com/dukamarket/en3]]></linkpreview>
+        </theme>
+        <theme>
+            <title><![CDATA[Digital 04]]></title>
+            <identifier><![CDATA[bluesky_dukamarket_digital_04]]></identifier>
+            <image><![CDATA[bluesky_dukamarket_digital_04.jpg]]></image>
+            <linkpreview><![CDATA[mageblueskytech.com/dukamarket/en4]]></linkpreview>
+        </theme>
+        <theme>
+            <title><![CDATA[Digital 05]]></title>
+            <identifier><![CDATA[bluesky_dukamarket_digital_05]]></identifier>
+            <image><![CDATA[bluesky_dukamarket_digital_05.jpg]]></image>
+            <linkpreview><![CDATA[mageblueskytech.com/dukamarket/en5]]></linkpreview>
+        </theme>
+        <theme>
+            <title><![CDATA[Digital 06]]></title>
+            <identifier><![CDATA[bluesky_dukamarket_digital_06]]></identifier>
+            <image><![CDATA[bluesky_dukamarket_digital_06.jpg]]></image>
+            <linkpreview><![CDATA[mageblueskytech.com/dukamarket/en6]]></linkpreview>
+        </theme>
+        <theme>
+            <title><![CDATA[Tool 01]]></title>
+            <identifier><![CDATA[bluesky_dukamarket_tool_01]]></identifier> 
+            <image><![CDATA[bluesky_dukamarket_tool_01.jpg]]></image>
+            <linkpreview><![CDATA[mageblueskytech.com/dukamarket/en7]]></linkpreview>
+        </theme>
+        <theme>
+            <title><![CDATA[Tool 02]]></title>
+            <identifier><![CDATA[bluesky_dukamarket_tool_02]]></identifier>
+            <image><![CDATA[bluesky_dukamarket_tool_02.jpg]]></image>
+            <linkpreview><![CDATA[mageblueskytech.com/dukamarket/en8]]></linkpreview>
+        </theme>
+        <theme>
+            <title><![CDATA[Sport 01]]></title>
+            <identifier><![CDATA[bluesky_dukamarket_sport_01]]></identifier>
+            <image><![CDATA[bluesky_dukamarket_sport_01.jpg]]></image>
+            <linkpreview><![CDATA[mageblueskytech.com/dukamarket/en9]]></linkpreview>
+        </theme>
+        <theme>
+            <title><![CDATA[Medical 01]]></title>
+            <identifier><![CDATA[bluesky_dukamarket_medical_01]]></identifier>
+            <image><![CDATA[bluesky_dukamarket_medical_01.jpg]]></image>
+            <linkpreview><![CDATA[mageblueskytech.com/dukamarket/en10]]></linkpreview>
+        </theme>
+         <theme>
+            <title><![CDATA[Medical 02]]></title>
+            <identifier><![CDATA[bluesky_dukamarket_medical_02]]></identifier>
+            <image><![CDATA[bluesky_dukamarket_medical_02.jpg]]></image>
+            <linkpreview><![CDATA[mageblueskytech.com/dukamarket/en11]]></linkpreview>
+        </theme>
+         <theme>
+            <title><![CDATA[Organic 01]]></title>
+            <identifier><![CDATA[bluesky_dukamarket_organic_01]]></identifier>
+            <image><![CDATA[bluesky_dukamarket_organic_01.jpg]]></image>
+            <linkpreview><![CDATA[mageblueskytech.com/dukamarket/en12]]></linkpreview>
+        </theme>
+        <theme>
+            <title><![CDATA[Market 01]]></title>
+            <identifier><![CDATA[bluesky_dukamarket_market_01]]></identifier>
+            <image><![CDATA[bluesky_dukamarket_market_01.jpg]]></image>
+            <linkpreview><![CDATA[mageblueskytech.com/dukamarket/en13]]></linkpreview>
+        </theme>
+         <theme>
+            <title><![CDATA[Digital 01 RTL]]></title>
+            <identifier><![CDATA[bluesky_dukamarket_digital_01_rtl]]></identifier>
+            <image><![CDATA[bluesky_dukamarket_digital_01_rtl.jpg]]></image>
+            <linkpreview><![CDATA[mageblueskytech.com/dukamarket/en1_rtl]]></linkpreview>
+        </theme>
+         <theme>
+            <title><![CDATA[Digital 02 RTL]]></title>
+            <identifier><![CDATA[bluesky_dukamarket_digital_02_rtl]]></identifier>
+            <image><![CDATA[bluesky_dukamarket_digital_02_rtl.jpg]]></image>
+            <linkpreview><![CDATA[mageblueskytech.com/dukamarket/en2_rtl]]></linkpreview>
+        </theme>
+         <theme>
+            <title><![CDATA[Digital 03 RTL]]></title>
+            <identifier><![CDATA[bluesky_dukamarket_digital_03_rtl]]></identifier>
+            <image><![CDATA[bluesky_dukamarket_digital_03_rtl.jpg]]></image>
+            <linkpreview><![CDATA[mageblueskytech.com/dukamarket/en3_rtl]]></linkpreview>
+        </theme>
+         <theme>
+            <title><![CDATA[Digital 04 RTL]]></title>
+            <identifier><![CDATA[bluesky_dukamarket_digital_04_rtl]]></identifier>
+            <image><![CDATA[bluesky_dukamarket_digital_04_rtl.jpg]]></image>
+            <linkpreview><![CDATA[mageblueskytech.com/dukamarket/en4_rtl]]></linkpreview>
+        </theme>
+         <theme>
+            <title><![CDATA[Digital 05 RTL]]></title>
+            <identifier><![CDATA[bluesky_dukamarket_digital_05_rtl]]></identifier>
+            <image><![CDATA[bluesky_dukamarket_digital_05_rtl.jpg]]></image>
+            <linkpreview><![CDATA[mageblueskytech.com/dukamarket/en5_rtl]]></linkpreview>
+        </theme>
+        <theme>
+            <title><![CDATA[Digital 06 RTL]]></title>
+            <identifier><![CDATA[bluesky_dukamarket_digital_06_rtl]]></identifier>
+            <image><![CDATA[bluesky_dukamarket_digital_06_rtl.jpg]]></image>
+            <linkpreview><![CDATA[mageblueskytech.com/dukamarket/en6_rtl]]></linkpreview>
+        </theme>
+         <theme>
+            <title><![CDATA[Tool 01 RTL]]></title>
+            <identifier><![CDATA[bluesky_dukamarket_tool_01_rtl]]></identifier> 
+            <image><![CDATA[bluesky_dukamarket_tool_01_rtl.jpg]]></image>
+            <linkpreview><![CDATA[mageblueskytech.com/dukamarket/en7_rtl]]></linkpreview>
+        </theme>
+         <theme>
+            <title><![CDATA[Tool 02 RTL]]></title>
+            <identifier><![CDATA[bluesky_dukamarket_tool_02_rtl]]></identifier>
+            <image><![CDATA[bluesky_dukamarket_tool_02_rtl.jpg]]></image>
+            <linkpreview><![CDATA[mageblueskytech.com/dukamarket/en8_rtl]]></linkpreview>
+        </theme>
+         <theme>
+            <title><![CDATA[Sport 01 RTL]]></title>
+            <identifier><![CDATA[bluesky_dukamarket_sport_01_rtl]]></identifier>
+            <image><![CDATA[bluesky_dukamarket_sport_01_rtl.jpg]]></image>
+            <linkpreview><![CDATA[mageblueskytech.com/dukamarket/en9_rtl]]></linkpreview>
+        </theme>
+         <theme>
+            <title><![CDATA[Medical 01 RTL]]></title>
+            <identifier><![CDATA[bluesky_dukamarket_medical_01_rtl]]></identifier>
+            <image><![CDATA[bluesky_dukamarket_medical_01_rtl.jpg]]></image>
+            <linkpreview><![CDATA[mageblueskytech.com/dukamarket/en10_rtl]]></linkpreview>
+        </theme>
+         <theme>
+            <title><![CDATA[Medical 02 RTL]]></title>
+            <identifier><![CDATA[bluesky_dukamarket_medical_02_rtl]]></identifier>
+            <image><![CDATA[bluesky_dukamarket_medical_02_rtl.jpg]]></image>
+            <linkpreview><![CDATA[mageblueskytech.com/dukamarket/en11_rtl]]></linkpreview>
+        </theme>
+         <theme>
+            <title><![CDATA[Organic 01 RTL]]></title>
+            <identifier><![CDATA[bluesky_dukamarket_organic_01_rtl]]></identifier>
+            <image><![CDATA[bluesky_dukamarket_organic_01_rtl.jpg]]></image>
+            <linkpreview><![CDATA[mageblueskytech.com/dukamarket/en12_rtl]]></linkpreview>
+        </theme>
+           <theme>
+            <title><![CDATA[Market 01 RTL]]></title>
+            <identifier><![CDATA[bluesky_dukamarket_market_01_rtl]]></identifier>
+            <image><![CDATA[bluesky_dukamarket_market_01_rtl.jpg]]></image>
+            <linkpreview><![CDATA[mageblueskytech.com/dukamarket/en13_rtl]]></linkpreview>
+        </theme>
+    </item>
+  </rokanthemes>
+</root>

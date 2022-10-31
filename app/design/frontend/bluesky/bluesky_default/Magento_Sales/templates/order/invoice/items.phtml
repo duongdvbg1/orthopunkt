@@ -1,0 +1,86 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php $_order = $block->getOrder() ?>
+
+<?php 
+$_magb_helper = $this->helper('ITM\MagB1\Helper\Data');
+$type ="sales_invoice";
+$customer_id = $_order->getCustomerId();
+?>
+
+
+<div class="actions-toolbar">
+    <a href="<?= /* @escapeNotVerified */ $block->getPrintAllInvoicesUrl($_order) ?>"
+       target="_blank"
+       class="action print">
+        <span><?= /* @escapeNotVerified */ __('Print All Invoices') ?></span>
+    </a>
+</div>
+<?php foreach ($_order->getInvoiceCollection() as $_invoice): ?>
+
+<?php $files = $_magb_helper->getInvoiceFiles($customer_id, $_invoice->getIncrementId());?>
+
+<div class="order-title">
+    <strong><?= /* @escapeNotVerified */ __('Invoice #') ?><?= /* @escapeNotVerified */ $_invoice->getIncrementId() ?></strong>
+    <a href="<?= /* @escapeNotVerified */ $block->getPrintInvoiceUrl($_invoice) ?>"
+       onclick="this.target='_blank'"
+       class="action print">
+        <span><?= /* @escapeNotVerified */ __('Print Invoice') ?></span>
+    </a>
+    <div style="height: 30px;">
+    <span style="float:right">
+     <?php   if( count($files)): ?>
+     	<ul style=" list-style-type: none;padding:0;margin:0">
+    	   	<?php foreach ($files as $file): ?>
+       		 <?php 
+       		 $file_info = pathinfo ($file["path"]);
+       		 $ext =  $file_info['extension'];
+       		 ?>
+       		 <li style="text-align: left;">
+       		 <a target="_blank" href="<?php echo $this->getUrl('magb1/download/index',["type"=>$type,"id" =>$file["entity_id"]]); ?>">
+       		 <img width=30 src="<?php echo $block->getViewFileUrl('ITM_MagB1::images/'.$ext.'.png'); ?>" title="<?php echo $file["path"]?> " alt="<?php echo $file["path"]?> " />
+       		 <?php //echo $file["path"]?> 
+       		 </a>
+       		</li>
+       		<?php endforeach; ?>
+   		</ul>
+     <?php endif; ?>
+    </span>
+    </div>
+</div>
+<div class="table-wrapper table-order-items invoice">
+    <table class="data table table-order-items invoice" id="my-invoice-table-<?= /* @escapeNotVerified */ $_invoice->getId() ?>">
+        <caption class="table-caption"><?= /* @escapeNotVerified */ __('Items Invoiced') ?></caption>
+        <thead>
+            <tr>
+                <th class="col name"><?= /* @escapeNotVerified */ __('Product Name') ?></th>
+                <th class="col sku"><?= /* @escapeNotVerified */ __('SKU') ?></th>
+                <th class="col price"><?= /* @escapeNotVerified */ __('Price') ?></th>
+                <th class="col qty"><?= /* @escapeNotVerified */ __('Qty Invoiced') ?></th>
+                <th class="col subtotal"><?= /* @escapeNotVerified */ __('Subtotal') ?></th>
+            </tr>
+        </thead>
+        <?php $_items = $_invoice->getAllItems(); ?>
+        <?php $_count = count($_items) ?>
+        <?php foreach ($_items as $_item): ?>
+        <?php if ($_item->getOrderItem()->getParentItem()) {
+    continue;
+} ?>
+        <tbody>
+            <?= $block->getItemHtml($_item) ?>
+        </tbody>
+        <?php endforeach; ?>
+        <tfoot>
+            <?= $block->getInvoiceTotalsHtml($_invoice) ?>
+        </tfoot>
+    </table>
+</div>
+<?= $block->getInvoiceCommentsHtml($_invoice) ?>
+<?php endforeach; ?>

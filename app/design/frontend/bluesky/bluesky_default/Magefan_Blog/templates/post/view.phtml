@@ -1,0 +1,69 @@
+<?php
+/**
+ * Copyright © Magefan (support@magefan.com). All rights reserved.
+ * Please visit Magefan.com for license details (https://magefan.com/end-user-license-agreement).
+ *
+ * Glory to Ukraine! Glory to the heroes!
+ */
+?>
+<?php
+/**
+ * Blog post view template
+ *
+ * @var $block \Magefan\Blog\Block\Post\View
+ */
+?>
+<?php
+    $_post = $block->getPost();
+    $_postUrl = $_post->getPostUrl();
+    $_postName = $block->escapeHtml($_post->getTitle(), null);
+?>
+<div class="post-view <?php if ($featuredImage = $_post->getFeaturedImage()) { ?>has-thumb<?php } ?>">  
+    <div class="post-holder post-holder-<?= (int)$_post->getId() ?>">
+		<div class="blog-post-thumb">
+			<?php if ($featuredImage = $_post->getFeaturedImage()) { ?>
+				<?php
+					$featuredImgAlt = $_post->getData('featured_img_alt');
+				if (!$featuredImgAlt) {
+					$featuredImgAlt = $_postName;
+				}
+				?>
+				<div class="post-ftimg-hld">
+					<img src="<?= $block->escapeUrl($featuredImage) ?>"
+						 alt="<?= $block->escapeHtml($featuredImgAlt) ?>" />
+				</div>
+			<?php } ?>
+		</div>
+        <div class="post-content">
+			<h1 class="post-title"><?php echo $_post->getTitle(); ?></h1>
+			<div class="flex-layout post-more-infor">
+				<?php if ($_categoriesCount = $_post->getCategoriesCount()) { ?>
+					<div class="item post-categories">
+						<span class="label"><?= $block->escapeHtml(__('Categories:')) ?></span>
+						<?php $n = 0; ?>
+						<?php foreach ($_post->getParentCategories() as $ct) { ?>
+							<?php $n++; ?>
+							<a title="<?= $block->escapeHtml($ct->getTitle()) ?>"
+							   href="<?= $block->escapeUrl($ct->getCategoryUrl()) ?>"
+							><?= $block->escapeHtml($ct->getTitle()) ?></a><?= /*@noEscape*/ ($n != $_categoriesCount) ? ',' : '' ?>
+						<?php } ?>
+					</div>
+				<?php } ?>
+				<?= $block->getInfoHtml() ?>
+				<?php if ($_post->isPublishDateEnabled()) { ?> 
+					<div class="item post-posed-date">
+						<span class="label"><?= $block->escapeHtml(__('Posted:')) ?></span>
+						<span class="value"><?= $block->escapeHtml($_post->getPublishDate()) ?></span>
+					</div>
+				<?php } ?>
+			</div>
+			<div class="post-text-hld">
+				<?= /*@noEscape*/ $block->getContent() ?>
+				<div class="clear clearfix"></div>
+			</div>
+		</div>
+    </div>
+</div>
+<div class="post-bottom">
+	<?= $block->getChildHtml('blog.post.bottom') ?>
+</div>

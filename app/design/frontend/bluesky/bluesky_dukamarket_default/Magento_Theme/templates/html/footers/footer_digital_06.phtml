@@ -1,0 +1,59 @@
+<?php 
+	$imageUrl = '';
+	if($this->helper('Rokanthemes\Themeoption\Helper\Themeconfig')->getFooterLogo()){
+		$imageUrl = $this->helper('Rokanthemes\Themeoption\Helper\Themeconfig')->getFooterLogo();
+	}
+	$helper = $this->helper('Rokanthemes\RokanBase\Helper\Data');
+	$enableMenu = $helper ->getConfigData('themeoption/footer/footer_menu_mobile');
+?>
+<div id="focus-area"></div>
+<div id="back-top" class=""><i class="icon icon-chevrons-up"></i></div>
+<div class="footer-container <?php if($enableMenu){ ?>enable-mobile-menu<?php } ?> layout-6">
+	<div class="footer-top">
+		<div class="footer content">
+			<div class="container-inner">
+				<div class="footer-static_link flex-layout space-between">
+					<div class="footer-links about-store">
+						<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('default_footer_about_store')->toHtml(); ?>
+					</div>
+					<div class="footer-links">
+						<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('default_footer_myaccount')->toHtml(); ?>
+					</div>
+					<div class="footer-links">
+						<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('default_footer_customer_service')->toHtml(); ?>
+					</div>
+					<div class="footer-links footer-newsletter">
+						<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('default_footer_subscriber')->toHtml(); ?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container-inner border-top">
+			<div class="footer content flex-layout column center">
+				<div class="hozital-menu hidden-sm">
+					<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('default_menu_link_bottom_footer')->toHtml(); ?>
+				</div>
+				<div class="footer-payment">
+					<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('default_footer_payment')->toHtml(); ?>
+				</div>
+				<?php echo $this->getChildHtml("copyright"); ?>	
+			</div>
+		</div>
+	</div> 
+</div>
+<?php if($enableMenu){ ?>
+<div class="fixed-bottom d-block d-md-none">
+	<div class="link-on-bottom">
+		<ul class="mobile-bottom-link flex-layout space-between list-unstyled no-wrap">
+			<li><a href="<?php echo $this->getUrl('');?>"><span class="icon icon-home1"></span><?= $block->escapeHtml(__('Home')) ?></a></li>
+			<li><a href="<?php echo $this->getUrl('customer/account/');?>"><span class="icon icon-user"></span><?= $block->escapeHtml(__('Account')) ?></a></li>
+			<li><a href="#" class="toggle-nav-footer"><span class="icon icon-menu"></span><?= $block->escapeHtml(__('Menu')) ?></a></li>
+			<li><a href="<?php echo $this->getUrl('wishlist');?>"><span class="icon icon-wishlist"></span><?= $block->escapeHtml(__('Wishlist')) ?></a></li>
+			<li><a href="<?php echo $this->getUrl('checkout/cart/');?>"><span class="icon icon-cart"></span><?= $block->escapeHtml(__('Cart')) ?></a></li>
+			
+		</ul>
+	</div>
+</div>
+<?php } ?>

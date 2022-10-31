@@ -1,0 +1,404 @@
+
+// Blog post
+//  Variables
+//  _____________________________________________
+@post_slider_padding: false;
+@post_bg_repeat: no-repeat;
+@post_bg_postion: center;
+@post_bg_size: cover;
+@post-infor-bg: @color-white;
+
+@blog_item_post_list_width_2column: 50%;
+@blog_item_post_list_width: 100% / 3; // width > 1199px;
+@blog_item_post_list_tablet_width: 50%; // width 565 to 992px;
+@blog_item_post_list_mobile_width: 100%; // width 565 to 992px;
+
+@recent_post_title_font-size: 1.5rem;
+@recent_post_infor-padding: 2rem 2rem 2.3rem;
+@recent_post_infor-mobile-padding: 1.5rem;
+@recent_post_hover_box-shadow: @custom_shadow_light;
+& when (@media-common = true) {
+	// Reset module style
+	.post-list-wrapper{
+		.post-holder{
+			border: 0;
+			border-radius: 0;
+			.post-header{ 
+				.post-info {
+					.label{
+						font-weight: @heading__font-weight__base;
+						color: @heading__color__base;
+					}
+				}
+			}
+		}	
+	}
+	.blog-page {
+		.related{
+			margin-top: 5rem;
+			.post-list-wrapper {
+				.blog-post-info {
+					.post-title{
+						margin-bottom: 2.4rem;
+						.lib-font-size(16);
+					}
+					.post-content{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.post-list-wrapper{
+		.blog-list-post{
+			list-style: none;
+			padding: 0;
+			&:not(.owl-carousel){
+				.flex();
+				margin-right: -15px;
+		 		margin-left: -15px;
+		 		.post-holder{
+					padding: 0 @layout-indent__width;
+		 		}
+		 	}
+		}
+		.blog-post-info{
+			background: @post-infor-bg;
+		}
+	}
+	.block-recent-posts,
+	.post-bottom .related{
+		.block-content{
+			.item{
+				.product-item{
+					.blog-image{
+						position: relative;
+						overflow: hidden;
+					}
+					.time-conment{
+						color: #999;
+					}
+					.blog-content{
+						padding: 20px 0 0;
+						.title{
+							margin: 0 0 23px;
+							font-size: 1.4285rem;
+						}
+						.post-read-more{
+							margin-top: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+	// Lazy load image
+	.page-wrapper {
+		&:not(.lazyload-image){
+			.post-list-wrapper{
+				.blog-post-thumb{
+					.post-ftimg-hld a img{
+						.transition();
+					}
+				}
+			}
+		}
+	}
+	// Lazy load image
+	.page-wrapper {
+		&:not(.lazyload-image){
+			.banner{
+				.banner-img{
+					img{
+						.transition();
+					}
+				}
+			}
+		}
+	}
+	.post-list-wrapper{
+		margin-bottom: 1rem;
+		.blog-post-thumb{
+			overflow: hidden;
+			.post-ftimg-hld a{
+				display: block;
+				font-size: 0;
+			}
+			&:hover{
+				img{
+					@transform: scale(1.1);
+					.lib-css(transform, @transform, 1);
+				}
+			}
+		}
+		.blog-list-post{
+			.item-post-full{
+				margin-bottom: 5rem;
+				.post-title{
+					a{
+						text-transform: capitalize;
+						&:not(:hover){
+							color: @heading__color__base;
+						}
+					}
+				}
+				.blog-post-info{
+					.desc{
+						margin: 20px 0;
+					}
+				}
+				&:hover{
+					.blog-post-thumb{
+						img{
+							transform: scale(1.1);
+							-webkit-transform: scale(1.1);
+							-ms-transform: scale(1.1);
+							-o-transform: scale(1.1);
+						}
+					}
+				}
+			}
+		}
+	}
+	.sidebar{
+		.block-reorder{
+			display: none;
+		}
+		.blog-search{
+			width: auto;
+			padding: 0;
+			float: none;
+			position: static;
+			margin-bottom: 3rem !important;
+			.block-content{
+				.control{
+					position: relative;
+					padding-bottom: 0;
+					input{
+						.lib-css(border-radius, 2px, @_prefix: 1);
+					}
+				}
+				.actions{
+					.action.search{
+						top: 50%;
+						@transform: translateY(-50%);
+						.lib-css(transform, @transform, @_prefix: 1);
+						&:before{
+							background: none;
+							width: auto;
+							height: auto;
+							.icon_custom_font(
+								@_icon_custom_font_content: "\e9ed",
+								@_icon_custom_font_color: @text__color,
+								@_icon_custon_font_size: 2rem,
+							);
+						}
+						&:hover,
+						&.active,
+						&:focus{
+							&:before{
+								color: @theme__color__primary;
+							}
+						}
+					}
+				}
+			}
+		}
+		.block-recent-posts.block-list-posts{
+			.block-content{
+				.item {
+					&:not(:last-child){
+						padding-bottom: 1.6rem;
+						margin-bottom: 1.2rem;
+					}
+					.post-image{
+						width: auto;
+					    float: none;
+					    padding: 0;
+					    border: 0;
+					    background: transparent;
+					    margin: 0 0 1.7rem;
+					    .post-item-link{
+					    	line-height: 0;
+					    	img{
+					    		.lib-css(border-radius, 2px, @_prefix: 1);
+					    	}
+					    }
+					}
+					> .post-item-link{
+						.lib-css(font-weight, @heading__font-weight__base);
+						.lib-font-size(16);
+						display: block;
+						width: 100%;
+						line-height: 1.4;
+						margin-bottom: 0.9rem;
+					}
+					.post-item-date{
+						.lib-css(color, @greycolor);
+					}
+				}
+			}
+		}
+		.widget.block-tagclaud{
+			.tagclaud-hld{
+				span{
+					line-height: 1 !important;
+					.lib-font-size(12);
+					a{
+						.lib-font-size(12);
+						.border_radius(30px);
+						padding: 0.8rem 2rem;
+					    margin-right: 0.8rem;
+					    margin-bottom: 1rem;
+					    display: inline-block;
+						&:not(:hover){
+							color: #a3a3a3;
+							background: @color-white-smoke;
+						}
+						&:hover{
+							color: @button__hover__color;
+							background-color: @button__hover__background;
+						}
+					}
+				}
+			}
+		}
+	}
+	// Blog post view
+	.blog-post-view{
+		.post-holder{
+			padding: 0;
+			margin-bottom: 0;
+			border: 0;
+		}
+		.main{
+			> .post-bottom{
+				margin-top: 3rem;
+			}
+		}
+	}
+	.post-view{
+		.post-title{
+			font-size: @h2__font-size;
+			text-transform: capitalize;
+		}
+		.post-category-name{
+			color: @heading__color__base;
+		}	
+		.blog-post-info{
+			// .margin_gobal_value();
+		}
+		.post-header{
+			margin-top: @indent__base;
+		}
+	}
+	.post-bottom{
+		.post-nextprev-hld{
+			.flex();
+			justify-content: space-between;
+			a{
+				.lib-font-size(16);
+				font-weight: @heading__font-weight__base;
+				&:not(:hover){
+					color: @heading__color__base;
+				}
+				flex: 1;
+				&.next-link{
+					text-align: right;
+				}
+			}
+			&:after{
+				display: none;
+			}
+		}
+	}
+	.section.block-recent-posts{
+		.post-list-wrapper {
+			margin-bottom: 0;
+			.blog-list-post {
+				.post-item{
+					&:hover{
+						.lib-css(box-shadow, @recent_post_hover_box-shadow, @_prefix: 1);
+					}
+				}
+				.item-post-full{
+					margin-bottom: 0;
+					padding: 0;
+					.blog-post-info{
+						border: 0;
+						padding: 0;
+						.lib-css(padding, @recent_post_infor-padding);
+						@media only screen and (max-width: (@screen__xs - 1)) {
+							.lib-css(padding, @recent_post_infor-mobile-padding);
+							.post-header {
+								.post-info{
+									padding-bottom: 0.8rem;
+								}
+							}
+							.post-content {
+								.post-text-hld{
+									margin-bottom: 1rem;
+								}
+							}
+							.post-bottom{
+								padding-top: 1rem;
+							}
+						}
+					}
+				}
+			}
+			.blog-post-info {
+				.post-title{
+					.lib-css(font-size, @recent_post_title_font-size);
+				}
+			}
+		}
+	}
+	// Post slider have background
+	div[class*="block-recent-posts"]{
+		.lib-css(padding, @post_slider_padding);
+	}
+	div[class*="block-recent-posts"][style*="background-image"]{
+		.lib-css(background-repeat, @post_bg_repeat);
+		.lib-css(background-position, @post_bg_postion);
+		.lib-css(background-size, @post_bg_size);
+	}
+}
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
+	.blog-list-post{
+		.post-holder{
+			.lib-css(flex, 0 0 @blog_item_post_list_width);
+		}
+	}
+	body[class*="page-layout-2columns"]{
+		.blog-list-post{
+			.post-holder{
+				.lib-css(flex, 0 0 @blog_item_post_list_width_2column);
+			}
+		}
+	}
+}
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__l) {
+	.blog-list-post{
+		.post-holder{
+			.lib-css(flex, 0 0 @blog_item_post_list_tablet_width);
+		}
+	}
+}
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+	.post-list-wrapper{
+		margin-bottom: 0;
+	}
+	.blog-page{
+		.sidebar{
+			display: none;
+		}
+	}
+}
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xs) {
+	.blog-list-post{
+		.post-holder{
+			.lib-css(flex, 0 0 @blog_item_post_list_mobile_width);
+		}
+	}
+}

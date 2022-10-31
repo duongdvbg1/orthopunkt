@@ -1,0 +1,239 @@
+<?php 
+	$_helper = $this->helper(Magento\Catalog\Helper\Output::class);
+	use Magento\Framework\App\Action\Action;
+	$templateType = \Magento\Catalog\Block\Product\ReviewRendererInterface::DEFAULT_VIEW;
+	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+    $StockState = $objectManager->get('\Magento\CatalogInventory\Api\StockStateInterface');
+
+    $owl_item_default = $block->getConfig('owl_item_default');
+    $owl_item_desktop = $block->getConfig('owl_item_desktop');
+    $owl_item_small_desktop = $block->getConfig('owl_item_small_desktop');
+    $owl_item_big_tablet = $block->getConfig('owl_item_big_tablet');
+    $owl_item_tablet = $block->getConfig('owl_item_tablet');
+    $owl_item_small_tablet = $block->getConfig('owl_item_small_tablet');
+    $owl_item_mobile = $block->getConfig('owl_item_mobile');
+    $rows = $block->getConfig('rows');
+	$speed = $this->getConfig('speed');
+	$mode_view = $this->getConfig('mode_view');
+	$owl_margin = $this->getConfig('owl_margin');
+	$auto = (1 == $this->getConfig('auto')) ? 'true' : 'false';
+	$hide_tocart = (1 == $this->getConfig('hide_tocart')) ? 'hide_tocart' : '';
+	$hide_tocompare = (1 == $this->getConfig('hide_tocompare')) ? 'hide_tocompare' : '';
+	$hide_towishlist = (1 == $this->getConfig('hide_towishlist')) ? 'hide_towishlist' : '';
+	$hide_quickview = (1 == $this->getConfig('hide_quickview')) ? 'hide_quickview' : '';
+	$owl_rtl = (1 == $this->getConfig('owl_rtl')) ? 'true' : 'false';
+	$next_back = (1 == $this->getConfig('next_back')) ? 'true' : 'false';
+	$owl_dots = (1 == $this->getConfig('owl_dots')) ? 'true' : 'false';
+	$owl_loop = (1 == $this->getConfig('owl_loop')) ? 'true' : 'false';
+	$owl_center = (1 == $this->getConfig('owl_center')) ? 'true' : 'false';	
+	
+	$category_load = $block->getCategory();
+	$_helper = $this->helper(Magento\Catalog\Helper\Output::class);
+	if($category_load && strtotime($block->getConfig('end_date')) >= strtotime($block->getCurrentTime())){ 
+		$image = 'category_page_grid';
+		$width = $block->getConfig('width');
+		if(!$width){
+			$width = 550;
+		}
+		$height = $block->getConfig('height');
+		if(!$height){
+			$height = 550;
+		}
+		$enabled_hover = $block->getConfig('enabled_hover');
+		$image_type = $block->getConfig('image_type');
+		$image_type_hover = $block->getConfig('image_type_hover');
+?>
+<div class="section hot-deal-tab-slider hot-deal-tab-slider-customcss section-product <?= $hide_tocart ?> <?= $hide_tocompare ?> <?= $hide_towishlist ?> <?= $hide_quickview ?>">
+	<?php if($this->getConfig('title_deal')){?>
+		<div class="rokan-title">
+			<div class="supper-deal-title flex-layout space-between">
+				<?php if($this->getConfig('title_deal')){?><h3 class="title-deal module-title"><span><?php echo $block->getConfig('title_deal');?></span></h3><?php }?>
+				<div class="right-deal flex-layout no-wrap-desktop">
+					<?php if($this->getConfig('sub_title')){?><h5 class="sub-title-deal hidden-xs"><?php echo $block->getConfig('sub_title');?></h5><?php }?>
+					<div class="super-deal-countdown" data-date="<?php echo $block->getConfig('end_date');?>"></div>
+				</div>
+			</div>
+		</div>
+	<?php }?>
+	<div class="products wrapper <?= $mode_view ?> products-<?= $mode_view ?>">
+		<div class="products list items product-items owl-carousel owl-theme"
+			data-rtl="<?= $owl_rtl ?>" data-items="<?= $owl_item_default ?>" data-bigdesktop="<?= $owl_item_desktop ?>" data-smalldesktop="<?= $owl_item_small_desktop ?>" data-bigtablet="<?= $owl_item_big_tablet ?>" 
+			data-tablet="<?= $owl_item_tablet ?>" data-smalltablet="<?= $owl_item_small_tablet ?>" data-mobile="<?= $owl_item_mobile ?>"  
+			data-margin="<?= $owl_margin ?>" data-loop="<?= $owl_loop ?>" data-center="<?= $owl_center ?>" 
+			data-mousedrag="true" data-touchdrag="true" data-stagepadding="1" 
+			data-nav="<?= $next_back ?>" data-navnext="" data-navprev="" data-rewind="true" 
+			data-dots="<?= $owl_dots ?>" data-autoplay="<?= $auto ?>" data-speed="<?= $speed ?>"> 
+		<?php 
+			$newItems =  $block->getProducts();
+			$i=0;
+			foreach($newItems as $_item) {  
+				$resizedImageUrl = $block->resizeImage($_item, $image_type, $width, $height)->getUrl();
+				if($i %$rows == 0){
+					echo '<div class="item-load group-rows-fixed-supper-deal item-row">';
+				}
+				$i ++;
+			?>
+				<div class="item product product-item">
+					<div class="product-item-info">
+						<a href="<?php /* @escapeNotVerified */ echo $_item->getProductUrl() ?>" class="product photo product-item-photo" tabindex="-1">
+							<span class="image0 image-switch product-image-container">
+								<img class="product-image" src="<?= $resizedImageUrl ?>" width="<?= $width ?>" height="<?= $height ?>" alt="<?php echo $_item->getName();?>">
+							</span>
+							<?php if($enabled_hover){ 
+								$resizedImageHoverUrl = $block->resizeImage($_item, $image_type_hover, $width, $height)->getUrl();
+							?>
+								<span class="image1 image_hover">
+									<img class="product-image" src="<?= $resizedImageHoverUrl ?>" width="<?= $width ?>" height="<?= $height ?>" alt="<?php echo $_item->getName();?>">
+								</span>
+							<?php } ?>
+						</a>
+						<?php if ( $_item->getFinalPrice() < $_item->getPrice() ): ?>
+						<div class="product-label">
+							<span class="onsale">
+								<span class="value"><?= 100 - round(($_item->getFinalPrice() / $_item->getPrice() * 100)) ?>%</span>
+							</span>
+						</div>
+						<?php endif; ?>
+						<div class="product details product-item-details">	
+							<strong class="product name product-item-name">
+								<a class="product-item-link"
+								   href="<?= $block->escapeUrl($_item->getProductUrl()) ?>">
+									<?php echo $_item->getName(); ?>
+								</a>
+							</strong>	
+							<?= $block->getReviewsSummaryHtml($_item, $templateType, true) ?>							
+							<?php /* @escapeNotVerified */ echo $this->helper('Rokanthemes\Themeoption\Helper\Data')->getPriceDisplayCustom($block->getProductPrice($_item)) ?>
+							<?php if ( 1 == $this->getConfig('show_description') ): ?>
+							<div class="product description product-item-description">
+								<?= /* @noEscape */ $_helper->productAttribute($_item, $_item->getShortDescription(), 'short_description') ?>
+							</div>
+							<?php endif; ?>
+                            <?php
+                            if($_item->getTypeId() == 'simple' || $_item->getTypeId() == 'virtual'|| $_item->getTypeId() == 'downloadable'):
+                                ?>
+                                <div class="product-sold">
+                                    <?php
+                                    $sale_qty = $this->helper('Rokanthemes\RokanBase\Helper\Data')->getSalableQuantityDataBySku($_item->getSku());
+                                    $numbersold = $block->getSoldProduct($_item->getId());
+                                    $total = $sale_qty + $numbersold;
+                                    $calculator = ($numbersold / $total) * 100;
+                                    ?>
+                                    <div class="ruler-sold">
+                                        <div class="ruler-sold-count" style="width: <?php
+                                        echo $calculator; ?>%;">
+                                        </div>
+                                    </div>
+                                    <div class="count-sold">
+                                        Sold:
+                                        <?php
+                                        echo $numbersold.'/'.$total;
+                                        ?>
+                                    </div>
+                                </div>
+                            <?php endif; ?>
+							<div class="product-item-inner">
+								<div class="product actions product-item-actions">
+									<div class="actions-primary">
+										<?php if ($_item->isSaleable()) :?>
+											<?php $postParams = $block->getAddToCartPostParams($_item); ?>
+											<form data-role="tocart-form"
+												  data-product-sku="<?= $block->escapeHtmlAttr($_item->getSku()) ?>"
+												  action="<?= $block->escapeUrl($postParams['action']) ?>"
+												  method="post">
+												<input type="hidden"
+													   name="product"
+													   value="<?= /* @noEscape */ $postParams['data']['product'] ?>">
+												<input type="hidden" name="<?= /* @noEscape */ Action::PARAM_NAME_URL_ENCODED ?>"
+													   value="<?= /* @noEscape */ $postParams['data'][Action::PARAM_NAME_URL_ENCODED] ?>">
+												<?= $block->getBlockHtml('formkey') ?>
+												<button type="submit"
+														title="<?= $block->escapeHtmlAttr(__('Add to Cart')) ?>"
+														class="action tocart primary">
+													<span><?= $block->escapeHtml(__('Add to Cart')) ?></span>
+												</button>
+											</form>
+										<?php else :?>
+											<?php if ($_item->isAvailable()) :?>
+												<div class="stock available"><span><?= $block->escapeHtml(__('In stock')) ?></span></div>
+											<?php else :?>
+												<div class="stock unavailable"><span><?= $block->escapeHtml(__('Out of stock')) ?></span></div>
+											<?php endif; ?>
+										<?php endif; ?>
+									</div>
+									<div data-role="add-to-links" class="actions-secondary">
+										<?php if ($this->helper('Magento\Wishlist\Helper\Data')->isAllow()): ?>
+											<a href="#" class="action towishlist"
+												title=""
+												aria-label="<?php echo $block->escapeHtml(__('Add to Wish List')); ?>"
+												data-post='<?php /* @escapeNotVerified */ echo $block->getAddToWishlistParams($_item); ?>'
+												data-action="add-to-wishlist"
+												role="button">
+												<span><?php echo $block->escapeHtml(__('Wish List')); ?></span>
+											</a>
+										<?php endif; ?>
+										<?php $compareHelper = $this->helper('Magento\Catalog\Helper\Product\Compare'); ?>
+										<a href="#"
+										   class="action tocompare"
+										   title="<?php echo $block->escapeHtml(__('Add to Compare')); ?>"
+										   aria-label="<?php echo $block->escapeHtml(__('Add to Compare')); ?>"
+										   data-post='<?php /* @escapeNotVerified */ echo $compareHelper->getPostDataParams($_item); ?>'
+										   role="button">
+											<span><?php /* @escapeNotVerified */ echo __('Add to Compare') ?></span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<?php if($i %$rows == 0) echo "</div>"; ?>
+			<?php 
+			}
+			?>
+			<?php if($i %$rows != 0) echo "</div>"; ?>
+		</div>
+		<?php if(count($newItems) == 0){ ?>
+        <div class="alert alert-danger">
+            <p><?= __('Products does not exist. Please login admin go to Rokanthemes > Configuration > Super Deals Settings.'); ?></p>
+        </div>
+        <?php } ?>
+	</div>
+</div>
+<script>
+require(["jquery", 'mage/mage','rokanthemes/timecircles', "rokanthemes/owl"], function($){
+	'use strict';
+	$( document ).ready(function() {
+		if($('.super-deal-countdown').length>0){
+			$(".super-deal-countdown").TimeCircles({
+				fg_width: 0.01,
+				bg_width: 1.2,
+				text_size: 0.07,
+				circle_bg_color: "#ffffff",
+				time: {
+					Days: {
+						show: true,
+						text: "Days",
+						color: "#f9bc02"
+					},
+					Hours: {
+						show: true,
+						text: "Hours",
+						color: "#f9bc02"
+					},
+					Minutes: {
+						show: true,
+						text: "Mins",
+						color: "#f9bc02"
+					},
+					Seconds: {
+						show: true,
+						text: "Secs",
+						color: "#f9bc02"
+					}
+				}
+			}); 
+		}
+	});
+});
+</script>
+<?php } ?>

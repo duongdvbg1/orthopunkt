@@ -1,0 +1,29 @@
+.tablet-viewport {
+    &.pagebuilder-stage-wrapper {
+        &.stage-content-snapshot,
+        &.stage-full-screen {
+            .pagebuilder-stage {
+                .pagebuilder-canvas {
+                    left: 50%;
+                    transform: translateX(-50%);
+                    max-width: 1024px;
+                }
+            }
+        }
+    }
+}
+
+.mobile-small-viewport {
+    &.pagebuilder-stage-wrapper {
+        &.stage-content-snapshot,
+        &.stage-full-screen {
+            .pagebuilder-stage {
+                .pagebuilder-canvas {
+                    left: 50%;
+                    transform: translateX(-50%);
+                    max-width: 640px;
+                }
+            }
+        } 
+    }
+}

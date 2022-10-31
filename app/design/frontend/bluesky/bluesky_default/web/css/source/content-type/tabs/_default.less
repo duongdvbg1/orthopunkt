@@ -1,0 +1,99 @@
+//
+@tab_font-size: 1.4rem;
+@tab_font-weight: @heading__font-weight__base;
+@tab-padding: 1.5rem 2rem;
+@tab-margin: 0 1.5rem;
+@tab-text-tranform: capitalize;
+
+@tab_background-color: @button__background;
+@tab-color: @button__color;
+
+@tab_active_background-color: @button__hover__background;
+@tab_active-color: @button__hover__color;
+
+
+
+//  Default appearance styles
+//  _____________________________________________
+
+& when (@media-common = true) {
+    div[data-content-type='tabs'] {
+        .tabs-navigation {
+            display: block;
+            font-size: 0;
+            padding: 0;
+            li.tab-header {
+                .lib-css(background, @tab_background-color);
+                display: inline-block;
+                .lib-css(margin, @tab-margin);
+                max-width: 100%;
+                overflow-wrap: break-word;
+                position: relative;
+                word-wrap: break-word;
+                z-index: 1;
+                border: 0;
+                &:not(:first-child) {
+                    margin-left: 0;
+                    border-right: 0;
+                }
+
+                a.tab-title {
+                    border-right: 0;
+                    .lib-css(color, @tab-color);
+                    .lib-css(font-size, @tab_font-size);
+                    .lib-css(font-weight, @tab_font-weight);
+                    .lib-css(padding, @tab-padding);
+                    .lib-css(text-transform, @tab-text-tranform);
+                    border: 0;
+                    cursor: pointer !important;
+                    display: block;
+                    position: relative;
+                    transition: all .3s;
+                    vertical-align: middle;
+                    white-space: normal;
+                    span.tab-title {
+                        display: block;
+                    }
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+                &.ui-state-active {
+                    .lib-css(background, @tab_active_background-color);
+                    z-index: 3;
+                    border: 0;
+                    a.tab-title {
+                        .lib-css(color, @tab_active-color);
+                        position: relative;
+                        transition: all .3s;
+                    }
+                }
+            }
+        }
+        .tabs-content {
+            box-sizing: border-box;
+            overflow: hidden;
+            position: relative;
+            z-index: 2;
+            border: 0;
+            [data-content-type='tab-item'] {
+                box-sizing: border-box;
+                min-height: inherit;
+
+                &:not(:first-child) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+//
+//  Mobile (style-m.css)
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    [data-content-type='tab-item'] {
+        background-attachment: scroll !important;
+    }
+}

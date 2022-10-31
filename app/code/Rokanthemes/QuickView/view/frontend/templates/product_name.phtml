@@ -1,0 +1,9 @@
+<?php 
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$product = $objectManager->get('Magento\Framework\Registry')->registry('current_product');
+?>
+<div class="page-title-wrapper product">
+	<h1 class="page-title">
+		<span class="base" data-ui-id="page-title-wrapper" itemprop="name"><?= $product->getName() ?></span>
+	</h1>
+</div>

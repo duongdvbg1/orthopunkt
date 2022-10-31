@@ -1,0 +1,486 @@
+<?xml version="1.0"?>
+<root>
+  <pages>
+    <item>
+      <title><![CDATA[404 Not Found]]></title>
+      <page_layout><![CDATA[2columns-right]]></page_layout>
+      <meta_keywords><![CDATA[Page keywords]]></meta_keywords>
+      <meta_description><![CDATA[Page description]]></meta_description>
+      <identifier><![CDATA[no-route]]></identifier>
+      <content_heading><![CDATA[Whoops, our bad...]]></content_heading>
+      <content><![CDATA[<dl>
+<dt>The page you requested was not found, and we have a fine guess why.</dt>
+<dd>
+<ul class="disc">
+<li>If you typed the URL directly, please make sure the spelling is correct.</li>
+<li>If you clicked on a link to get here, the link is outdated.</li>
+</ul></dd>
+</dl>
+<dl>
+<dt>What can you do?</dt>
+<dd>Have no fear, help is near! There are many ways you can get back on track with Magento Store.</dd>
+<dd>
+<ul class="disc">
+<li><a href="#" onclick="history.go(-1); return false;">Go back</a> to the previous page.</li>
+<li>Use the search bar at the top of the page to search for your products.</li>
+<li>Follow these links to get you back on track!<br /><a href="{{store url=""}}">Store Home</a> <span class="separator">|</span> <a href="{{store url="customer/account"}}">My Account</a></li></ul></dd></dl>
+]]></content>
+      <meta_title><![CDATA[]]></meta_title>
+    </item>
+    <item>
+      <title><![CDATA[Kontakt]]></title>
+      <page_layout><![CDATA[cms-full-width]]></page_layout>
+      <meta_keywords><![CDATA[]]></meta_keywords>
+      <meta_description><![CDATA[]]></meta_description>
+      <identifier><![CDATA[kontakt]]></identifier>
+      <content_heading><![CDATA[]]></content_heading>
+      <content><![CDATA[<style>#html-body [data-pb-style=A1JJUPC]{justify-content:flex-start;display:flex;flex-direction:column}#html-body [data-pb-style=A1JJUPC],#html-body [data-pb-style=LUOOBL9]{background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=CNTVAEN]{border-radius:0;min-height:450px;background-color:transparent}#html-body [data-pb-style=L0C9TO5],#html-body [data-pb-style=R2IXWMI],#html-body [data-pb-style=XPOC0H9]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=L0C9TO5]{padding-top:30px}#html-body [data-pb-style=R2IXWMI],#html-body [data-pb-style=XPOC0H9]{width:50%;align-self:stretch}</style><div data-content-type="row" data-appearance="full-bleed" data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{}" data-background-type="image" data-video-loop="true" data-video-play-only-visible="true" data-video-lazy-load="true" data-video-fallback-src="" data-element="main" data-pb-style="A1JJUPC"><div data-content-type="banner" data-appearance="poster" data-show-button="never" data-show-overlay="never" data-element="main"><div data-element="empty_link"><div class="pagebuilder-banner-wrapper" data-background-images="{\&quot;desktop_image\&quot;:\&quot;{{media url=wysiwyg/orthopunkt-kontakt_1_3.jpg}}\&quot;}" data-background-type="image" data-video-loop="true" data-video-play-only-visible="true" data-video-lazy-load="true" data-video-fallback-src="" data-element="wrapper" data-pb-style="LUOOBL9"><div class="pagebuilder-overlay pagebuilder-poster-overlay" data-overlay-color="" data-element="overlay" data-pb-style="CNTVAEN"><div class="pagebuilder-poster-content"><div data-element="content"><h1 class="size-60 regular" style="text-align: center;"><span style="color: #ffffff;">Kontakt</span></h1><p style="text-align: center;"><span style="color: #dddddd;">Gerne beraten wir Sie persönlich an einem unserer Standorte. <br></span><span style="color: #dddddd;">Sie finden uns in Soluthurn, Rothrist und Burgdorf.</span></p></div></div></div></div></div></div></div><div data-content-type="row" data-appearance="contained" data-element="main"><div data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{}" data-background-type="image" data-video-loop="true" data-video-play-only-visible="true" data-video-lazy-load="true" data-video-fallback-src="" data-element="inner" data-pb-style="L0C9TO5"><div class="pagebuilder-column-group" style="display: flex;" data-content-type="column-group" data-grid-size="12" data-element="main"><div class="pagebuilder-column" data-content-type="column" data-appearance="full-height" data-background-images="{}" data-element="main" data-pb-style="R2IXWMI"><div data-content-type="html" data-appearance="default" data-element="main">&lt;p class="size-18"&gt;Informationsfragen&lt;/p&gt;
+&lt;h2&gt;Häufig gestellte Fragen&lt;/h2&gt;
+&lt;div class="panel-group"&gt;
+&lt;div class="panel"&gt;
+&lt;div class="panel-heading"&gt;
+&lt;h5&gt;Welche Zahlungarten stehen zur Verfügung?&lt;/h5&gt;
+&lt;/div&gt;
+&lt;div class="panel-collapse collapse"&gt;
+&lt;p&gt;Consectetur cras scelerisque dis nec mi vestibulum ullamcorper turpis enim natoque tempus a malesuada suspendisse iaculis adipiscing himenaeos tincidunt.Tellus pharetra dis nostra urna a scelerisque id parturient ullamcorper ullamcorper class ad consectetur tristique et.&lt;/p&gt;
+&lt;p&gt;Hendrerit mollis facilisi odio a montes scelerisque a scelerisque justo a praesent conubia aenean mi tempor.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="panel"&gt;
+&lt;div class="panel-heading"&gt;
+&lt;h5&gt;Wie lange ist die Lieferzeit?&lt;/h5&gt;
+&lt;/div&gt;
+&lt;div class="panel-collapse collapse"&gt;
+&lt;p&gt;Consectetur cras scelerisque dis nec mi vestibulum ullamcorper turpis enim natoque tempus a malesuada suspendisse iaculis adipiscing himenaeos tincidunt.Tellus pharetra dis nostra urna a scelerisque id parturient ullamcorper ullamcorper class ad consectetur tristique et.&lt;/p&gt;
+&lt;p&gt;Hendrerit mollis facilisi odio a montes scelerisque a scelerisque justo a praesent conubia aenean mi tempor.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="panel"&gt;
+&lt;div class="panel-heading"&gt;
+&lt;h5&gt;Wird auch ausserhalb der Schweiz geliefert?&lt;/h5&gt;
+&lt;/div&gt;
+&lt;div class="panel-collapse collapse"&gt;
+&lt;p&gt;Consectetur cras scelerisque dis nec mi vestibulum ullamcorper turpis enim natoque tempus a malesuada suspendisse iaculis adipiscing himenaeos tincidunt.Tellus pharetra dis nostra urna a scelerisque id parturient ullamcorper ullamcorper class ad consectetur tristique et.&lt;/p&gt;
+&lt;p&gt;Hendrerit mollis facilisi odio a montes scelerisque a scelerisque justo a praesent conubia aenean mi tempor.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="panel"&gt;
+&lt;div class="panel-heading"&gt;
+&lt;h5&gt;Bietet orthopunkt auch Beratungsgespräche?”&lt;/h5&gt;
+&lt;/div&gt;
+&lt;div class="panel-collapse collapse"&gt;
+&lt;p&gt;Consectetur cras scelerisque dis nec mi vestibulum ullamcorper turpis enim natoque tempus a malesuada suspendisse iaculis adipiscing himenaeos tincidunt.Tellus pharetra dis nostra urna a scelerisque id parturient ullamcorper ullamcorper class ad consectetur tristique et.&lt;/p&gt;
+&lt;p&gt;Hendrerit mollis facilisi odio a montes scelerisque a scelerisque justo a praesent conubia aenean mi tempor.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="panel"&gt;
+&lt;div class="panel-heading"&gt;
+&lt;h5&gt;Wie kann ich orthopunkt am besten erreichen?&lt;/h5&gt;
+&lt;/div&gt;
+&lt;div class="panel-collapse collapse"&gt;
+&lt;p&gt;Consectetur cras scelerisque dis nec mi vestibulum ullamcorper turpis enim natoque tempus a malesuada suspendisse iaculis adipiscing himenaeos tincidunt.Tellus pharetra dis nostra urna a scelerisque id parturient ullamcorper ullamcorper class ad consectetur tristique et.&lt;/p&gt;
+&lt;p&gt;Hendrerit mollis facilisi odio a montes scelerisque a scelerisque justo a praesent conubia aenean mi tempor.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</div></div><div class="pagebuilder-column" data-content-type="column" data-appearance="full-height" data-background-images="{}" data-element="main" data-pb-style="XPOC0H9"><div data-content-type="html" data-appearance="default" data-element="main">{{block class="Magento\Contact\Block\ContactForm" name="contactForm" template="Magento_Contact::form.phtml"}}</div></div></div></div></div>]]></content>
+      <meta_title><![CDATA[]]></meta_title>
+    </item>
+    <item>
+      <title><![CDATA[Enable Cookies]]></title>
+      <page_layout><![CDATA[1column]]></page_layout>
+      <meta_keywords><![CDATA[]]></meta_keywords>
+      <meta_description><![CDATA[]]></meta_description>
+      <identifier><![CDATA[enable-cookies]]></identifier>
+      <content_heading><![CDATA[What are Cookies?]]></content_heading>
+      <content><![CDATA[<div class="enable-cookies cms-content">
+<p>"Cookies" are little pieces of data we send when you visit our store. Cookies help us get to know you better and personalize your experience. Plus they help protect you and other shoppers from fraud.</p>
+<p style="margin-bottom: 20px;">Set your browser to accept cookies so you can buy items, save items, and receive customized recommendations. Here’s how:</p>
+<ul>
+<li><a href="https://support.google.com/accounts/answer/61416?hl=en" target="_blank">Google Chrome</a></li>
+<li><a href="http://windows.microsoft.com/en-us/internet-explorer/delete-manage-cookies" target="_blank">Internet Explorer</a></li>
+<li><a href="http://support.apple.com/kb/PH19214" target="_blank">Safari</a></li>
+<li><a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" target="_blank">Mozilla/Firefox</a></li>
+</ul>
+</div>]]></content>
+      <meta_title><![CDATA[]]></meta_title>
+    </item>
+    <item>
+      <title><![CDATA[Privacy and Cookie Policy]]></title>
+      <page_layout><![CDATA[1column]]></page_layout>
+      <meta_keywords><![CDATA[]]></meta_keywords>
+      <meta_description><![CDATA[]]></meta_description>
+      <identifier><![CDATA[privacy-policy-cookie-restriction-mode]]></identifier>
+      <content_heading><![CDATA[Privacy and Cookie Policy]]></content_heading>
+      <content><![CDATA[<div class="privacy-policy cms-content">
+    <div class="message info">
+        <span>
+            Please replace this text with you Privacy Policy.
+            Please add any additional cookies your website uses below (e.g. Google Analytics).
+        </span>
+    </div>
+    <p>
+        This privacy policy sets out how this website (hereafter "the Store") uses and protects any information that
+        you give the Store while using this website. The Store is committed to ensuring that your privacy is protected.
+        Should we ask you to provide certain information by which you can be identified when using this website, then
+        you can be assured that it will only be used in accordance with this privacy statement. The Store may change
+        this policy from time to time by updating this page. You should check this page from time to time to ensure
+        that you are happy with any changes.
+    </p>
+    <h2>What we collect</h2>
+    <p>We may collect the following information:</p>
+    <ul>
+        <li>name</li>
+        <li>contact information including email address</li>
+        <li>demographic information such as postcode, preferences and interests</li>
+        <li>other information relevant to customer surveys and/or offers</li>
+    </ul>
+    <p>
+        For the exhaustive list of cookies we collect see the <a href="#list">List of cookies we collect</a> section.
+    </p>
+    <h2>What we do with the information we gather</h2>
+    <p>
+        We require this information to understand your needs and provide you with a better service,
+        and in particular for the following reasons:
+    </p>
+    <ul>
+        <li>Internal record keeping.</li>
+        <li>We may use the information to improve our products and services.</li>
+        <li>
+            We may periodically send promotional emails about new products, special offers or other information which we
+            think you may find interesting using the email address which you have provided.
+        </li>
+        <li>
+            From time to time, we may also use your information to contact you for market research purposes.
+            We may contact you by email, phone, fax or mail. We may use the information to customise the website
+            according to your interests.
+        </li>
+    </ul>
+    <h2>Security</h2>
+    <p>
+        We are committed to ensuring that your information is secure. In order to prevent unauthorised access or
+        disclosure, we have put in place suitable physical, electronic and managerial procedures to safeguard and
+        secure the information we collect online.
+    </p>
+    <h2>How we use cookies</h2>
+    <p>
+        A cookie is a small file which asks permission to be placed on your computer's hard drive.
+        Once you agree, the file is added and the cookie helps analyse web traffic or lets you know when you visit
+        a particular site. Cookies allow web applications to respond to you as an individual. The web application
+        can tailor its operations to your needs, likes and dislikes by gathering and remembering information about
+        your preferences.
+    </p>
+    <p>
+        We use traffic log cookies to identify which pages are being used. This helps us analyse data about web page
+        traffic and improve our website in order to tailor it to customer needs. We only use this information for
+        statistical analysis purposes and then the data is removed from the system.
+    </p>
+    <p>
+        Overall, cookies help us provide you with a better website, by enabling us to monitor which pages you find
+        useful and which you do not. A cookie in no way gives us access to your computer or any information about you,
+        other than the data you choose to share with us. You can choose to accept or decline cookies.
+        Most web browsers automatically accept cookies, but you can usually modify your browser setting
+        to decline cookies if you prefer. This may prevent you from taking full advantage of the website.
+    </p>
+    <h2>Links to other websites</h2>
+    <p>
+        Our website may contain links to other websites of interest. However, once you have used these links
+        to leave our site, you should note that we do not have any control over that other website.
+        Therefore, we cannot be responsible for the protection and privacy of any information which you provide whilst
+        visiting such sites and such sites are not governed by this privacy statement.
+        You should exercise caution and look at the privacy statement applicable to the website in question.
+    </p>
+    <h2>Controlling your personal information</h2>
+    <p>You may choose to restrict the collection or use of your personal information in the following ways:</p>
+    <ul>
+        <li>
+            whenever you are asked to fill in a form on the website, look for the box that you can click to indicate
+            that you do not want the information to be used by anybody for direct marketing purposes
+        </li>
+        <li>
+            if you have previously agreed to us using your personal information for direct marketing purposes,
+            you may change your mind at any time by letting us know using our Contact Us information
+        </li>
+    </ul>
+    <p>
+        We will not sell, distribute or lease your personal information to third parties unless we have your permission
+        or are required by law to do so. We may use your personal information to send you promotional information
+        about third parties which we think you may find interesting if you tell us that you wish this to happen.
+    </p>
+    <p>
+        You may request details of personal information which we hold about you under the Data Protection Act 1998.
+        A small fee will be payable. If you would like a copy of the information held on you please email us this
+        request using our Contact Us information.
+    </p>
+    <p>
+        If you believe that any information we are holding on you is incorrect or incomplete,
+        please write to or email us as soon as possible, at the above address.
+        We will promptly correct any information found to be incorrect.
+    </p>
+    <h2><a name="list"></a>List of cookies we collect</h2>
+    <p>The table below lists the cookies we collect and what information they store.</p>
+    <table class="data-table data-table-definition-list">
+        <thead>
+        <tr>
+            <th>Cookie Name</th>
+            <th>Cookie Description</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>FORM_KEY</th>
+                <td>Stores randomly generated key used to prevent forged requests.</td>
+            </tr>
+            <tr>
+                <th>PHPSESSID</th>
+                <td>Your session ID on the server.</td>
+            </tr>
+            <tr>
+                <th>GUEST-VIEW</th>
+                <td>Allows guests to view and edit their orders.</td>
+            </tr>
+            <tr>
+                <th>PERSISTENT_SHOPPING_CART</th>
+                <td>A link to information about your cart and viewing history, if you have asked for this.</td>
+            </tr>
+            <tr>
+                <th>STF</th>
+                <td>Information on products you have emailed to friends.</td>
+            </tr>
+            <tr>
+                <th>STORE</th>
+                <td>The store view or language you have selected.</td>
+            </tr>
+            <tr>
+                <th>USER_ALLOWED_SAVE_COOKIE</th>
+                <td>Indicates whether a customer allowed to use cookies.</td>
+            </tr>
+            <tr>
+                <th>MAGE-CACHE-SESSID</th>
+                <td>Facilitates caching of content on the browser to make pages load faster.</td>
+            </tr>
+            <tr>
+                <th>MAGE-CACHE-STORAGE</th>
+                <td>Facilitates caching of content on the browser to make pages load faster.</td>
+            </tr>
+            <tr>
+                <th>MAGE-CACHE-STORAGE-SECTION-INVALIDATION</th>
+                <td>Facilitates caching of content on the browser to make pages load faster.</td>
+            </tr>
+            <tr>
+                <th>MAGE-CACHE-TIMEOUT</th>
+                <td>Facilitates caching of content on the browser to make pages load faster.</td>
+            </tr>
+            <tr>
+                <th>SECTION-DATA-IDS</th>
+                <td>Facilitates caching of content on the browser to make pages load faster.</td>
+            </tr>
+            <tr>
+                <th>PRIVATE_CONTENT_VERSION</th>
+                <td>Facilitates caching of content on the browser to make pages load faster.</td>
+            </tr>
+            <tr>
+                <th>X-MAGENTO-VARY</th>
+                <td>Facilitates caching of content on the server to make pages load faster.</td>
+            </tr>
+            <tr>
+                <th>MAGE-TRANSLATION-FILE-VERSION</th>
+                <td>Facilitates translation of content to other languages.</td>
+            </tr>
+            <tr>
+                <th>MAGE-TRANSLATION-STORAGE</th>
+                <td>Facilitates translation of content to other languages.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>]]></content>
+      <meta_title><![CDATA[]]></meta_title>
+    </item>
+    <item>
+      <title><![CDATA[orthopunkt24]]></title>
+      <page_layout><![CDATA[cms-full-width]]></page_layout>
+      <meta_keywords><![CDATA[]]></meta_keywords>
+      <meta_description><![CDATA[]]></meta_description>
+      <identifier><![CDATA[bluesky_dukamarket_digital_05]]></identifier>
+      <content_heading><![CDATA[]]></content_heading>
+      <content><![CDATA[<style>#html-body [data-pb-style=NCWGULI],#html-body [data-pb-style=PYK1FHA],#html-body [data-pb-style=S8MRKBE]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=PYK1FHA],#html-body [data-pb-style=S8MRKBE]{width:66.6667%;padding-left:10px;padding-right:10px;align-self:stretch}#html-body [data-pb-style=S8MRKBE]{width:33.3333%}#html-body [data-pb-style=HRWWKRB]{margin-bottom:20px}#html-body [data-pb-style=KFNONA8]{background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll;border-radius:5px}#html-body [data-pb-style=G3APTF4]{border-radius:5px;min-height:125px;background-color:transparent;padding:15px 30px}#html-body [data-pb-style=GVGLUNU]{background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll;border-radius:5px}#html-body [data-pb-style=PXK2S0X]{border-radius:5px;min-height:125px;background-color:transparent;padding:15px 30px}#html-body [data-pb-style=CMY6Y8E]{background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll;margin-bottom:30px}#html-body [data-pb-style=CMY6Y8E],#html-body [data-pb-style=J87CG1K]{justify-content:flex-start;display:flex;flex-direction:column}#html-body [data-pb-style=EYPKEU7],#html-body [data-pb-style=J87CG1K],#html-body [data-pb-style=P60XIWH]{background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=EYPKEU7]{justify-content:flex-start;display:flex;flex-direction:column;width:50%;align-self:stretch}#html-body [data-pb-style=P60XIWH]{border-radius:5px}#html-body [data-pb-style=DYJC602]{border-radius:5px;min-height:129px;background-color:transparent;padding:15px 30px 15px 60px}#html-body [data-pb-style=G0KFY3N],#html-body [data-pb-style=SB0KOEV]{background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=G0KFY3N]{justify-content:flex-start;display:flex;flex-direction:column;width:50%;align-self:stretch}#html-body [data-pb-style=SB0KOEV]{border-radius:5px}#html-body [data-pb-style=NNS637R]{border-radius:5px;min-height:129px;background-color:transparent;padding:15px 30px 15px 60px}#html-body [data-pb-style=L6Y1N3J],#html-body [data-pb-style=U8OX24H],#html-body [data-pb-style=WITUJT2]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=WITUJT2]{background-color:#f3f5f6;margin-bottom:0;padding-top:60px;padding-bottom:60px}#html-body [data-pb-style=L6Y1N3J],#html-body [data-pb-style=U8OX24H]{width:50%;padding-left:10px;padding-right:10px;align-self:stretch}#html-body [data-pb-style=T9PUX33]{margin-top:30px;margin-bottom:30px}#html-body [data-pb-style=T9PUX33],#html-body [data-pb-style=U4Q1DD9]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}</style><div data-content-type="row" data-appearance="contained" data-element="main"><div class="wrap-slider-banner slider_home5 banner" data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{}" data-background-type="image" data-video-loop="true" data-video-play-only-visible="true" data-video-lazy-load="true" data-video-fallback-src="" data-element="inner" data-pb-style="NCWGULI"><div class="pagebuilder-column-group" style="display: flex;" data-content-type="column-group" data-grid-size="12" data-element="main"><div class="pagebuilder-column left-banner" data-content-type="column" data-appearance="full-height" data-background-images="{}" data-element="main" data-pb-style="PYK1FHA"><div data-content-type="text" data-appearance="default" data-element="main"><div>{{widget type="Nwdthemes\Revslider\Block\Widget\Revslider" alias="bluesky_dukamarket_digital_05"}}</div></div></div><div class="pagebuilder-column banner-top right-banner banner-slider" data-content-type="column" data-appearance="full-height" data-background-images="{}" data-element="main" data-pb-style="S8MRKBE"><div data-content-type="banner" data-appearance="poster" data-show-button="never" data-show-overlay="never" data-element="main" data-pb-style="HRWWKRB" class="banner-top-content banner-img hover-light-effect"><a href="{{widget type='Magento\Catalog\Block\Category\Widget\Link' id_path='category/3' template='Magento_PageBuilder::widget/link_href.phtml' type_name='Catalog Category Link' }}" target="_blank" data-link-type="category" data-element="link"><div class="pagebuilder-banner-wrapper" data-background-images="{\&quot;desktop_image\&quot;:\&quot;{{media url=wysiwyg/orthopunkt-blog-1.jpg}}\&quot;,\&quot;mobile_image\&quot;:\&quot;{{media url=wysiwyg/orthopunkt-blog-1_1.jpg}}\&quot;}" data-background-type="image" data-video-loop="true" data-video-play-only-visible="true" data-video-lazy-load="true" data-video-fallback-src="" data-element="wrapper" data-pb-style="KFNONA8"><div class="pagebuilder-overlay pagebuilder-poster-overlay" data-overlay-color="" data-element="overlay" data-pb-style="G3APTF4"><div class="pagebuilder-poster-content"><div data-element="content"></div></div></div></div></a></div><div data-content-type="banner" data-appearance="poster" data-show-button="never" data-show-overlay="never" data-element="main" class="banner-top-content banner-top-content-right banner-img hover-light-effect"><a href="{{widget type='Magento\Catalog\Block\Category\Widget\Link' id_path='category/4' template='Magento_PageBuilder::widget/link_href.phtml' type_name='Catalog Category Link' }}" target="_blank" data-link-type="category" data-element="link"><div class="pagebuilder-banner-wrapper" data-background-images="{\&quot;desktop_image\&quot;:\&quot;{{media url=wysiwyg/aktionen-2022.jpg}}\&quot;,\&quot;mobile_image\&quot;:\&quot;{{media url=wysiwyg/aktionen-2022_1.jpg}}\&quot;}" data-background-type="image" data-video-loop="true" data-video-play-only-visible="true" data-video-lazy-load="true" data-video-fallback-src="" data-element="wrapper" data-pb-style="GVGLUNU"><div class="pagebuilder-overlay pagebuilder-poster-overlay" data-overlay-color="" data-element="overlay" data-pb-style="PXK2S0X"><div class="pagebuilder-poster-content"><div data-element="content"></div></div></div></div></a></div></div></div></div></div><div data-content-type="row" data-appearance="contained" data-element="main"><div data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{}" data-background-type="image" data-video-loop="true" data-video-play-only-visible="true" data-video-lazy-load="true" data-video-fallback-src="" data-element="inner" data-pb-style="CMY6Y8E"><div data-content-type="text" data-appearance="default" data-element="main"><div>{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" title="Bestseller" types="1" limit="10" sorting="position" tab_postions="horizontal" number_row="1" height_default_loading="300" mode_view="grid" hide_tocart="0" hide_tocompare="0" hide_towishlist="0" hide_quickview="0" product_image="small_image" image_width="300" image_height="300" owl_rtl="false" owl_nav="false" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="5" owl_items="5" owl_smalldesktop="3" owl_bigtablet="3" owl_tablet="3" owl_smalltablet="2" owl_mobile="1"}}</div></div></div></div><div data-content-type="row" data-appearance="contained" data-element="main"><div class="banner-middle banner" data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{}" data-background-type="image" data-video-loop="true" data-video-play-only-visible="true" data-video-lazy-load="true" data-video-fallback-src="" data-element="inner" data-pb-style="J87CG1K"><div class="pagebuilder-column-group" style="display: flex;" data-content-type="column-group" data-grid-size="12" data-element="main"><div class="pagebuilder-column banner-middle-column col-banner" data-content-type="column" data-appearance="full-height" data-background-images="{}" data-element="main" data-pb-style="EYPKEU7"><div data-content-type="banner" data-appearance="poster" data-show-button="never" data-show-overlay="never" data-element="main" class="banner-img hover-light-effect"><a href="shop.html" target="_blank" data-link-type="default" data-element="link"><div class="pagebuilder-banner-wrapper" data-background-images="{\&quot;desktop_image\&quot;:\&quot;{{media url=wysiwyg/orthopunkt-rollatoren.jpg}}\&quot;,\&quot;mobile_image\&quot;:\&quot;{{media url=wysiwyg/banner-middle-1.jpg}}\&quot;}" data-background-type="image" data-video-loop="true" data-video-play-only-visible="true" data-video-lazy-load="true" data-video-fallback-src="" data-element="wrapper" data-pb-style="P60XIWH"><div class="pagebuilder-overlay pagebuilder-poster-overlay" data-overlay-color="" data-element="overlay" data-pb-style="DYJC602"><div class="pagebuilder-poster-content"><div data-element="content"><p class="size-16 margin_0"><span style="line-height: 34px;"><span style="color: #ffffff; font-size: 24px;"><strong>Rollatoren</strong><br></span><span style="color: #ffffff; font-size: 18px;">Für Kinder, Jugendliche, Erwachsene und Senioren.</span></span></p></div></div></div></div></a></div></div><div class="pagebuilder-column banner-middle-column col-banner" data-content-type="column" data-appearance="full-height" data-background-images="{}" data-element="main" data-pb-style="G0KFY3N"><div data-content-type="banner" data-appearance="poster" data-show-button="never" data-show-overlay="never" data-element="main" class="banner-img hover-light-effect"><a href="shop.html" target="_blank" data-link-type="default" data-element="link"><div class="pagebuilder-banner-wrapper" data-background-images="{\&quot;desktop_image\&quot;:\&quot;{{media url=wysiwyg/orthopunkt-bandagen.jpg}}\&quot;,\&quot;mobile_image\&quot;:\&quot;{{media url=wysiwyg/banner-middle-2.png}}\&quot;}" data-background-type="image" data-video-loop="true" data-video-play-only-visible="true" data-video-lazy-load="true" data-video-fallback-src="" data-element="wrapper" data-pb-style="SB0KOEV"><div class="pagebuilder-overlay pagebuilder-poster-overlay" data-overlay-color="" data-element="overlay" data-pb-style="NNS637R"><div class="pagebuilder-poster-content"><div data-element="content"><p class="size-16 margin_0"><span style="line-height: 34px;"><span style="color: #ffffff; font-size: 24px;"><strong>Bandagen</strong><br></span><span style="color: #ffffff; font-size: 18px;">Wenn die Gelenke schmerzen, helfen Aktivbandagen.</span></span></p></div></div></div></div></a></div></div></div></div></div><div class="wrap-product-list" data-content-type="row" data-appearance="full-width" data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{}" data-background-type="image" data-video-loop="true" data-video-play-only-visible="true" data-video-lazy-load="true" data-video-fallback-src="" data-element="main" data-pb-style="WITUJT2"><div class="row-full-width-inner" data-element="inner"><div class="rokan-title has-see-all" data-content-type="text" data-appearance="default" data-element="main"><h3 class="module-title"><span style="color: #222;">Neueste Artikel</span><a class="see-all" href="shop.html">Alle ansehen</a></h3></div><div class="pagebuilder-column-group" style="display: flex;" data-content-type="column-group" data-grid-size="12" data-element="main"><div class="pagebuilder-column product-item-left product-item-column" data-content-type="column" data-appearance="full-height" data-background-images="{}" data-element="main" data-pb-style="U8OX24H"><div class="product-content" data-content-type="text" data-appearance="default" data-element="main"><div>{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" types="7" limit="10" sorting="position" tab_postions="horizontal" number_row="1" height_default_loading="300" mode_view="list" show_description="1" product_image="small_image" image_width="300" image_height="300" owl_rtl="false" owl_nav="false" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="1" owl_items="1" owl_smalldesktop="2" owl_bigtablet="2" owl_tablet="2" owl_smalltablet="2" owl_mobile="1" owl_margin="20"}}</div></div></div><div class="pagebuilder-column product-item-column" data-content-type="column" data-appearance="full-height" data-background-images="{}" data-element="main" data-pb-style="L6Y1N3J"><div data-content-type="text" data-appearance="default" data-element="main"><div>{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" types="7" limit="10" sorting="position" tab_postions="horizontal" number_row="2" height_default_loading="173" mode_view="list" show_description="0" product_image="small_image" image_width="200" image_height="200" owl_rtl="false" owl_nav="false" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="2" owl_items="2" owl_smalldesktop="3" owl_bigtablet="3" owl_tablet="2" owl_smalltablet="2" owl_mobile="1" owl_margin="20"}}</div></div></div></div></div></div><div data-content-type="row" data-appearance="contained" data-element="main"><div data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{}" data-background-type="image" data-video-loop="true" data-video-play-only-visible="true" data-video-lazy-load="true" data-video-fallback-src="" data-element="inner" data-pb-style="T9PUX33"><div data-content-type="text" data-appearance="default" data-element="main"><div>{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" title="Aktionen" types="6" limit="10" sorting="position" tab_postions="horizontal" number_row="1" height_default_loading="300" mode_view="grid" hide_tocart="0" hide_tocompare="0" hide_towishlist="0" hide_quickview="0" product_image="small_image" image_width="300" image_height="300" owl_rtl="false" owl_nav="true" owl_dots="false" owl_center="false" owl_loop="true" owl_bigdesktop="6" owl_items="6" owl_smalldesktop="5" owl_bigtablet="4" owl_tablet="4" owl_smalltablet="3.5" owl_mobile="2.2" owl_margin="0"}}</div></div></div></div><div data-content-type="row" data-appearance="contained" data-element="main"><div data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{}" data-background-type="image" data-video-loop="true" data-video-play-only-visible="true" data-video-lazy-load="true" data-video-fallback-src="" data-element="inner" data-pb-style="U4Q1DD9"><div data-content-type="text" data-appearance="default" data-element="main"><p>{{widget type="Magefan\Blog\Block\Widget\Recent" title="Neues vom Blog" category_id="0" tag_id="0" author_id="0"}}</p></div></div></div>]]></content>
+      <meta_title><![CDATA[]]></meta_title>
+    </item>
+    <item>
+      <title><![CDATA[Unsere Standorte]]></title>
+      <page_layout><![CDATA[cms-full-width]]></page_layout>
+      <meta_keywords><![CDATA[]]></meta_keywords>
+      <meta_description><![CDATA[]]></meta_description>
+      <identifier><![CDATA[standorte]]></identifier>
+      <content_heading><![CDATA[]]></content_heading>
+      <content><![CDATA[<style>#html-body [data-pb-style=XO0NU5H]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=DUWACR8]{justify-content:flex-start;display:flex;flex-direction:column;width:100%;align-self:stretch}#html-body [data-pb-style=DUWACR8],#html-body [data-pb-style=K15KJJ8]{background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=PGFJNAA]{border-radius:0;min-height:450px;background-color:transparent}#html-body [data-pb-style=RDF6HG5],#html-body [data-pb-style=X3EVODF]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=RDF6HG5]{padding-top:60px}#html-body [data-pb-style=X3EVODF]{width:33.3333%;align-self:stretch}#html-body [data-pb-style=BM8F1PU]{text-align:center;border-style:none}#html-body [data-pb-style=DYT8GTP],#html-body [data-pb-style=WVNAAT0]{max-width:100%;height:auto}#html-body [data-pb-style=P4XXOO3]{text-align:center}#html-body [data-pb-style=POG86UD]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll;width:33.3333%;align-self:stretch}#html-body [data-pb-style=X4HUOS0]{text-align:center;border-style:none}#html-body [data-pb-style=BGP5ALH],#html-body [data-pb-style=NT3XQIA]{max-width:100%;height:auto}#html-body [data-pb-style=V2XRTE1]{text-align:center}#html-body [data-pb-style=WTE1MJ2]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll;text-align:center;width:33.3333%;align-self:stretch}#html-body [data-pb-style=UQCXN6X]{border-style:none}#html-body [data-pb-style=GOW8PUC],#html-body [data-pb-style=HHP23WN]{max-width:100%;height:auto}@media only screen and (max-width: 1024px) { #html-body [data-pb-style=BM8F1PU],#html-body [data-pb-style=UQCXN6X],#html-body [data-pb-style=X4HUOS0]{border-style:none} }@media only screen and (max-width: 768px) { #html-body [data-pb-style=BM8F1PU],#html-body [data-pb-style=UQCXN6X],#html-body [data-pb-style=X4HUOS0]{border-style:none} }@media only screen and (max-width: 640px) { #html-body [data-pb-style=BM8F1PU],#html-body [data-pb-style=UQCXN6X],#html-body [data-pb-style=X4HUOS0]{border-style:none} }</style><div class="banner-about-top absolute-content" data-content-type="row" data-appearance="full-bleed" data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{}" data-background-type="image" data-video-loop="true" data-video-play-only-visible="true" data-video-lazy-load="true" data-video-fallback-src="" data-element="main" data-pb-style="XO0NU5H"><div class="pagebuilder-column-group" style="display: flex;" data-content-type="column-group" data-grid-size="12" data-element="main"><div class="pagebuilder-column" data-content-type="column" data-appearance="full-height" data-background-images="{}" data-element="main" data-pb-style="DUWACR8"><div data-content-type="banner" data-appearance="poster" data-show-button="never" data-show-overlay="never" data-element="main"><div data-element="empty_link"><div class="pagebuilder-banner-wrapper" data-background-images="{\&quot;desktop_image\&quot;:\&quot;{{media url=wysiwyg/orthopunkt-standorte_1.jpg}}\&quot;}" data-background-type="image" data-video-loop="true" data-video-play-only-visible="true" data-video-lazy-load="true" data-video-fallback-src="" data-element="wrapper" data-pb-style="K15KJJ8"><div class="pagebuilder-overlay pagebuilder-poster-overlay" data-overlay-color="" data-element="overlay" data-pb-style="PGFJNAA"><div class="pagebuilder-poster-content"><div data-element="content"><h1 class="size-60 regular" style="text-align: center;"><span style="color: #ffffff;">Unsere Standorte</span></h1><p style="text-align: center;"><span style="color: #dddddd;">Gerne beraten wir persönlich an einer unser Standorte. <br></span><span style="color: #dddddd;">Sie finden uns in Soluthurn, Rothrist und Burgdorf.</span></p></div></div></div></div></div></div></div></div></div><div class="meet-our" data-content-type="row" data-appearance="full-width" data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{}" data-background-type="image" data-video-loop="true" data-video-play-only-visible="true" data-video-lazy-load="true" data-video-fallback-src="" data-element="main" data-pb-style="RDF6HG5"><div class="row-full-width-inner" data-element="inner"><div class="pagebuilder-column-group" style="display: flex;" data-content-type="column-group" data-grid-size="12" data-element="main"><div class="pagebuilder-column" data-content-type="column" data-appearance="full-height" data-background-images="{}" data-element="main" data-pb-style="X3EVODF"><figure data-content-type="image" data-appearance="full-width" data-element="main" data-pb-style="BM8F1PU"><img class="pagebuilder-mobile-hidden" src="{{media url=wysiwyg/orthopunkt-solothurn.jpg}}" alt="" title="" data-element="desktop_image" data-pb-style="DYT8GTP"><img class="pagebuilder-mobile-only" src="{{media url=wysiwyg/orthopunkt-solothurn.jpg}}" alt="" title="" data-element="mobile_image" data-pb-style="WVNAAT0"></figure><div data-content-type="text" data-appearance="default" data-element="main" data-pb-style="P4XXOO3"><p style="text-align: left;"><strong>orthopunkt Solothurn</strong></p>
+<p style="text-align: left;">Schöngrünstrasse 35<br>4500 Solothurn</p>
+<p style="text-align: left;">Telefon: 032 623 00 53<br>Fax: 032 623 00 58<br>E-Mail:&nbsp;info@orthopunkt.ch<br>www.orthopunkt.ch</p></div></div><div class="pagebuilder-column" data-content-type="column" data-appearance="full-height" data-background-images="{}" data-element="main" data-pb-style="POG86UD"><figure data-content-type="image" data-appearance="full-width" data-element="main" data-pb-style="X4HUOS0"><img class="pagebuilder-mobile-hidden" src="{{media url=wysiwyg/orthopunkt-rothrist.jpg}}" alt="" title="" data-element="desktop_image" data-pb-style="NT3XQIA"><img class="pagebuilder-mobile-only" src="{{media url=wysiwyg/orthopunkt-rothrist.jpg}}" alt="" title="" data-element="mobile_image" data-pb-style="BGP5ALH"></figure><div data-content-type="text" data-appearance="default" data-element="main" data-pb-style="V2XRTE1"><p style="text-align: left;"><strong>orthopunkt Rothrist</strong></p>
+<p style="text-align: left;">Bernstrasse 86<br>4852 Rothrist&nbsp;&nbsp;</p>
+<p style="text-align: left;">Telefon: 062 206 00 90<br>Fax: 062 206 00 98<br>E-Mail:&nbsp;info@orthopunkt.ch<br>www.orthopunkt.ch</p></div></div><div class="pagebuilder-column" data-content-type="column" data-appearance="full-height" data-background-images="{}" data-element="main" data-pb-style="WTE1MJ2"><figure data-content-type="image" data-appearance="full-width" data-element="main" data-pb-style="UQCXN6X"><img class="pagebuilder-mobile-hidden" src="{{media url=wysiwyg/orthopunkt-burgdorf.jpg}}" alt="" title="" data-element="desktop_image" data-pb-style="HHP23WN"><img class="pagebuilder-mobile-only" src="{{media url=wysiwyg/orthopunkt-burgdorf.jpg}}" alt="" title="" data-element="mobile_image" data-pb-style="GOW8PUC"></figure><div data-content-type="text" data-appearance="default" data-element="main"><p style="text-align: left;"><strong>orthopunkt - Burgdorf</strong></p>
+<p style="text-align: left;">Mühlegasse 3<br>3400 Burgdorf&nbsp;</p>
+<p style="text-align: left;">Telefon: 034 424 01 85<br>Fax: 034 424 01 89<br>E-Mail:&nbsp;info@orthopunkt.ch<br>www.orthopunkt.ch</p></div></div></div></div></div>]]></content>
+      <meta_title><![CDATA[]]></meta_title>
+    </item>
+    <item>
+      <title><![CDATA[Impressum]]></title>
+      <page_layout><![CDATA[cms-full-width]]></page_layout>
+      <meta_keywords><![CDATA[]]></meta_keywords>
+      <meta_description><![CDATA[]]></meta_description>
+      <identifier><![CDATA[impressum]]></identifier>
+      <content_heading><![CDATA[Impressum]]></content_heading>
+      <content><![CDATA[<style>#html-body [data-pb-style=S1C1V90]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}</style><div data-content-type="row" data-appearance="contained" data-element="main"><div data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{}" data-background-type="image" data-video-loop="true" data-video-play-only-visible="true" data-video-lazy-load="true" data-video-fallback-src="" data-element="inner" data-pb-style="S1C1V90"><div data-content-type="text" data-appearance="default" data-element="main"><p><strong>Verantwortlich</strong><br>orthopunkt ag<br>Schöngrünstrasse 35<br>4500 Solothurn</p>
+<p><strong>Kontakt</strong><br>E-Mail:&nbsp;info@orthopunkt.ch<br>Telefon:&nbsp;(+41) 032 623 00 53<br>Internet: www.orthopunkt24.ch / www.orthopunkt.ch&nbsp;</p>
+<p><strong>Standorte</strong><br>Hier geht es zu allen Standorten: https://orthopunkt24.ch/standorte/</p></div></div></div>]]></content>
+      <meta_title><![CDATA[]]></meta_title>
+    </item>
+    <item>
+      <title><![CDATA[Widerrufsbelehrung]]></title>
+      <page_layout><![CDATA[cms-full-width]]></page_layout>
+      <meta_keywords><![CDATA[]]></meta_keywords>
+      <meta_description><![CDATA[]]></meta_description>
+      <identifier><![CDATA[widerrufsbelehrung]]></identifier>
+      <content_heading><![CDATA[Widerrufsbelehrung]]></content_heading>
+      <content><![CDATA[<style>#html-body [data-pb-style=ATMY4UX]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}</style><div data-content-type="row" data-appearance="contained" data-element="main"><div data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{}" data-background-type="image" data-video-loop="true" data-video-play-only-visible="true" data-video-lazy-load="true" data-video-fallback-src="" data-element="inner" data-pb-style="ATMY4UX"><div data-content-type="text" data-appearance="default" data-element="main"><p class="typo-second"><span class="font-size-3">Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen.</span></p>
+<p class="typo-second">Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag, an dem Sie oder ein von Ihnen beauftragter Dritter, der nicht der Beförderer ist, die (letzte) Ware(n) in Besitz genommen haben bzw. hat.</p>
+<p class="typo-second">Um Ihr Widerrufsrecht auszuüben, müssen Sie uns<span class="font-size-3">&nbsp;</span></p>
+<p><span class="font-size-3"><strong>IMPRESSIONEN</strong><br>orthopunkt Solothurn<br></span><span class="font-size-3">Schöngrünstrasse 35<br>4500 Solothurn</span></p>
+<p class="typo-second"><span class="font-size-3">mittels einer eindeutigen Erklärung (z.B. ein mit der Post versandter Brief, ein Telefax oder eine E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, unterrichten. Sie können dafür das der Sendung beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.</span></p>
+<p class="typo-second"><span class="font-size-3">Zur Wahrung der Widerrufsfrist reicht es aus, wenn Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.</span><span class="font-size-3">&nbsp;</span></p>
+<p><strong>FOLGEN DES WIDERRUFS</strong></p>
+<p><span class="font-size-3">Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, einschließlich der Lieferkosten (mit Ausnahme der zusätzlichen Kosten, die sich daraus ergeben, daß Sie eine andere Art der Lieferung als die von uns angebotene, günstigste Standardlieferung gewählt haben), unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf dieses Vertrages bei uns eingegangen ist. Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes vereinbart; in keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte berechnet. Wir können die Rückzahlung verweigern, bis wir die Waren wieder zurückerhalten oder bis Sie den Nachweis erbracht haben, daß Sie die Waren zurückgesandt haben, je nachdem, welches der frühere Zeitpunkt ist. Sie haben die Waren unverzüglich und in jedem Fall spätestens binnen vierzehn Tagen ab dem Tag, an dem Sie uns über den Widerruf des Vertrages unterrichten, an die oben genannte Anschrift zurückzusenden oder zu übergeben. Die Frist ist gewahrt, wenn Sie die Waren vor Ablauf der Frist von vierzehn Tagen absenden.</span>&nbsp;</p></div></div></div>]]></content>
+      <meta_title><![CDATA[]]></meta_title>
+    </item>
+    <item>
+      <title><![CDATA[AGB's]]></title>
+      <page_layout><![CDATA[cms-full-width]]></page_layout>
+      <meta_keywords><![CDATA[]]></meta_keywords>
+      <meta_description><![CDATA[]]></meta_description>
+      <identifier><![CDATA[agb]]></identifier>
+      <content_heading><![CDATA[AGB's]]></content_heading>
+      <content><![CDATA[<style>#html-body [data-pb-style=C9ANDP8]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}</style><div data-content-type="row" data-appearance="contained" data-element="main"><div data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{}" data-background-type="image" data-video-loop="true" data-video-play-only-visible="true" data-video-lazy-load="true" data-video-fallback-src="" data-element="inner" data-pb-style="C9ANDP8"><div data-content-type="text" data-appearance="default" data-element="main"><h2><strong>1 Geltungsbereich</strong></h2>
+<p>Die Allgemeinen Geschäftsbedingungen (nachfolgend "<strong>AGB</strong>" genannt) gelten für sämtliche Rechtsgeschäfte, die über die Onlineshops&nbsp;<a href="http://www.orthopunkt24.ch/">www.orthopunkt24.ch</a>&nbsp;abgeschlossen werden (nachfolgend "<strong>Onlineshop</strong>" genannt). Der Onlineshops wird von der orthopunkt ag betrieben (nachfolgend "<strong>orthopunkt</strong>" genannt).</p>
+<p>Die Allgemeinen Geschäftsbedingungen gelten auch für sämtliche Rechtsgeschäfte, die im Rahmen des Händlerprogrammes von orthopunkt (nachfolgend "<strong>Händlerprogramm</strong>" genannt) abgeschlossen werden. Im Händlerprogramm können ausgewählte unabhängige Drittanbieter (nachfolgend "<strong>Händler</strong>" genannt) Produkte und Dienstleistungen in ihrem eigenen Namen anbieten und direkt an die Kundschaft über die Onlineshops von orthopunkt verkaufen.</p>
+<p>Bei Produkten, welche im Onlineshop mit „gebraucht“ gekennzeichnet sind, gelten zusätzlich bzw. teilweise abweichend von diesen AGB die Allgemeine Kaufbedingungen Wiederverkauf (AKB).</p>
+<p>orthopunkt behält sich das Recht vor, diese AGB jederzeit zu ändern. Massgebend ist jeweils die zum Zeitpunkt der Bestellung geltende Version dieser AGB, welche für diese Bestellung nicht einseitig geändert werden können. Entgegenstehende oder von diesen AGB abweichende Bedingungen der Kundschaft werden nicht anerkannt.</p>
+<p>Das Angebot von Produkten und Dienstleistungen im Onlineshop, explizit auch im Rahmen des Händlerprogrammes (nachfolgend "<strong>Angebot</strong>" genannt), richtet sich ausschliesslich an eine Kundschaft mit Wohn- oder Firmensitz in der Schweiz oder Liechtenstein.</p>
+<p>Lieferungen erfolgen ausschliesslich an Adressen in der Schweiz oder in Liechtenstein.</p>
+<p>Das Angebot gilt, solange das Produkt über die Suchmaschine im Onlineshop auffindbar ist und/oder der Vorrat reicht.</p>
+<p>Bestellungen in nicht haushaltsüblichen Mengen können ohne Begründung abgelehnt werden.</p>
+<p>&nbsp;</p>
+<h2><strong>2 Information</strong></h2>
+<h3><strong>2.1 Produkt und Preis</strong></h3>
+<p>Abbildungen von Produkten in Werbung, Prospekten, Onlineshop usw. dienen der Illustration und sind unverbindlich.</p>
+<p>Alle im Onlineshop publizierten Verkaufspreise stellen Endpreise dar, die sämtliche Steuern (insb. MwSt.), allfällige vorgezogene Recyclinggebühren (vRG), Kosten für Verpackung/en,und sämtliche weitere allfälligen Abgaben, Gebühren, oder Kosten enthalten. Davon ausgenommen ist einzig ein möglicher Mindermengenzuschlag, welcher von orthopunkt erhoben wird. Zusätzlich zum Endpreis wird ein Mindermengenzuschlag in der Höhe von maximal CHF 9.00 erhoben, sofern bei einer Bestellung die Summe des Warenkorbs weniger als CHF 50.00 beträgt. orthopunkt und die Händler behalten sich das Recht vor, die Preise der angebotenen Produkte und Dienstleistungen jederzeit zu ändern. Massgebend für das Zustandekommen des Kaufvertrags ist der Preis im Onlineshop zum Zeitpunkt der Bestellung.</p>
+<p>Bei orthopunkt bestellte kostenpflichtige Zusatzleistungen wie beispielsweise Montage, Entsorgung, Versicherungen usw. werden von orthopunkt angeboten. Solche Zusatzleistungen werden im Warenkorb und auf der Rechnung separat aufgeführt.</p>
+<h3><strong>2.2 Verfügbarkeit und Lieferzeit</strong></h3>
+<p>orthopunkt legt grossen Wert darauf, Verfügbarkeiten und Lieferzeiten im Onlineshop aktuell und genau anzugeben. Insbesondere aufgrund von Produktions- oder Lieferengpässen kann es jedoch sowohl bei orthopunkt selber wie auch bei Händlern zu Lieferverzögerungen kommen. Alle Angaben zur Verfügbarkeit und Lieferzeit sind deshalb ohne Gewähr und können sich jederzeit ändern.</p>
+<h3><strong>2.3 Zusatzleistungen: Montage und Entsorgung</strong></h3>
+<p>Die Montage beinhaltet das Auspacken und Montieren der bestellten Produkte inkl. Rücknahme des Verpackungsmaterials.</p>
+<p>Die Entsorgung beinhaltet die Entgegennahme und umweltgerechte Entsorgung der von der Kundschaft bei der Bestellung angezeigten Gegenstände. Diese müssen in Art und Menge in etwa dem bestellten Produkt entsprechen. Die zu entsorgenden Gegenstände sind durch die Kundschaft transportgerecht und auf den vereinbarten Liefertermin der bestellten Produkte bereitzustellen.</p>
+<p>Kann die Montageleistung aufgrund eines vom Kunden zu vertretenen Grundes nicht erbracht werden (z.B. aufgrund von Nichteinhaltung des Montagetermins, falsche Massinformationen, etc.), so hat der Kunde keinen Anspruch auf Rückerstattung der bezahlten Montageleistung.</p>
+<p>&nbsp;</p>
+<h2><strong>3 Vertragsabschluss</strong></h2>
+<p>Die Produkte und Preise im Onlineshop gelten als Angebot. Dieses Angebot steht jedoch immer unter der den Vertrag auflösenden Bedingung einer Lieferunmöglichkeit oder einer fehlerhaften Preisangabe.</p>
+<p>Der Kaufvertrag kommt für Produkte oder Dienstleistungen von orthopunkt mit orthopunkt zustande, sobald die Kundschaft im Onlineshop, in einer der Filialen, per Telefon oder E-Mail ihre Bestellung aufgibt (nachfolgend "<strong>Kaufvertrag</strong>" genannt).</p>
+<p>Für Produkte und Dienstleistungen, welche ein Händler anbietet, kommt der Vertrag unmittelbar zwischen dem Händler und der Kundschaft zustande, und zwar zum Zeitpunkt der Bestellung im Onlineshop, in einer der Filialen, per Telefon oder E-Mail. orthopunkt vermittelt diese Käufe lediglich. orthopunkt ist in diesem Fall stets nur als Vermittlerin und Dienstleisterin für den Händler tätig, wird aber selber nicht zum Vertragspartner der Kundschaft.</p>
+<p>Für die Kundschaft ist jeweils im Onlineshop sowie auf der Rechnung ersichtlich, wer Anbieter bzw. wer die Vertragspartei bei einem Kauf ist (also orthopunkt oder ein Händler).</p>
+<p>Das Eintreffen einer Online-Bestellung wird der Kundschaft mittels einer automatisch generierten Bestellbestätigung von orthopunkt an die von ihr angegebene E-Mail-Adresse angezeigt. Der Erhalt der automatisch generierten Bestellungsbestätigung enthält keine Zusage, dass das Produkt auch tatsächlich geliefert werden kann. Sie zeigt der Kundschaft lediglich an, dass die abgegebene Bestellung beim Onlineshop eingetroffen und somit der Vertrag mit orthopunkt bzw. dem Händler unter der Bedingung der Liefermöglichkeit und der korrekten Preisangabe zustande gekommen ist.</p>
+<p>&nbsp;</p>
+<h2><strong>4 Liefertermin</strong></h2>
+<p>Mit der Bestellbestätigung wird der Kundschaft ein provisorischer Liefertermin mitgeteilt oder es wird mit der Kundschaft Kontakt aufgenommen und ein individueller Liefertermin vereinbart.</p>
+<p>Kommen orthopunkt bzw. der Händler in Lieferverzug, so steht der Kundschaft (ausser bei Spezialbestellungen) ab dem 30. Kalendertag seit dem ursprünglich angekündigten Liefertermin das Recht zu, vom Vertrag zurück zu treten. In diesem Fall erstattet orthopunkt&nbsp;der Kundschaft bereits im Voraus bezahlte Beträge zurück. Darüberhinausgehende Ansprüche gegenüber orthopunkt oder dem Händler bestehen nicht.</p>
+<p>&nbsp;</p>
+<h2><strong>5 Lieferung / Filialabholung</strong></h2>
+<p>Bei Produkten und Dienstleistungen von orthopunkt stehen der Kundschaft sämtliche Liefer- und Abholoptionen zur Verfügung, welche im Onlineshop unter „Lieferung und Abholung“ vermerkt sind.</p>
+<p>Produkte und Dienstleistungen, welche die Kundschaft von einem Händler kauft, können ausschliesslich via Versand an die Kundschaft geliefert werden.</p>
+<p>Die Lieferadresse der Kundschaft muss in der Schweiz oder in Liechtenstein und per LKW gut erreichbar sein. Ist dies nicht der Fall, trägt die Kundschaft die allfälligen Zusatzkosten.</p>
+<p>Wählt der Kunde die Lieferoption «Lieferung an den Verwendungsort» so ist der Kunde dafür verantwortlich, dass der Zugang zum Verwendungsort möglich und gewährleistet ist. Der Kunde muss überprüfen, ob das Produkt durch die Zugänge (z.B. Treppenhaus, Türen etc.) passt. Kann das Produkt nicht an den Verwendungsort transportiert werden, so trägt der Kunde dafür die allfälligen Zusatzkosten.</p>
+<p>Nimmt die Kundschaft die bestellten Produkte am vereinbarten oder angezeigten Liefertermin nicht entgegen, kann orthopunkt bzw. der Händler den Vertrag auflösen (stornieren) und der Kundschaft die entstandenen Lieferkosten und allfällige Wertverluste in Rechnung stellen.</p>
+<p>Falls die Kundschaft die in eine Filiale (Filialabholung) bestellten Produkte nicht innerhalb von 14 Kalendertagen seit der Abholbereitschaft in der Filiale abholt, kann orthopunkt den Vertrag auflösen (stornieren).</p>
+<p>&nbsp;</p>
+<h2><strong>6 Prüfpflicht</strong></h2>
+<p>Die Kundschaft hat gelieferte oder abgeholte Produkte sofort auf Richtigkeit, Vollständigkeit und Lieferschäden zu prüfen.</p>
+<p>Bei Speditionslieferungen ist ein allfälliger Lieferschaden auf dem Lieferschein zu vermerken.</p>
+<p>Lieferschäden, Falsch- und unvollständige Lieferungen sind, auch für alle Produkte und Dienstleistungen eines Händlers, orthopunkt&nbsp;innert 5 Kalendertagen ab dem Zeitpunkt der Abholung respektive der Zustellung zu melden. Ein solches Produkt darf die Kundschaft nicht in Betrieb nehmen. Sie hat es wie erhalten in der Originalverpackung aufzubewahren und den Instruktionen der Kundenhotline zu folgen.</p>
+<p>&nbsp;</p>
+<h2><strong>7 Gewährleistung</strong></h2>
+<h3><strong>7.1 Grundbestimmungen</strong></h3>
+<p>orthopunkt bzw. der Händler übernimmt während 2 Jahren nach der Lieferung bzw. Filialabholung die Garantie für Mängelfreiheit und Funktionsfähigkeit des bestellten Produktes. Die Garantiedauer läuft ungeachtet der Erbringung allfälliger Garantieleistungen weiter. orthopunkt bzw. der Händler kann die Garantie wahlweise durch</p>
+<ul>
+<li>kostenlose Reparatur (ursprüngliche Garantiefrist läuft auf gesamtem Produkten weiter);</li>
+<li>teilweisen und vollständigen Ersatz durch ein gleichwertiges gebrauchtes/repariertes Produkt. (bei Ersatz im 1. Jahr der Garantie läuft die ursprüngliche Garantiefrist weiter, bei Ersatz im 2. Jahr der Garantie beträgt die Garantiefrist 1 Jahr ab Zeitpunkt des Austausches);&nbsp;</li>
+<li>Ersatz durch ein neues Produkt durch orthopunkt (neue Garantiefrist von 2 Jahren ab Ersatz)</li>
+<li>Gutschrift zum Tagespreis, (maximal den Verkaufspreis im Zeitpunkt der Bestellung); oder</li>
+<li>Minderung</li>
+</ul>
+<p>erbringen.</p>
+<p>Verschleissteile wie insbesondere Batterien, Akkus, Netzkabel, Adapter, Leuchtmittel sowie Softwareprobleme sind sowohl von orthopunkt als auch vom Händler von der Garantie ausgenommen. Im Übrigen gelten die Haftungsausschlüsse gemäss Ziffer 8.</p>
+<p>Sofern die Herstellergarantie über die Garantie von orthopunkt bzw. vom Händler hinausgeht, räumen orthopunkt bzw. der Händler diese der Kundschaft ebenfalls ein.</p>
+<p>Bei Übergabe eines Datenträgers oder eines Produkts mit einem darin enthaltenen Datenspeicher an orthopunkt oder den Händler muss in jedem Fall mit einem vollständigen Datenverlust gerechnet werden. Die Kundschaft ist selbst für eine ordentliche Datensicherung und den Schutz ihrer Daten verantwortlich. Für allfällige Datenverluste übernehmen orthopunkt bzw. der Händler keine Haftung.</p>
+<p>Sowohl orthopunkt als auch der Händler können der Kundschaft während der Prüfung des Garantieanspruchs nach freiem Ermessen ein Ersatzgerät / Austauschgerät zur Verfügung stellen (Austausch unter Vorbehalt). Dies erfolgt unter der (aufschiebenden) Bedingung, dass tatsächlich ein Garantiefall vorliegt. Somit erlangt die Kundschaft erst im Zeitpunkt der Garantiezusage durch orthopunkt oder den Händler Eigentum am Ersatzprodukt. Bei Ablehnung eines Garantiefalls durch orthopunkt oder den Händler kann die Kundschaft das Ersatzgerät zum Warenwert zum Zeitpunkt der Aushändigung erwerben, oder sie ist verpflichtet, das Ersatzgerät auf eigene Kosten zurückzusenden.</p>
+<p>Alle weitergehenden und insbesondere die gesetzlichen Bestimmungen zur Gewährleistung werden ausgeschlossen.</p>
+<h3><strong>7.2 Zusatzbestimmungen für gebrauchte Ware</strong></h3>
+<p>Es gelten andere Bestimmungen für die bereits vergünstigten Produkte, welche im Onlineshop als "Vorführprodukt", „Wiederaufbereitet“, „Testgerät“, „Reparatur“ oder „Ausstellungsprodukt“ gekennzeichnet sind. Sie können leichte optische Mängel haben oder wieder instand gesetzte Produkte sein. Diese optischen Mängel sind von der Garantie ausgeschlossen und werden in den Artikeldetails erwähnt. Im Übrigen gilt für diese Produkte die&nbsp;<strong>Garantiedauer von einem Jahr</strong>&nbsp;nach der Lieferung bzw. Filialabholung.</p>
+<p>Die Kundschaft ist sich bewusst, dass sie ein benutztes elektronisches Produkt erwirbt, das persönliche Daten des früheren Eigentümers/Nutzers enthalten könnte und in diesem Zusammenhang von orthopunkt bzw. dem Händler jegliche Haftung abgelehnt wird.&nbsp;</p>
+<p>&nbsp;</p>
+<h2><strong>8 Haftung und Haftungsausschluss</strong></h2>
+<p>Die Haftung richtet sich nach den anwendbaren gesetzlichen Bestimmungen. Allerdings haften orthopunkt bzw. der Händler in keinem Fall für (i) leichte Fahrlässigkeit, (ii) indirekte und mittelbare Schäden und Folgeschäden und entgangenen Gewinn, (iii) nicht realisierte Einsparungen, (iv) Schäden aus Lieferverzug sowie (v) jegliche Handlungen und Unterlassungen der Hilfspersonen von orthopunkt oder der Hilfspersonen eines Händlers, sei dies vertraglich oder ausservertraglich.</p>
+<p>orthopunkt bzw. der Händler haften im Übrigen nicht für Schäden, die auf eine der folgenden Ursachen zurückzuführen sind:</p>
+<ul>
+<li>unsachgemässe, vertragswidrige oder widerrechtliche Lagerung, Einstellung oder Benutzung der Produkte;</li>
+<li>Einsatz inkompatibler Ersatz- oder Zubehörteile (z.B. Stromversorgung);</li>
+<li>unterlassene Wartung und/oder unsachgemässe Abänderung oder Reparatur der Produkte durch die Kundschaft oder einen Dritten;</li>
+<li>höhere Gewalt, insbesondere Elementar-, Feuchtigkeits-, Sturz- und Schlagschäden usw., welche nicht durch orthopunkt&nbsp;zu vertreten sind, und behördliche Anordnungen.</li>
+</ul>
+<p>&nbsp;</p>
+<h2><strong>9 Zahlung</strong></h2>
+<h3><strong>9.1 Zahlungsvarianten</strong></h3>
+<p>Alle Zahlungsforderungen von Produkten und Dienstleistungen, welche über die Onlineshops von orthopunkt gekauft werden, macht orthopunkt direkt bei der Kundschaft geltend. Der Händler tritt mit Abschluss des Kaufvertrags die gesamte Zahlungsforderung, die im Rahmen des Kaufvertrags zwischen ihm und der Kundschaft entsteht, an orthopunkt ab (Zession). Die Kundschaft nimmt diese Abtretung zur Kenntnis und ist verpflichtet, sämtliche Zahlungen ausschliesslich an orthopunkt zu leisten.</p>
+<p>Zahlungen müssen in Schweizer Franken geleistet werden.</p>
+<p>Der Kundschaft stehen die als Zahlungsmittel im Onlineshop unter „Zahlungsoptionen“ angebotenen Zahlungsmöglichkeiten zur Verfügung.</p>
+<p>Die aktuellen Zahlungsmittelgebühren, welche gegebenenfalls von orthopunkt erhoben werden, sind unter „Zahlungsoptionen“ ersichtlich und werden im Bestellprozess detailliert ausgewiesen.</p>
+<p>Bei Zahlung mit Kreditkarte oder anderen Sofort-Zahlungsmitteln erfolgt die Belastung bei Bestellung.</p>
+<p>Bei Vorauskasse erfolgt die Lieferung erst nach Eingang der Zahlung. Die Produkte im Zentrallager von orthopunkt werden bis Ablauf der Zahlungsfrist von mindestens 10 Kalendertagen reserviert. Dies betrifft auch Produkte, welche zuerst extern bestellt, aber über unser Lager verarbeitet und verschickt werden. Bei Produkten, welche per Direktlieferung von einem Händler bzw. von einem externen Distributor an unsere Kundschaft zugestellt werden, erfolgt die externe Bestellung erst nach Zahlungseingang.&nbsp;</p>
+<p>Bei gebührenpflichtigem Kauf auf Rechnung (nur für Produkte und Waren von orthopunkt zulässig) ist die Kundschaft verpflichtet, den Rechnungsbetrag innert 30 Kalendertagen nach Erhalt der Lieferung ohne jeglichen (Skonto-) Abzug zu begleichen. Im Falle einer teilweise erfolgten Rücksendung der gelieferten Produkte kann der Rechnungsbetrag entsprechend reduziert werden.</p>
+<h3><strong>9.2 Zahlungsverzug</strong></h3>
+<p>Kommt die Kundschaft ihrer Zahlungsverpflichtungen ganz oder teilweise nicht nach, werden alle offenen Beträge, welche die Kundschaft orthopunkt unter irgendeinem Titel schuldet, sofort (bei Vorauszahlung innert 8 Kalendertagen seit der 1. Mahnung) fällig und orthopunkt kann diese sofort einfordern und weitere Lieferungen von Produkten an die Kundschaft einstellen.</p>
+<p>Bei erfolglosen Mahnungen können die Rechnungsbeträge an eine mit dem Inkasso beauftragte Firma abgetreten werden. In diesem Fall kann zusätzlich ein effektiver Jahreszins von bis zu 15% auf dem geschuldeten Rechnungsbetrag ab Fälligkeitsdatum in Rechnung gestellt werden. Die mit dem Inkasso beauftragte Firma wird die offenen Beträge in eigenem Namen und auf eigene Rechnung geltend machen und kann zusätzliche Bearbeitungsgebühren erheben.</p>
+<h3><strong>9.3 Eigentumsvorbehalt</strong></h3>
+<p>Bestellte Produkte bleiben bis zur vollständigen Bezahlung an orthopunkt im Eigentum von orthopunkt bzw. dem Händler. orthopunkt bzw. der Händler ist berechtigt, einen entsprechenden Eintrag im Eigentumsvorbehaltsregister vorzunehmen. Vor Eigentumsübergang ist eine Verpfändung, Sicherungsübereignung, Verarbeitung oder Umgestaltung ohne ausdrückliche Einwilligung von orthopunkt nicht zulässig.</p>
+<p>&nbsp;</p>
+<h2><strong>10 Änderung der Bestellung oder Stornierung</strong></h2>
+<p><strong>Stornierung</strong></p>
+<p>Bestellungen verpflichten die Kundschaft zur Abnahme der Produkte und Leistungen. Nachträgliche Änderungen oder Stornierungen von Bestellungen der Kundschaft können orthopunkt bzw. der Händler nach freiem Ermessen akzeptieren und eine Umtriebs-Entschädigung von 20% des stornierten Bestellwerts, mindestens aber CHF 60.–, sowie den allfälligen Wertverlust der stornierten Produkte seit deren Bestellung in Rechnung stellen.</p>
+<p>Tritt nach einer Bestellung bzw. dem Vertragsabschluss gemäss Ziffer 3 eine (Teil-) Lieferunmöglichkeit (auflösende Bedingung) ein, wird die Kundschaft umgehend per E-Mail informiert. Falls die Kundschaft bereits bezahlt hat, wird ihr dieser Betrag zurückerstattet. Ist noch keine Zahlung erfolgt, wird die Kundschaft von der Zahlungspflicht befreit. Weitere Ansprüche wegen Lieferverzug oder Ausfall der Lieferung sind ausgeschlossen.</p>
+<p>&nbsp;</p>
+<h2><strong>11 Rückgabe von mängelfreier Ware</strong></h2>
+<p>Unter den bei Rückgaberichtlinien aufgelisteten Bedingungen gewährt die orthopunkt das Recht auf Rückgabe der bestellten Produkte innert maximal 30 Kalendertagen, bei Produkten von Händlern innert maximal 14 Kalendertagen seit deren Versand oder Abholung.</p>
+<p>. Die Produkte sind mit sämtlichem Zubehör in der Originalverpackung fachgerecht zu verpacken. Beschädigte Produkte werden nicht zurückgenommen bzw. werden dem Kunden vollständig in Rechnung gestellt.</p>
+<p>Bei Übergabe eines Datenträgers oder eines Produkts mit einem darin enthaltenen Datenspeicher an orthopunkt oder den Händler, muss in jedem Fall mit einem vollständigen Datenverlust gerechnet werden. Die Kundschaft ist selbst für eine ordentliche Datensicherung und den Schutz ihrer Daten verantwortlich. Für allfällige Datenverluste übernimmt orthopunkt oder der Händler keine Haftung.</p>
+<p>Macht die Kundschaft von ihrem Rückgaberecht Gebrauch, erstattet ihr orthopunkt den gesamten Kaufpreis abzüglich des allenfalls bezahlten Mindermengenzuschlags und der in den Rückgaberichtlinien aufgeführten Rücksendekosten zurück.</p>
+<p>&nbsp;</p>
+<h2><strong>12 Reparatur ausserhalb der Gewährleistung</strong></h2>
+<p>Die Kosten für eine Reparatur ausserhalb der Gewährleistung gemäss Ziffer 7 gehen zu Lasten des Kunden. Bei Geräten, welche keine feststellbaren Fehler aufweisen oder bei denen der Mangel nicht unter die Gewährleistung gemäss Ziffer 7 fällt, behalten sich orthopunkt bzw. der Händler vor, die Kosten für die Prüfung des geltend gemachten Mangels sowie die Versandkosten der Kundschaft in Rechnung zu stellen.</p>
+<p>&nbsp;</p>
+<h2><strong>13 Weitere Bestimmungen</strong></h2>
+<h3><strong>13.1 Nicht zuordenbare und zustellbare Rücksendungen</strong></h3>
+<p>Rücksendungen, die keiner Kundschaft zugeordnet oder der Kundschaft nicht retourniert werden können, werden sechs Monate von orthopunkt bzw. vom Händler aufbewahrt und dann entsorgt.</p>
+<h3><strong>13.2 Nicht abgeholte oder zustellbare Garantieware</strong></h3>
+<p>Wird Ware, die im Zusammenhang mit der Gewährleistungserbringung gemäss Ziffer 7 steht, in den Filialen nicht innert sechs Monaten seit Versendung der Abholaufforderung an die Kundschaft abgeholt oder kann ihr die Ware nicht retourniert werden, so ist orthopunkt berechtigt, über die Ware zu verfügen, insbesondere diese zu entsorgen.</p>
+<h3><strong>13.3 Datenschutz</strong></h3>
+<p>Die Datenschutzerklärung unter Datenschutzerklärung ist integrierter Bestandteil dieser AGB. Mit der Akzeptanz dieser AGBs erklärt die Kundschaft auch der Datenschutzerklärung zuzustimmen.</p>
+<h3><strong>13.4 Teilungültigkeit</strong></h3>
+<p>Sollten einzelne Bestimmungen dieser AGB ungültig oder unwirksam sein, so hat dies keinen Einfluss auf die Wirksamkeit der übrigen Bestimmungen und dieser AGB insgesamt.</p>
+<h3><strong>13.5 Gerichtsstand und anwendbares Recht</strong></h3>
+<p>Sämtliche Rechtsbeziehungen zwischen orthopunkt bzw. einem Händler und der Kundschaft unterstehen materiellem Schweizer Recht. Das Wiener Kaufrecht ist nicht anwendbar.</p>
+<p>Es gelten folgende ausschliesslichen Gerichtstände:</p>
+<p>Für sämtliche Ansprüche aus Kaufverträgen, in denen orthopunkt Vertragspartei ist:<br>Für Klagen von Konsumentinnen und Konsumenten gilt ihr Wohnsitz oder Solothurn als Gerichtsstand.&nbsp;In allen anderen Fällen ist Solothurn ausschliesslicher Gerichtsstand.</p>
+<p>Für sämtliche Ansprüche aus Kaufverträgen, in denen ein Händler mit Sitz in der Schweiz Vertragspartei ist:<br>Für Klagen von Konsumentinnen und Konsumenten gilt ihr Wohnsitz oder der Sitz des Händlers als Gerichtsstand.&nbsp;In allen anderen Fällen ist der Sitz des Händlers ausschliesslicher Gerichtsstand.</p>
+<h3><strong>13.6 Urheberrechtlicher Hinweis</strong></h3>
+<p>Sämtliche Rechte, namentlich Urheberrechte, an diesen AGB liegen bei orthopunkt .</p>
+<p>Jegliche Vervielfältigung, Verbreitung oder anderweitige Verwendung ist untersagt und nur mit der ausdrücklichen und schriftlichen Zustimmung von orthopunkt zulässig. Bei einem Verstoss gegen diese Vorgabe behält sich orthopunkt sämtliche rechtlichen Schritte vor.</p>
+<p>Oktober 2018</p></div></div></div>]]></content>
+      <meta_title><![CDATA[]]></meta_title>
+    </item>
+  </pages>
+</root>
