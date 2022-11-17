@@ -65,21 +65,6 @@ $_helper = $this->helper(Magento\Catalog\Helper\Output::class);
 							<?php $productImageHover = $block->getImage($_product, $imageDisplayAreaHover); ?>
 							<img class="image_hover" src="<?= $productImageHover->getImageUrl(); ?>" />
 						</a>
-						<div class="product-label">
-							<?php if ( $_product->getFinalPrice() < $_product->getPrice() ): ?>
-								<span class="onsale">
-									<span class="value"><?= -100 + round(($_product->getFinalPrice() / $_product->getPrice() * 100)) ?>%</span>
-								</span>
-							<?php endif; ?>
-							<?php $todayDate = time(); 
-								$timeStartNew = strtotime($_product->getData('news_from_date'));
-								$timeEndNew = strtotime($_product->getData('news_to_date')); ?>
-							<?php if ( $timeEndNew >= $todayDate && $timeStartNew <= $todayDate): ?>
-								<span class="newlabel">
-									<span><?php echo __('New') ?></span>
-								</span>
-							<?php endif; ?>
-						</div>
 						<?php if ($block->getMode() == 'list') { ?>
 							<?php if ($_product->isAvailable()) :?>
 								<?= $block->getProductDetailsHtml($_product) ?>
@@ -117,8 +102,8 @@ $_helper = $this->helper(Magento\Catalog\Helper\Output::class);
 										</div>
 									<?php endif; ?> 
 									<?php if ($block->getMode() == 'grid') { ?>
-										<div class="product actions product-item-actions"<?= strpos($pos, $viewMode . '-actions') ? $block->escapeHtmlAttr($position) : '' ?>>
-											<div class="actions-primary visible-hover"<?= strpos($pos, $viewMode . '-primary') ? $block->escapeHtmlAttr($position) : '' ?>>
+										<div class="product actions product-item-actions">
+											<div class="actions-primary visible-hover">
 												<?php if ($_product->isSaleable()) :?>
 													<?php $postParams = $block->getAddToCartPostParams($_product); ?>
 													<form data-role="tocart-form"
@@ -145,7 +130,7 @@ $_helper = $this->helper(Magento\Catalog\Helper\Output::class);
 													<?php endif; ?>
 												<?php endif; ?>
 											</div>
-											<div data-role="add-to-links" class="actions-secondary visible-hover"<?= strpos($pos, $viewMode . '-secondary') ? $block->escapeHtmlAttr($position) : '' ?>>
+											<div data-role="add-to-links" class="actions-secondary visible-hover">
 												<?php if ($addToBlock = $block->getChildBlock('addto')) :?>
 													<?= $addToBlock->setProduct($_product)->getChildHtml() ?>
 												<?php endif; ?>
@@ -168,13 +153,13 @@ $_helper = $this->helper(Magento\Catalog\Helper\Output::class);
 										<?php endif; ?>
 									<?php endif; ?>
 									<?= /* @noEscape */ $block->getProductPrice($_product) ?>
-									<div class="product actions product-item-actions"<?= strpos($pos, $viewMode . '-actions') ? $block->escapeHtmlAttr($position) : '' ?>>
-										<div data-role="add-to-links" class="actions-secondary visible-hover"<?= strpos($pos, $viewMode . '-secondary') ? $block->escapeHtmlAttr($position) : '' ?>>
+									<div class="product actions product-item-actions">
+										<div data-role="add-to-links" class="actions-secondary visible-hover">
 											<?php if ($addToBlock = $block->getChildBlock('addto')) :?>
 												<?= $addToBlock->setProduct($_product)->getChildHtml() ?>
 											<?php endif; ?>
 										</div>
-										<div class="actions-primary visible-hover"<?= strpos($pos, $viewMode . '-primary') ? $block->escapeHtmlAttr($position) : '' ?>>
+										<div class="actions-primary visible-hover">
 											<?php if ($_product->isSaleable()) :?>
 												<?php $postParams = $block->getAddToCartPostParams($_product); ?>
 												<form data-role="tocart-form"

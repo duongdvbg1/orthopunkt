@@ -197,7 +197,7 @@ Bitte aktualisieren Sie die Web-Seite um die Mitteilungs-Benachrichtigung zurüc
 "Edit","Bearbeiten",module,Magento_AdvancedCheckout
 "Remove item","Artikel entfernen",module,Magento_AdvancedCheckout
 "Products Requiring Attention","Produkte benötigen Aufmerksamkeit",module,Magento_AdvancedCheckout
-"Add to Cart","In den Warenkorb",module,Magento_AdvancedCheckout
+"Add to Cart","MEHR ERFAHREN",module,Magento_AdvancedCheckout
 "Sku","Artikelnr.",module,Magento_AdvancedCheckout
 "File","Datei",module,Magento_AdvancedCheckout
 "File extensions allowed: .csv","Erlaubte Datei-Erweiterungen: .csv",module,Magento_AdvancedCheckout

@@ -833,7 +833,7 @@ class Post extends \Magento\Framework\Model\AbstractModel implements \Magento\Fr
             );
 
             if (!$format) {
-                $format = 'Y-m-d H:i:s';
+                $format = 'd-m-Y H:i:s';
             }
         }
 
@@ -860,7 +860,7 @@ class Post extends \Magento\Framework\Model\AbstractModel implements \Magento\Fr
      * @param  string $format
      * @return string
      */
-    public function getUpdateDate($format = 'Y-m-d H:i:s')
+    public function getUpdateDate($format = 'd-m-Y')
     {
         return \Magefan\Blog\Helper\Data::getTranslatedDate(
             $format,

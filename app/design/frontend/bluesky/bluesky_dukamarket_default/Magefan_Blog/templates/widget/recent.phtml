@@ -51,14 +51,6 @@ $_postCollection = $block->getPostCollection();
 ?>
 <?php if ($_postCollection->count()) { ?>
 	<div class="widget box-section block-recent-posts section" <?php echo $background ?>>
-		<?php if($description || $block->getTitle() || $blog_see_all){?>
-		<div class="rokan-title <?php if($block->getData('description')): ?>has-short-des<?php endif; ?><?php if($blog_see_all): ?>has-see-all<?php endif; ?>">
-			<h3 class="module-title"><span><?= $block->escapeHtml($block->getTitle()) ?></span><?php if($blog_see_all): ?><a class="see-all" href="<?php echo $blog_see_all ?>"><?= __('See All') ?></a><?php endif; ?></h3>
-			<div class="rokan-description blog-description">
-				<p><?php echo nl2br($description); ?></p>
-			</div>
-		</div>
-		<?php }?>
 		<div class="post-list-wrapper">
 				<div class="blog-list-post owl-carousel owl-theme" data-rtl="<?php echo $owl_rtl; ?>" data-items="<?php echo $items; ?>" 
 				data-bigdesktop="<?php echo $items_bigdesktop; ?>" data-smalldesktop="<?php echo $items_smalldesktop; ?>" 

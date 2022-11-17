@@ -102,6 +102,25 @@
 			}
 		}
 	}
+
+	.product-item-actions {
+		.actions-secondary {
+			.action {
+				&.tocompare {
+					display: none !important;
+				}
+			}
+		}
+	}
+
+	.post-content {
+		[data-content-type='row'][data-appearance='contained'], 
+		[data-content-type='row'][data-appearance='full-width'] > .row-full-width-inner {
+			padding: 0;
+			width: 100%;
+		}
+	}
+	
 }
 // Slide show on top
 @content_banner_padding: 10% 0 16%;
