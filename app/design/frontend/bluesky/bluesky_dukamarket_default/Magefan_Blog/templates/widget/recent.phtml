@@ -122,7 +122,7 @@ $_postCollection = $block->getPostCollection();
 													<?php 
 														$date = $_post->getPublishTime();
 													?>
-													<span class="date"><?php echo date('d', strtotime($_post->getPublishTime())); ?> <?php echo date('M', strtotime($_post->getPublishTime())); ?></span>		
+													<span class="date"><?php echo date('d.m.Y', strtotime($_post->getPublishTime())); ?></span>		
 													</span>
 												</div>
 											<?php } ?>

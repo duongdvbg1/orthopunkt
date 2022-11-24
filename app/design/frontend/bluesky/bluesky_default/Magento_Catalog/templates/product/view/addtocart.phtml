@@ -9,7 +9,7 @@ $qty = 1;
 ?>
 <?php $_product = $block->getProduct(); ?>
 <?php $buttonTitle = __('Add to Cart'); ?>
-<?php if ($_product->isSaleable()) :?>
+<?php if ($_product->isSaleable() && !$_product->getSap_massprodukte()) :?>
 <div class="box-tocart">
     <div class="fieldset">
         <?php if ($block->shouldRenderQuantity()) :?>
@@ -42,6 +42,11 @@ $qty = 1;
     </div>
 </div>
 <?php endif; ?>
+
+<?php if ($_product->getSap_massprodukte()) :?>
+	<p class="sap-text"><a href="<?= $block->getUrl('kontakt').'?sku='.$_product->getSku(); ?>"><?php /* @escapeNotVerified */ echo __('Beratungstermin vereinbaren') ?></a></p>
+<?php endif; ?>
+
 <?php if ($block->isRedirectToCartEnabled()) : ?>
 	<script type="text/x-magento-init">
 		{
