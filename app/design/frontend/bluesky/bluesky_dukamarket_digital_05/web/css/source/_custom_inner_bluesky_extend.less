@@ -1177,13 +1177,25 @@
 			}
 		}
 	}
-}
-& when (@media-common = true) {
+
 	ul.chosen-results{
 		li.result-selected{
 			&.highlighted{
 				color: @button__color;
 			}
+		}
+	}
+
+	.product-info-main {
+		> .product-category,
+		.product-page-brand-common-view {
+			display: none;
+		}
+	}
+
+	#opc-sidebar {
+		> .choice {
+			display: none;
 		}
 	}
 }

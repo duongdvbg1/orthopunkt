@@ -197,7 +197,7 @@ Bitte aktualisieren Sie die Web-Seite um die Mitteilungs-Benachrichtigung zurüc
 "Edit","Bearbeiten",module,Magento_AdvancedCheckout
 "Remove item","Artikel entfernen",module,Magento_AdvancedCheckout
 "Products Requiring Attention","Produkte benötigen Aufmerksamkeit",module,Magento_AdvancedCheckout
-"Add to Cart","MEHR ERFAHREN",module,Magento_AdvancedCheckout
+"Add to Cart","IN DEN WARENKORB",module,Magento_AdvancedCheckout
 "Sku","Artikelnr.",module,Magento_AdvancedCheckout
 "File","Datei",module,Magento_AdvancedCheckout
 "File extensions allowed: .csv","Erlaubte Datei-Erweiterungen: .csv",module,Magento_AdvancedCheckout
@@ -888,7 +888,7 @@ href=""https://dashboard.rjmetrics.com/v2/magento/signup/"">Magento BI Essential
 "Store Phone Number","Shop-Telefonnummer",module,Magento_Backend
 "Store Hours of Operation","Shop Öffnungszeiten",module,Magento_Backend
 "Country","Land",module,Magento_Backend
-"Region/State","Region/Bundesland",module,Magento_Backend
+"Region/State","Region/Kanton",module,Magento_Backend
 "ZIP/Postal Code","Postleitzahl",module,Magento_Backend
 "City","Stadt",module,Magento_Backend
 "Street Address","Straße",module,Magento_Backend
@@ -1476,8 +1476,8 @@ Bitte überprüfe diesen Vorgangsbericht und versuche es nochmal.",module,Magent
 "Company","Firma",module,Magento_Braintree
 "Address","Adresse",module,Magento_Braintree
 "City","Stadt",module,Magento_Braintree
-"State/Province","Bundesland",module,Magento_Braintree
-"Please select region, state or province","Wählen Sie bitte eine Region, ein Bundesland oder eine Provinz aus",module,Magento_Braintree
+"State/Province","Kanton",module,Magento_Braintree
+"Please select region, state or province","Wählen Sie bitte eine Region, ein Kanton oder eine Provinz aus",module,Magento_Braintree
 "Zip/Postal Code","PLZ",module,Magento_Braintree
 "Submit","Absenden",module,Magento_Braintree
 "Add Credit Card","Kreditkarte hinzufügen",module,Magento_Braintree
@@ -2296,7 +2296,7 @@ and the product descriptor can be up to 18, 14, or 9 characters respectively (wi
 "Compare Products","Produkte vergleichen",module,Magento_Catalog
 "Print This Page","Diese Seite drucken",module,Magento_Catalog
 "Remove Product","Produkt entfernen",module,Magento_Catalog
-"Add to Cart","MEHR ERFAHREN",module,Magento_Catalog
+"Add to Cart","IN DEN WARENKORB",module,Magento_Catalog
 "In stock","Auf Lager",module,Magento_Catalog
 "Out of stock","Nicht lieferbar",module,Magento_Catalog
 "Add to Wish List","Zur Wunschliste hinzufügen",module,Magento_Catalog
@@ -2505,7 +2505,7 @@ and the product descriptor can be up to 18, 14, or 9 characters respectively (wi
 "Skip to the beginning of the images gallery","Zum Anfang der Bildgalerie springen",module,Magento_Catalog
 "Details","Details",module,Magento_Catalog
 "Recently Compared","Kürzlich verglichen",module,Magento_Catalog
-"Add To Cart","MEHR ERFAHREN",module,Magento_Catalog
+"Add To Cart","IN DEN WARENKORB",module,Magento_Catalog
 "Add To Compare","Zur Vergleichsliste hinzufügen",module,Magento_Catalog
 "Learn more","Weitere Informationen",module,Magento_Catalog
 "Recently Viewed","Kürzlich angesehen",module,Magento_Catalog
@@ -2855,7 +2855,7 @@ Zeit in Sekunden zwischen den Widget-Updates.,module,Magento_Catalog
 "Category Permissions","Kategorieberechtigungen",module,Magento_CatalogPermissions
 "Browsing Category","Durch Kategorie navigieren",module,Magento_CatalogPermissions
 "Display Product Prices","Produktpreise anzeigen",module,Magento_CatalogPermissions
-"Add to Cart","MEHR ERFAHREN",module,Magento_CatalogPermissions
+"Add to Cart","MEHR IN DEN WARENKORB",module,Magento_CatalogPermissions
 "Yes, for Everyone","Ja, für alle",module,Magento_CatalogPermissions
 "Yes, for Specified Customer Groups","Ja, für angegebene Kundengruppen",module,Magento_CatalogPermissions
 "No","Nein",module,Magento_CatalogPermissions
@@ -3048,7 +3048,7 @@ Zeit in Sekunden zwischen den Widget-Updates.,module,Magento_Catalog
 "Category","Kategorie",module,Magento_CatalogSearch
 "%1 and above","%1 und mehr",module,Magento_CatalogSearch
 "%1 - %2","%1 – %2",module,Magento_CatalogSearch
-"Sorry, something went wrong. You can find out more in the error log.","Entschuldigung, es ist ein Fehler aufgetreten. Sie erfahren mehr im Fehlerprotokoll.",module,Magento_CatalogSearch
+"Sorry, something went wrong. You can find out more in the error log.","Entschuldigung, es ist ein Fehler aufgetreten. Sie IN DEN WARENKORB mehr im Fehlerprotokoll.",module,Magento_CatalogSearch
 "Bucket does not exist","Bucket existiert nicht",module,Magento_CatalogSearch
 "Product","Produkt",module,Magento_CatalogSearch
 "Search Settings","Sucheinstellungen",module,Magento_CatalogSearch
@@ -3181,7 +3181,7 @@ Zeit in Sekunden zwischen den Widget-Updates.,module,Magento_Catalog
 "Product Attribute","Artikelattribut",module,Magento_CatalogWidget
 "SKU","Artikelnummer",module,Magento_CatalogWidget
 "Please choose a condition to add.","Bitte wählen Sie eine Bedingung zum Hinzufügen.",module,Magento_CatalogWidget
-"Add to Cart","MEHR ERFAHREN",module,Magento_CatalogWidget
+"Add to Cart","MEHR IN DEN WARENKORB",module,Magento_CatalogWidget
 "In stock","Auf Lager",module,Magento_CatalogWidget
 "Out of stock","Nicht lieferbar",module,Magento_CatalogWidget
 "Add to Wish List","Zur Wunschliste hinzufügen",module,Magento_CatalogWidget
@@ -3209,7 +3209,7 @@ Zeit in Sekunden zwischen den Widget-Updates.,module,Magento_CatalogWidget
 "Invalid method: %1","Ihre Kreditkarte wird belastet für",module,Magento_Checkout
 "City","Stadt",module,Magento_Checkout
 "Country","Land",module,Magento_Checkout
-"State/Province","Bundesland",module,Magento_Checkout
+"State/Province","Kanton",module,Magento_Checkout
 "Zip/Postal Code","PLZ",module,Magento_Checkout
 "My Cart (1 item)","Mein Warenkorb (1 Artikel)",module,Magento_Checkout
 "My Cart (%1 items)","Mein Warenkorb (%1 Artikel)",module,Magento_Checkout
@@ -3746,7 +3746,7 @@ Zeit in Sekunden zwischen den Widget-Updates.,module,Magento_CatalogWidget
 "Street Address:","Straße:",module,Magento_Company
 "City:","Stadt:",module,Magento_Company
 "Country:","Land:",module,Magento_Company
-"State/Province:","Bundesland:",module,Magento_Company
+"State/Province:","Kanton:",module,Magento_Company
 "ZIP/Postal Code:","Postleitzahl:",module,Magento_Company
 "Phone Number:","Telefonnummer:",module,Magento_Company
 "Job Title:","Job-Titel:",module,Magento_Company
@@ -3883,8 +3883,8 @@ Zeit in Sekunden zwischen den Widget-Updates.,module,Magento_CatalogWidget
 "Street Address","Straße",module,Magento_Company
 "City","Stadt",module,Magento_Company
 "Country","Land",module,Magento_Company
-"State/Province","Bundesland",module,Magento_Company
-"Please select a region, state or province.","Wählen Sie eine Region, Bundesland oder Provinz.",module,Magento_Company
+"State/Province","Kanton",module,Magento_Company
+"Please select a region, state or province.","Wählen Sie eine Region, Kanton oder Provinz.",module,Magento_Company
 "ZIP/Postal Code","Postleitzahl",module,Magento_Company
 "Phone Number","Telefonnummer",module,Magento_Company
 "Company Administrator","Company Administrator",module,Magento_Company
@@ -4996,7 +4996,7 @@ new products will be created. Use this step to customize images and price for yo
 "some error","ein Fehler",module,Magento_Customer
 "frontend_label","frontend_label",module,Magento_Customer
 "NOT LOGGED IN","NICHT ANGEMELDET",module,Magento_Customer
-"Please enter the state/province.","Geben Sie ein Bundesland/Gebiet ein.",module,Magento_Customer
+"Please enter the state/province.","Geben Sie ein Kanton/Gebiet ein.",module,Magento_Customer
 "region is a required field.","region ist ein Pflichtfeld.",module,Magento_Customer
 "regionId is a required field.","regionId ist ein Pflichtfeld.",module,Magento_Customer
 "Label","Bezeichnung",module,Magento_Customer
@@ -5045,8 +5045,8 @@ new products will be created. Use this step to customize images and price for yo
 "Street Address %1","Fax",module,Magento_Customer
 "VAT Number","USt-IdNr.",module,Magento_Customer
 "City","Stadt",module,Magento_Customer
-"State/Province","Bundesland",module,Magento_Customer
-"Please select a region, state or province.","Wählen Sie eine Region, Bundesland oder Provinz.",module,Magento_Customer
+"State/Province","Kanton",module,Magento_Customer
+"Please select a region, state or province.","Wählen Sie eine Region, Kanton oder Provinz.",module,Magento_Customer
 "Zip/Postal Code","PLZ",module,Magento_Customer
 "Country","Land",module,Magento_Customer
 "It's a default billing address.","Es ist eine Standard-Rechnungsanschrift.",module,Magento_Customer
@@ -5345,7 +5345,7 @@ Ausgewählte E-Mail-Vorlage basiert auf dem Fallback-Thema, wenn die Option ""St
 "Delete address","Adresse löschen",module,Magento_Customer
 "Are you sure you want to delete the address?","Sind Sie sicher, dass Sie diese Adresse löschen wollen?",module,Magento_Customer
 "Additional addresses","Zusätzliche Adressen",module,Magento_Customer
-"State","Bundesland",module,Magento_Customer
+"State","Kanton",module,Magento_Customer
 "Actions","Aktionen",module,Magento_Customer
 "Sorry, there has been an error processing your request. Please try again later.","Es tut uns leid, bei der Bearbeitung Ihrer Anfrage ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.",module,Magento_Customer
 "Reset password","Passwort zurüksetzen",module,Magento_Customer
@@ -5533,8 +5533,8 @@ Ausgewählte E-Mail-Vorlage basiert auf dem Fallback-Thema, wenn die Option ""St
 "Street Address %1","Fax",module,Magento_CustomerCustomAttributes
 "VAT Number","USt-IdNr.",module,Magento_CustomerCustomAttributes
 "City","Stadt",module,Magento_CustomerCustomAttributes
-"State/Province","Bundesland",module,Magento_CustomerCustomAttributes
-"Please select a region, state or province.","Wählen Sie eine Region, Bundesland oder Provinz.",module,Magento_CustomerCustomAttributes
+"State/Province","Kanton",module,Magento_CustomerCustomAttributes
+"Please select a region, state or province.","Wählen Sie eine Region, Kanton oder Provinz.",module,Magento_CustomerCustomAttributes
 "Zip/Postal Code","PLZ",module,Magento_CustomerCustomAttributes
 "Country","Land",module,Magento_CustomerCustomAttributes
 "This is your default billing address.","Standard Rechnungsadresse.",module,Magento_CustomerCustomAttributes
@@ -5687,8 +5687,8 @@ Ausgewählte E-Mail-Vorlage basiert auf dem Fallback-Thema, wenn die Option ""St
 "Billing","Rechnungstellung",module,Magento_CustomerSegment
 "Shipping","Versand",module,Magento_CustomerSegment
 "Customer Address %1 Default %2 Address","Kundenadresse %1 Standard %2 Adresse",module,Magento_CustomerSegment
-"Has State/Province","hat Bundesland/Kanton",module,Magento_CustomerSegment
-"If Customer Address %1 State/Province specified","Wenn Kundenadresse %1 Bundesland/Provinz angegeben",module,Magento_CustomerSegment
+"Has State/Province","hat Kanton/Kanton",module,Magento_CustomerSegment
+"If Customer Address %1 State/Province specified","Wenn Kundenadresse %1 Kanton/Provinz angegeben",module,Magento_CustomerSegment
 "has","hat",module,Magento_CustomerSegment
 "does not have","hat keinen",module,Magento_CustomerSegment
 "exists","vorhanden",module,Magento_CustomerSegment
@@ -5769,7 +5769,7 @@ Ausgewählte E-Mail-Vorlage basiert auf dem Fallback-Thema, wenn die Option ""St
 "Phone","Telefonnummer",module,Magento_CustomerSegment
 "ZIP","PLZ",module,Magento_CustomerSegment
 "Country","Land",module,Magento_CustomerSegment
-"State/Province","Bundesland",module,Magento_CustomerSegment
+"State/Province","Kanton",module,Magento_CustomerSegment
 "Customer Since","Kunde seit",module,Magento_CustomerSegment
 "View Combined Report","Kombinierten Bericht anzeigen",module,Magento_CustomerSegment
 "Set","Einrichten",module,Magento_CustomerSegment
@@ -5803,7 +5803,7 @@ Ausgewählte E-Mail-Vorlage basiert auf dem Fallback-Thema, wenn die Option ""St
 "Unverifiable address. The billing or shipping address cannot be verified","Nicht verifizierbare Adresse. Die Rechnungs- oder Versandadresse kann nicht verifiziert werden.",module,Magento_Cybersource
 "Velocity. The account number was use  many times in the past 15 minutes","Geschwindigkeit. Die Kontonummer wurde mehrfach in den letzen 15 Minuten benutzt.",module,Magento_Cybersource
 "Marked as suspect. The billing or shipping address is similar to an address previously marked as suspect","Als verdächtig markiert. Die Rechnungs- oder Versandadresse ähnelt einer kürzlich als verdächtig markierten Adresse.",module,Magento_Cybersource
-"Gift Order. The street address, city, state, or country of the billing and shipping addresses do not correlate","Geschenkbestellung. Adresse, Stadt, Bundesland oder Land der Rechnungs- und Versandadressen hängen nicht zusammen.",module,Magento_Cybersource
+"Gift Order. The street address, city, state, or country of the billing and shipping addresses do not correlate","Geschenkbestellung. Adresse, Stadt, Kanton oder Land der Rechnungs- und Versandadressen hängen nicht zusammen.",module,Magento_Cybersource
 "Invalid value. Because the request contains an unexpected value, a default value was substituted. Although the transact on can still be processed, examine the request carefully for abnormalities in the order","Invalid value. Because the request contains an unexpected value, a default value was substituted. Although the transact on can still be processed, examine the request carefully for abnormalities in the order",module,Magento_Cybersource
 "Unknown factor. Please contact Cybersource customer service","Unbekannter Faktor. Bitte kontaktieren Sie den Cybersource Kundenservice.",module,Magento_Cybersource
 "Payment Token Build Error.","Zahlungstoken-Buildfehler",module,Magento_Cybersource
@@ -5977,7 +5977,7 @@ Ausgewählte E-Mail-Vorlage basiert auf dem Fallback-Thema, wenn die Option ""St
 "Content Type (Non Domestic)","Content Type (Non Domestic)",module,Magento_Dhl
 "Documents Allowed Methods","Documents Allowed Methods",module,Magento_Dhl
 "Non Documents Allowed Methods","Non Documents Allowed Methods",module,Magento_Dhl
-"State/Province","Bundesland",module,Magento_Directory
+"State/Province","Kanton",module,Magento_Directory
 "--Please Select--","-- Bitte wählen --",module,Magento_Directory
 "lbs","lb",module,Magento_Directory
 "kgs","kg",module,Magento_Directory
@@ -5994,7 +5994,7 @@ Ausgewählte E-Mail-Vorlage basiert auf dem Fallback-Thema, wenn die Option ""St
 "Please correct the country code: %1.","Bitte korrigieren Sie den Landescode: %1.",module,Magento_Directory
 "Country and Format Type combination should be unique","Kombination aus Land und Formattyp sollte eindeutig sein",module,Magento_Directory
 "Please correct the rates received","Bitte korrigieren Sie die erhaltenen Wechselkurse",module,Magento_Directory
-"Please select a region, state or province.","Wählen Sie eine Region, Bundesland oder Provinz.",module,Magento_Directory
+"Please select a region, state or province.","Wählen Sie eine Region, Kanton oder Provinz.",module,Magento_Directory
 "Currency","Währung",module,Magento_Directory
 "Your current currency is: %1.","Ihre aktuelle Währung ist: %1.",module,Magento_Directory
 "Continue","Fortsetzen",module,Magento_Directory
@@ -6020,9 +6020,9 @@ Ausgewählte E-Mail-Vorlage basiert auf dem Fallback-Thema, wenn die Option ""St
 "Start Time","Startzeit",module,Magento_Directory
 "Installed Currencies","Installierte Währungen",module,Magento_Directory
 "Zip/Postal Code is Optional for","Postleitzahl ist optional für",module,Magento_Directory
-"State Options","Bundeslandoptionen",module,Magento_Directory
-"State is Required for","Bundesland ist erforderlich für",module,Magento_Directory
-"Allow to Choose State if It is Optional for Country","Erlauben Sie die Wahl des Bundeslandes, wenn er für das Land optional ist",module,Magento_Directory
+"State Options","Kantonoptionen",module,Magento_Directory
+"State is Required for","Kanton ist erforderlich für",module,Magento_Directory
+"Allow to Choose State if It is Optional for Country","Erlauben Sie die Wahl des Kantones, wenn er für das Land optional ist",module,Magento_Directory
 "Weight Unit","Gewichtseinheit",module,Magento_Directory
 "Base currency is used for all online payment transactions. If you have more than one store view, the base currency scope is defined by the catalog price scope (""Catalog"" > ""Price"" > ""Catalog Price Scope"").","Basiswährung wird für alle Online-Transaktionen verwendet. Wenn Sie mehr als eine Store-View haben, wird der Basiswährungs-Geltungsbereich durch den Katalogpreis-Geltungsbereich definiert (""Katalog""> ""Preis""> ""Katalogpreis-Geltungsbereich"").",module,Magento_Directory
 "No API Key was specified or an invalid API Key was specified.","Es wurde kein oder ein ungültiger API-Schlüssel angegeben.",module,Magento_Directory
@@ -6457,7 +6457,7 @@ Ausgewählte E-Mail-Vorlage basiert auf dem Fallback-Thema, wenn die Option ""St
 "Store Phone Number","Shop-Telefonnummer",module,Magento_Email
 "Store Hours","Öffnungszeiten",module,Magento_Email
 "Country","Land",module,Magento_Email
-"Region/State","Region/Bundesland",module,Magento_Email
+"Region/State","Region/Kanton",module,Magento_Email
 "Zip/Postal Code","PLZ",module,Magento_Email
 "City","Stadt",module,Magento_Email
 "Street Address 1","Anschrift 1",module,Magento_Email
@@ -7028,8 +7028,8 @@ Ausgewählte E-Mail-Vorlage basiert auf dem Fallback-Thema, wenn die Option ""St
 "New Address","Neue Adresse",module,Magento_GiftRegistry
 "Edit Gift Registry","Geschenkeliste bearbeiten",module,Magento_GiftRegistry
 "Create Gift Registry","Geschenkeliste erstellen",module,Magento_GiftRegistry
-"State/Province","Bundesland",module,Magento_GiftRegistry
-"Please select a region, state or province","Bitte wählen Sie Region, Bundesland oder Provinz",module,Magento_GiftRegistry
+"State/Province","Kanton",module,Magento_GiftRegistry
+"Please select a region, state or province","Bitte wählen Sie Region, Kanton oder Provinz",module,Magento_GiftRegistry
 "Please Select","Bitte wählen",module,Magento_GiftRegistry
 "View Gift Registry %1","Geschenkeliste %1 ansehen",module,Magento_GiftRegistry
 "Share '%1' Gift Registry","Geschenkeliste ""%1"" teilen",module,Magento_GiftRegistry
@@ -7142,7 +7142,7 @@ Ausgewählte E-Mail-Vorlage basiert auf dem Fallback-Thema, wenn die Option ""St
 "Is Required","Ist erforderlich",module,Magento_GiftRegistry
 "Is Searcheable","Ist durchsuchbar",module,Magento_GiftRegistry
 "We found an attribute with this static input type already in the gift registry type. Please select a different input type.","Wir haben ein Attribut mit diesem statischen Eingabetyp gefunden, welche bereits im Geschenkelistetyp vorhanden ist. Bitte wählen Sie einen anderen Eingabetyp aus.",module,Magento_GiftRegistry
-"Show Region","Bundesland/Kanton anzeigen",module,Magento_GiftRegistry
+"Show Region","Kanton/Kanton anzeigen",module,Magento_GiftRegistry
 "Date Format","Datumsformat",module,Magento_GiftRegistry
 "Is Default","Ist voreingestellt",module,Magento_GiftRegistry
 "Select a shipping address from your address book or enter a new address.","Wählen Sie eine Versandadresse aus Ihrem Adressbuch oder geben Sie eine neue Adresse ein.",module,Magento_GiftRegistry
@@ -7151,7 +7151,7 @@ Ausgewählte E-Mail-Vorlage basiert auf dem Fallback-Thema, wenn die Option ""St
 "Street Address","Straße",module,Magento_GiftRegistry
 "Street Address %1","Fax",module,Magento_GiftRegistry
 "City","Stadt",module,Magento_GiftRegistry
-"Please select a region, state or province.","Wählen Sie eine Region, Bundesland oder Provinz.",module,Magento_GiftRegistry
+"Please select a region, state or province.","Wählen Sie eine Region, Kanton oder Provinz.",module,Magento_GiftRegistry
 "Zip/Postal Code","PLZ",module,Magento_GiftRegistry
 "Country","Land",module,Magento_GiftRegistry
 "Phone Number","Telefonnummer",module,Magento_GiftRegistry
@@ -7215,7 +7215,7 @@ Ausgewählte E-Mail-Vorlage basiert auf dem Fallback-Thema, wenn die Option ""St
 "Search By","Suche nach",module,Magento_GiftRegistry
 "Please enter at least two letters.","Bitte geben Sie mindestens zwei Buchstaben ein.",module,Magento_GiftRegistry
 "Unit Price","Einzelpreis",module,Magento_GiftRegistry
-"Add to Cart","MEHR ERFAHREN",module,Magento_GiftRegistry
+"Add to Cart","MEHR IN DEN WARENKORB",module,Magento_GiftRegistry
 "Gift Registry created at %store_name","Gift Registry created at %store_name",module,Magento_GiftRegistry
 "%name,","%name,",module,Magento_GiftRegistry
 "You have successfully created the new gift registry ""%registry_name"".","Sie haben die Geschenkliste ""%registry_name"" erfolgreich erstellt.",module,Magento_GiftRegistry
@@ -8186,7 +8186,7 @@ Kein Einfluss auf den Preisfilter.",module,Magento_LayeredNavigation
 "You will see the order total before you submit the order.","Sie werden den Bestellbetrag sehen, bevor Sie die Bestellung absenden.",module,Magento_Msrp
 "Price","Preis",module,Magento_Msrp
 "Actual Price","Tatsächlicher Preis",module,Magento_Msrp
-"Add to Cart","MEHR ERFAHREN",module,Magento_Msrp
+"Add to Cart","MEHR IN DEN WARENKORB",module,Magento_Msrp
 "Minimum Advertised Price","Unverbindliche Preisempfehlung",module,Magento_Msrp
 "Enable MAP","UVP aktivieren",module,Magento_Msrp
 "Display Actual Price","Tatsächlichen Preis anzeigen",module,Magento_Msrp
@@ -8263,7 +8263,7 @@ Kein Einfluss auf den Preisfilter.",module,Magento_LayeredNavigation
 "Updated","Aktualisiert",module,Magento_MultipleWishlist
 "Wish List Items","Wunschlisten-Artikel",module,Magento_MultipleWishlist
 "You must select items to add to the cart.","Sie müssen Artikel auswählen, um sie zum Warenkorb hinzuzufügen.",module,Magento_MultipleWishlist
-"Add to Cart","MEHR ERFAHREN",module,Magento_MultipleWishlist
+"Add to Cart","MEHR IN DEN WARENKORB",module,Magento_MultipleWishlist
 "Back","Zurück",module,Magento_MultipleWishlist
 "Add to:","Hinzufügen zu:",module,Magento_MultipleWishlist
 "Create New Wish List","Neue Wunschliste erstellen",module,Magento_MultipleWishlist
@@ -9098,7 +9098,7 @@ information on installing the agent is available <a target=""_blank"" href=""%1"
 "Automatically Invoice All Items","Alle Artikel automatisch in Rechnung zu stellen",module,Magento_OfflinePayments
 "Purchase order number is a required field.","Bestellnummer ist ein Pflichtfeld.",module,Magento_OfflinePayments
 "Country","Land",module,Magento_OfflineShipping
-"Region/State","Region/Bundesland",module,Magento_OfflineShipping
+"Region/State","Region/Kanton",module,Magento_OfflineShipping
 "Zip/Postal Code","PLZ",module,Magento_OfflineShipping
 "Shipping Price","Gewicht gg. Ziel",module,Magento_OfflineShipping
 "Export CSV","CSV exportieren",module,Magento_OfflineShipping
@@ -9121,7 +9121,7 @@ information on installing the agent is available <a target=""_blank"" href=""%1"
 "Column ""%1"" not found","Spalte ""%1"" nicht gefunden",module,Magento_OfflineShipping
 "Please correct Table Rates format in the Row #%1.","Bitte korrigieren Sie das Table Rates-Format in der Reihe #%1.",module,Magento_OfflineShipping
 "Please correct Country ""%1"" in the Row #%2.","Bitte korrigieren Sie das Land ""%1"" in der Zeile #%2.",module,Magento_OfflineShipping
-"Please correct Region/State ""%1"" in the Row #%2.","Bitte korrigieren Sie das Bundesland ""%1"" in der Zeile #%2.",module,Magento_OfflineShipping
+"Please correct Region/State ""%1"" in the Row #%2.","Bitte korrigieren Sie das Kanton ""%1"" in der Zeile #%2.",module,Magento_OfflineShipping
 "Please correct %1 ""%2"" in the Row #%3.","Bitte korrigieren Sie %1 ""%2"" in der Zeile #%3.",module,Magento_OfflineShipping
 "Please correct Shipping Price ""%1"" in the Row #%2.","Bitte korrigieren Sie die Versandkosten ""%1"" in der Zeile #%2.",module,Magento_OfflineShipping
 "Duplicate Row #%1 (duplicates row #%2)","Doppelte Zeile #%1 (Duplikat der Zeile #%2)",module,Magento_OfflineShipping
@@ -9152,7 +9152,7 @@ information on installing the agent is available <a target=""_blank"" href=""%1"
 "Free Shipping","Versandkostenfrei",module,Magento_OfflineShipping
 "Minimum Order Amount","Mindestbestellwert",module,Magento_OfflineShipping
 "-- Please Select --","-- Bitte wählen --",module,Magento_OfflineShipping
-"Duplicate Row #%1 (Country ""%2"", Region/State ""%3"", Zip ""%4"" and Value ""%5"")","Doppelte Zeile #%1 (Land ""%2"", Bundesland ""%3"", Postleitzahl ""%4"" und Wert ""%5"")",module,Magento_OfflineShipping
+"Duplicate Row #%1 (Country ""%2"", Region/State ""%3"", Zip ""%4"" and Value ""%5"")","Doppelte Zeile #%1 (Land ""%2"", Kanton ""%3"", Postleitzahl ""%4"" und Wert ""%5"")",module,Magento_OfflineShipping
 "Sorry, but we can't deliver to the destination country with this shipping module.","Leider ist es mit diesem Modul nicht möglich in dieses Land zu senden.",module,Magento_OfflineShipping
 "The Table Rates File Format is incorrect in row number ""%1"". Verify the format and try again.","Das Dateiformat für tabellenbasierte Versandkosten in Zeilennummer ""%1"" ist falsch. Überprüfen Sie das Format und probieren Sie es erneut.",module,Magento_OfflineShipping
 "The ""%1"" country in row number ""%2"" is incorrect. Verify the country and try again.","Das Land ""%1"" in Zeilennummer ""%2"" ist falsch. Überprüfen Sie das Land und versuchen Sie es erneut.",module,Magento_OfflineShipping
@@ -9297,7 +9297,7 @@ If field is empty default value localhost will be saved.","Durch \',\' getrennte
 "Help","Hilfe",module,Magento_Paypal
 "Configure","Konfigurieren",module,Magento_Paypal
 "Close","Schließen",module,Magento_Paypal
-"Learn More","Mehr erfahren",module,Magento_Paypal
+"Learn More","Mehr IN DEN WARENKORB",module,Magento_Paypal
 "View Demo","Demo anzeigen",module,Magento_Paypal
 "See terms","Allgemeine Geschäftsbedingungen ansehen",module,Magento_Paypal
 "You will be redirected to the PayPal website.","Sie werden zur PayPal-Website weitergeleitet.",module,Magento_Paypal
@@ -10158,7 +10158,7 @@ offered and the currency offered by the merchant is USD.",module,Magento_Paypal
 "Order by SKU","Bestellung anhand Artikelnummer",module,Magento_QuickOrder
 "Enter SKU or Product Name","Artikelnummer oder Produktname eingeben",module,Magento_QuickOrder
 "Qty","Menge",module,Magento_QuickOrder
-"Add to Cart","MEHR ERFAHREN",module,Magento_QuickOrder
+"Add to Cart","IN DEN WARENKORB",module,Magento_QuickOrder
 "Remove Row","Zeile entfernen",module,Magento_QuickOrder
 " product(s) require(s) your attention."," Produkt(e) erfordern Ihre Aufmerksamkeit.",module,Magento_QuickOrder
 "Enable Quick Order","Schnellbestellung freischalten",module,Magento_QuickOrder
@@ -10862,7 +10862,7 @@ target=""_blank"">DevDocs' Veröffentlichungsinfomationen</a> an.,module,Magento
 "Show Report For:","Zeige Bericht für:",module,Magento_Reports
 "All Websites","Alle Webseiten",module,Magento_Reports
 "Recently Viewed","Kürzlich angesehen",module,Magento_Reports
-"Add to Cart","MEHR ERFAHREN",module,Magento_Reports
+"Add to Cart","IN DEN WARENKORB",module,Magento_Reports
 "In stock","Auf Lager",module,Magento_Reports
 "Out of stock","Nicht lieferbar",module,Magento_Reports
 "Add to Wish List","Zur Wunschliste hinzufügen",module,Magento_Reports
@@ -10988,7 +10988,7 @@ target=""_blank"">DevDocs' Veröffentlichungsinfomationen</a> an.,module,Magento
 "item","Artikel",module,Magento_RequisitionList
 "in requisition list","in requisition list",module,Magento_RequisitionList
 "Contact Us","Kontaktieren Sie uns",module,Magento_RequisitionList
-"Add to Cart","MEHR ERFAHREN",module,Magento_RequisitionList
+"Add to Cart","IN DEN WARENKORB",module,Magento_RequisitionList
 "Update List","Update List",module,Magento_RequisitionList
 "Delete Requisition List","Delete Requisition List",module,Magento_RequisitionList
 "You have no items in this requisition list.","You have no items in this requisition list.",module,Magento_RequisitionList
@@ -11696,7 +11696,7 @@ target=""_blank"">DevDocs' Veröffentlichungsinfomationen</a> an.,module,Magento
 "Contact Name","Kontaktname",module,Magento_Rma
 "Street Address","Straße",module,Magento_Rma
 "City","Stadt",module,Magento_Rma
-"State/Province","Bundesland",module,Magento_Rma
+"State/Province","Kanton",module,Magento_Rma
 "ZIP/Postal Code","Postleitzahl",module,Magento_Rma
 "Country","Land",module,Magento_Rma
 "Enabled","Aktiviert",module,Magento_Rma
@@ -12091,7 +12091,7 @@ target=""_blank"">DevDocs' Veröffentlichungsinfomationen</a> an.,module,Magento
 "Please enter the fax number.","Bitte geben Sie die Faxnummer ein.",module,Magento_Sales
 "Please enter the zip/postal code.","Bitte geben Sie die Postleitzahl ein.",module,Magento_Sales
 "Please enter the country.","Bitte geben Sie das Land ein.",module,Magento_Sales
-"Please enter the state/province.","Geben Sie ein Bundesland/Gebiet ein.",module,Magento_Sales
+"Please enter the state/province.","Geben Sie ein Kanton/Gebiet ein.",module,Magento_Sales
 "Requested entity doesn't exist","Die angeforderte Einheit existiert nicht",module,Magento_Sales
 "Could not delete order address","Bestelladresse konnte nicht gelöscht werden",module,Magento_Sales
 "Could not save order address","Bestelladresse konnte nicht gespeichert werden",module,Magento_Sales
@@ -12230,7 +12230,7 @@ target=""_blank"">DevDocs' Veröffentlichungsinfomationen</a> an.,module,Magento
 "Email","E-Mail",module,Magento_Sales
 "First Name","Vorname",module,Magento_Sales
 "Last Name","Nachname",module,Magento_Sales
-"State/Province","Bundesland",module,Magento_Sales
+"State/Province","Kanton",module,Magento_Sales
 "Street Address","Straße",module,Magento_Sales
 "Phone Number","Telefonnummer",module,Magento_Sales
 "Zip/Postal Code","PLZ",module,Magento_Sales
@@ -12431,7 +12431,7 @@ target=""_blank"">DevDocs' Veröffentlichungsinfomationen</a> an.,module,Magento
 "View All","Alle anzeigen",module,Magento_Sales
 "Gift Message for This Order","Geschenknachricht für diese Bestellung",module,Magento_Sales
 "Recently Ordered","Zuletzt bestellt",module,Magento_Sales
-"Add to Cart","MEHR ERFAHREN",module,Magento_Sales
+"Add to Cart","IN DEN WARENKORB",module,Magento_Sales
 "Search","Suche",module,Magento_Sales
 "Credit memo for your %store_name order","Gutschrift für Ihre %store_name Bestellung",module,Magento_Sales
 "%name,","%name,",module,Magento_Sales
@@ -12802,7 +12802,7 @@ Bestimme die ID und versuche es erneut.",module,Magento_Sales
 "Shipping Method","Versandart",module,Magento_SalesRule
 "Shipping Postcode","Versand-Postleitzahl",module,Magento_SalesRule
 "Shipping Region","Versandregion",module,Magento_SalesRule
-"Shipping State/Province","Versand-Bundesland",module,Magento_SalesRule
+"Shipping State/Province","Versand-Kanton",module,Magento_SalesRule
 "Shipping Country","Versandland",module,Magento_SalesRule
 "Product attribute combination","Artikelattribut-Kombination",module,Magento_SalesRule
 "Products subselection","Artikel-Unterauswahl",module,Magento_SalesRule
@@ -13421,7 +13421,7 @@ configuring in shared catalogs will not be restricted to customers.",module,Mage
 "ID","Id",module,Magento_SharedCatalog
 "Company","Firma",module,Magento_SharedCatalog
 "Country","Land",module,Magento_SharedCatalog
-"State/Province","Bundesland",module,Magento_SharedCatalog
+"State/Province","Kanton",module,Magento_SharedCatalog
 "Assigned","Zugewiesen",module,Magento_SharedCatalog
 "Catalog","Katalog",module,Magento_SharedCatalog
 "Action","Aktion",module,Magento_SharedCatalog
@@ -13633,7 +13633,7 @@ configuring in shared catalogs will not be restricted to customers.",module,Mage
 "Shipping Settings","Versand-Einstellungen",module,Magento_Shipping
 "Origin","Herkunft",module,Magento_Shipping
 "Country","Land",module,Magento_Shipping
-"Region/State","Region/Bundesland",module,Magento_Shipping
+"Region/State","Region/Kanton",module,Magento_Shipping
 "ZIP/Postal Code","Postleitzahl",module,Magento_Shipping
 "City","Stadt",module,Magento_Shipping
 "Street Address","Straße",module,Magento_Shipping
@@ -14357,7 +14357,7 @@ Wählen Sie einen anderen Bereich, um ein neues zukünftiges Update hinzuzufüge
 "'*' - matches any; 'xyz*' - matches any that begins on 'xyz' and are not longer than %1.","'*' findet jede beliebige Zeichenkette; 'xyz*' - findet alle Zeichenketten, die mit 'xyz' beginnen und nicht länger sind als %1.",module,Magento_Tax
 "Range From","Von",module,Magento_Tax
 "Range To","Bis",module,Magento_Tax
-"State","Bundesland",module,Magento_Tax
+"State","Kanton",module,Magento_Tax
 "Country","Land",module,Magento_Tax
 "Rate Percent","Rate Prozent",module,Magento_Tax
 "Tax Titles","Steuertitel",module,Magento_Tax
@@ -14508,7 +14508,7 @@ Wählen Sie einen anderen Bereich, um ein neues zukünftiges Update hinzuzufüge
 "When catalog price includes tax, enable this setting to fix the price no matter what the customer's tax rate.","Wenn der Katalogpreis Steuern beinhaltet, aktivieren Sie diese Einstellung, um den Preis unabhängig vom Steuersatz des Kunden festzusetzen.",module,Magento_Tax
 "Default Tax Destination Calculation","Steuerberechnung basierend auf",module,Magento_Tax
 "Default Country","Standardland",module,Magento_Tax
-"Default State","Standard Bundesland",module,Magento_Tax
+"Default State","Standard Kanton",module,Magento_Tax
 "Default Post Code","Standard-Postleitzahl",module,Magento_Tax
 "Price Display Settings","Einstellungen für Preisanzeige",module,Magento_Tax
 "Display Product Prices In Catalog","Artikelpreise im Shop-Frontend",module,Magento_Tax
@@ -14521,7 +14521,7 @@ Wählen Sie einen anderen Bereich, um ein neues zukünftiges Update hinzuzufüge
 "Display Full Tax Summary","Steuern vollständig anzeigen",module,Magento_Tax
 "Display Zero Tax Subtotal","Steuerzwischensumme auch anzeigen, wenn 0,00",module,Magento_Tax
 "Orders, Invoices, Credit Memos Display Settings","Anzeigeeinstellungen für Bestellungen, Rechnungen, Gutschriften",module,Magento_Tax
-"State/Region","Bundesland / Region",module,Magento_Tax
+"State/Region","Kanton / Region",module,Magento_Tax
 "Rate","Satz",module,Magento_Tax
 "Subtotal Only","Zwischensumme",module,Magento_Tax
 "(Excl. Tax)","(Zzgl. Steuern)",module,Magento_Tax
@@ -14545,7 +14545,7 @@ als der Kunde erwarten würde. ",module,Magento_Tax
 """%fieldName"" is required. Enter and try again.","""%fieldName"" ist erforderlich. Bitte eingeben und erneut versuchen.",module,Magento_Tax
 "Code","Code",module,Magento_TaxImportExport
 "Country","Land",module,Magento_TaxImportExport
-"State","Bundesland",module,Magento_TaxImportExport
+"State","Kanton",module,Magento_TaxImportExport
 "Zip/Post Code","Postleitzahl",module,Magento_TaxImportExport
 "Rate","Satz",module,Magento_TaxImportExport
 "Zip/Post is Range","Nur für bestimmte Postleitzahlen",module,Magento_TaxImportExport
@@ -14902,7 +14902,7 @@ als der Kunde erwarten würde. ",module,Magento_Tax
 "Please enter a valid date.","Bitte geben Sie ein gültiges Datum an.",module,Magento_Ui
 "Please enter a valid URL Key (Ex: ""example-page"", ""example-page.html"" or ""anotherlevel/example-page"").","Bitte verwenden sie einen gültigen URL Schlüssel (Bsp: ""example-page"", ""example-page.html"" or ""anotherlevel/example-page"").",module,Magento_Ui
 "Please enter a valid zip code.","Bitte geben Sie eine gültige Postleitzahl ein.",module,Magento_Ui
-"Please select State/Province.","Bitte wählen Sie ein Bundesland/Kanton.",module,Magento_Ui
+"Please select State/Province.","Bitte wählen Sie ein Kanton/Kanton.",module,Magento_Ui
 "Please enter a value less than or equal to {0}.","Bitte geben Sie einen Wert ein, der kleiner oder gleich {0} ist.",module,Magento_Ui
 "Please enter a value greater than or equal to {0}.","Bitte geben Sie einen Wert ein, der größer oder gleich {0} ist.",module,Magento_Ui
 "Please enter valid email addresses, separated by commas. For example, johndoe@domain.com, johnsmith@domain.com.","Bitte geben Sie gültige E-Mail-Adressen durch Komma getrennt ein. Zum Beispiel johndoe@domain.com, johnsmith@domain.com.",module,Magento_Ui
@@ -15943,7 +15943,7 @@ formElements/*[name(.)=../../@formElement]/settings/title,module,Magento_Ui
 "label_value","label_value",module,Magento_Weee
 "frontend_label","frontend_label",module,Magento_Weee
 "Fixed Product Tax","Feste Produktsteuer",module,Magento_Weee
-"Country/State","Land/Bundesland",module,Magento_Weee
+"Country/State","Land/Kanton",module,Magento_Weee
 "Tax","Steuer",module,Magento_Weee
 "Website","Webseite",module,Magento_Weee
 "Action","Aktion",module,Magento_Weee
@@ -16105,7 +16105,7 @@ formElements/*[name(.)=../../@formElement]/settings/title,module,Magento_Ui
 "Add to Wish List","Zur Wunschliste hinzufügen",module,Magento_Wishlist
 "View Product","Produkt anzeigen",module,Magento_Wishlist
 "Qty","Menge",module,Magento_Wishlist
-"Add to Cart","MEHR ERFAHREN",module,Magento_Wishlist
+"Add to Cart","IN DEN WARENKORB",module,Magento_Wishlist
 "Availability","Verfügbarkeit",module,Magento_Wishlist
 "In stock","Auf Lager",module,Magento_Wishlist
 "Out of stock","Nicht lieferbar",module,Magento_Wishlist
@@ -16372,7 +16372,7 @@ formElements/*[name(.)=../../@formElement]/settings/title,module,Magento_Ui
 "Please enter a valid URL Key (Ex: ""example-page"", ""example-page.html"" or ""anotherlevel/example-page"").","Bitte verwenden sie einen gültigen URL Schlüssel (Bsp: ""example-page"", ""example-page.html"" or ""anotherlevel/example-page"").",lib,web
 "Please enter a valid zip code.","Bitte geben Sie eine gültige Postleitzahl ein.",lib,web
 "Please select one of the options above.","Bitte wählen Sie eine der oben genannten Optionen.",lib,web
-"Please select State/Province.","Bitte wählen Sie ein Bundesland/Kanton.",lib,web
+"Please select State/Province.","Bitte wählen Sie ein Kanton/Kanton.",lib,web
 "Please select a file.","Bitte wählen Sie eine Datei.",lib,web
 "The field isn't complete.","Das Feld ist nicht vollständig.",lib,web
 "This is a required field.","Vervollständigen Sie bitte die notwendigen Angaben.",lib,web
@@ -16442,3 +16442,7 @@ formElements/*[name(.)=../../@formElement]/settings/title,module,Magento_Ui
 "View Cart","Warenkorb ansehen"
 "Search posts here...","Suchen Sie hier nach Beiträgen ..."
 "Recent Posts","Aktuelle Beiträge"
+"Create New Account","Ein Konto erstellen"
+"Order comment","Bestellkommentar"
+"Express Checkout","Kasse"
+"SKU","Artikelnummer"

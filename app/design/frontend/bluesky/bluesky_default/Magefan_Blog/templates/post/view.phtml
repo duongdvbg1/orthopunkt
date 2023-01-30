@@ -39,7 +39,7 @@
 			<div class="flex-layout post-more-infor">
 				<?php if ($_categoriesCount = $_post->getCategoriesCount()) { ?>
 					<div class="item post-categories">
-						<span class="label"><?= $block->escapeHtml(__('Categories:')) ?></span>
+						<span class="label"><?= $block->escapeHtml(__('Kategorie:')) ?></span>
 						<?php $n = 0; ?>
 						<?php foreach ($_post->getParentCategories() as $ct) { ?>
 							<?php $n++; ?>
@@ -49,10 +49,9 @@
 						<?php } ?>
 					</div>
 				<?php } ?>
-				<?= $block->getInfoHtml() ?>
 				<?php if ($_post->isPublishDateEnabled()) { ?> 
 					<div class="item post-posed-date">
-						<span class="label"><?= $block->escapeHtml(__('Posted:')) ?></span>
+						<span class="label"><?= $block->escapeHtml(__('Datum:')) ?></span>
 						<span class="value"><?php echo date('d.m.Y', strtotime($_post->getPublishTime())); ?></span>
 					</div>
 				<?php } ?>
@@ -63,7 +62,4 @@
 			</div>
 		</div>
     </div>
-</div>
-<div class="post-bottom">
-	<?= $block->getChildHtml('blog.post.bottom') ?>
 </div>
