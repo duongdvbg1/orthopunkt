@@ -1198,4 +1198,271 @@
 			display: none;
 		}
 	}
+
+	.form-create-account {
+		.fieldset {
+			&.create {
+				&.info {
+					.choice {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	#print_page {
+		max-width: 30cm;
+		min-height: 20cm;
+		margin: auto;
+		background: white;
+	}
+	.btn-print {
+		display: table;
+		text-align: center;
+		width: 100%;
+	}
+	#btn {
+		display: inline-block;
+		padding: 10px 20px;
+		background: red;
+		text-transform: uppercase;
+		color: #fff;
+		cursor: pointer;
+	}
+	.page_inner {
+		margin: auto;
+	}
+	.print_header {
+		
+	}
+	.form_input {
+		display: block;
+		padding: 30px 0 0;
+	}
+	.form-group {
+		display: flex;
+		width: 100%;
+	}
+	.form-group p {
+		width: 50%;
+		display: flex;
+	}
+	.form_input label {
+		text-transform: uppercase;
+		font-size: 13px;
+		color: #333;
+	}
+	
+	.form_input input {
+		border: 0;
+		height: 30px;
+		margin: 0 10px;
+	}
+	.logo_print {
+		padding: 30px 0 20px;
+		border-bottom: 1px solid #666;
+	}
+	.logo_print img {
+		max-width: 100%;
+		height: auto;
+		width: 250px;
+	}
+	.left_content {
+		padding: 20px 0;
+		display: flex;
+	}
+	.left_content .box {
+		width: 50%;
+	}
+	.left_content .box2 {
+		padding-left: 15px;
+	}
+	.left_content .diagnose_content {
+		
+	}
+	.left_content .hilfsmittel {
+		margin-top: -15px;
+	}
+	.left_content .hilfsmittel img {
+		width: 130px;
+		float: left;
+		margin-right: 15px;
+	}
+	.left_content .hilfsmittel .details {
+		padding-top: 15px;
+		padding-left: 150px;
+	}
+	.left_content .hilfsmittel .details .product_name {
+		margin-bottom: 10px;
+		text-transform: uppercase;
+		color: #1dc6bd;
+	}
+	.left_content .hilfsmittel .details p {
+		margin: 5px;
+		text-transform: uppercase;
+		color: #777;
+	}
+	.produc_price .price-box {
+		display: inline-block;
+	}
+	.left_content .hilfsmittel .details .tax-details {
+		display: none;
+	}
+	.left_content .text_content {
+			display: table;
+		clear: both;
+		width: 100%;
+		padding: 50px 0;
+		margin-top: 30px;
+		border-top: 1px solid #ddd;
+	}
+	.left_content .text_content span {
+		display: table-cell;
+		width: 50%;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #666;
+		font-size: 16px;
+	}
+	.middle_content {
+		position: relative;
+		vertical-align: bottom;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.middle_content .check_code {
+		width: 150px;
+		height: 150px;
+		background: #1dc6bd !important;
+		-webkit-print-color-adjust: exact;
+		padding: 10px;
+		border-radius: 10px;
+		bottom: 0;
+		margin-bottom: -10px;
+		position: relative;
+		z-index: 2;
+	}
+	.right_content {
+		
+	}
+	.p_title {
+		position: relative;
+		margin-bottom: 30px;
+	}
+	.p_title::after {
+		height: 1px;
+		width: 100%;
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: 0;
+		background: #ccc;
+		-webkit-print-color-adjust: exact;
+		z-index: 1;
+	}
+	.p_title h3 {
+		display: inline-block;
+		background: #fff !important;
+		-webkit-print-color-adjust: exact;
+		padding-right: 15px;
+		position: relative;
+		z-index: 2;
+		font-size: 16px;
+		text-transform: uppercase;
+		margin: 0;
+	}
+	.maps ul {
+		display: flex;
+		width: 100%;
+		padding: 0;
+	}
+	.maps ul li {
+		margin-bottom: 10px;
+		width: 50%;
+		list-style: none;
+		display: flex;
+	}
+	.maps ul li.even { 
+		background: #f7f7f7;
+		-webkit-print-color-adjust: exact;
+	}
+	.maps ul li .address {
+		float: left;
+		width: 40%;
+		vertical-align: middle;
+		padding: 12px 20px;
+	}
+	.maps ul li .address h4 {
+		margin: 0 0 5px;
+		color: #1dc6bd;
+		text-transform: uppercase;
+		font-size: 13px;
+	}
+	.maps ul li .address strong {
+		font-size: 14px;
+	}
+	.maps ul li .address p {
+		margin: 0 0 10px;
+	}
+	.maps ul li .img_map {
+		width: 60%;
+		vertical-align: middle;
+		text-align: right;
+		img {
+			width: 100%;
+		}
+	}
+	.print_footer {
+		background: #1dc6bd !important;
+		-webkit-print-color-adjust: exact;
+		padding: 15px 30px;
+		color: #fff;
+		font-size: 13px;
+		position: relative;
+		text-align: center;
+		z-index: 3;
+	}
+	.print_footer p {
+		color: #fff !important;
+		margin: 0;
+	}
+
+	.page-print {
+		padding: 0;
+	  }
+	  
+	.print_window {
+		margin: 15px 0 0;
+		text-align: right;
+	}
+	
+	.print_window a {
+		background: url(../images/icon-print.png) 0 0 no-repeat;
+		padding-left: 20px;
+	}
 }
+
+@media print {
+	@page {
+		size: 100%;
+		margin: 0;
+		html, body{
+			margin: 0; 
+			font-size: 12px;
+	   } 
+	}
+
+	.maps ul li {
+		.address {
+			width: 50%;
+		}
+		.img_map {
+			width: 50%;
+		}
+	}
+}
+

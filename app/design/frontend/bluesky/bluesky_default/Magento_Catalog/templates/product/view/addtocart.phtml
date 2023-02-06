@@ -47,6 +47,8 @@ $qty = 1;
 	<p class="sap-text"><a href="<?= $block->getUrl('kontakt').'?sku='.$_product->getSku(); ?>"><?php /* @escapeNotVerified */ echo __('Beratungstermin vereinbaren') ?></a></p>
 <?php endif; ?>
 
+<a href="#" class="print-page">Print product</a>
+
 <?php if ($block->isRedirectToCartEnabled()) : ?>
 	<script type="text/x-magento-init">
 		{
@@ -61,10 +63,11 @@ $qty = 1;
 	<script>
 		require([
 			'jquery',
+			'mage/url',
 			'mage/mage',
 			'Magento_Catalog/product/view/validation',
 			'Magento_Catalog/js/catalog-add-to-cart'
-		], function ($) {
+		], function ($, url) {
 			'use strict';
 			
 			$('#product_addtocart_form').mage('validation', {
@@ -79,6 +82,11 @@ $qty = 1;
 					return false;
 				}
 			});
+
+			$('.print-page').on('click', function(){
+				var linkUrl = url.build('standorte');
+				var print = window.open(linkUrl);
+			})
 		});
 	</script>
 <?php endif; ?>
