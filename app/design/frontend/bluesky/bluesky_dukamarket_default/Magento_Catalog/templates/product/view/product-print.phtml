@@ -3,24 +3,3 @@
 <div class="print_window">
     <a target="_blank" href="<?= $block->getUrl('printproduct').'?id='.$_product->getID(); ?>" class="print-page">Datenblatt und Verordnung</a>
 </div>
-
-<script>
-	require([
-		'jquery',
-		'mage/url'
-	], function ($, url) {
-		'use strict';
-
-		// $('.print-page').on('click', function(){
-		// 	var linkUrl = url.build('printproduct');
-		// 	var print = window.open(linkUrl);
-
-		// 	setTimeout(function () {
-		// 		print.document.close();
-		// 		print.focus();
-		// 		print.print();
-		// 		print.close(); 
-		// 	}, 1000);
-		// })
-	});
-</script>
