@@ -1,3 +1,15 @@
+<?php
+	$productID = $this->getRequest()->getParam('id');
+	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+	$helperImport = $objectManager->get('\Magento\Catalog\Helper\Image');
+	$product = $objectManager->create('Magento\Catalog\Model\Product')->load($productID);
+
+	$imageUrl = $helperImport->init($product, 'product_page_image_small')
+                ->setImageFile($product->getSmallImage()) // image,small_image,thumbnail
+                ->resize(345,440)
+                ->getUrl();
+	$priceFormatted = $this->helper('Magento\Framework\Pricing\Helper\Data')->currency(number_format($product->getPrice(), 2), true, false);
+?>
 
 <div id="print_page">
 	<div class="sub_print">
@@ -49,17 +61,6 @@
 								<div class="img_map">
                                     <img src="<?php echo $this->getViewFileUrl('images/maps2.jpg'); ?>" alt="" />								</div>
 							</li>
-							<!-- <li style="clear: left">
-								<div class="address">
-									
-									<strong>orthopunkt Burgdorf</strong>
-									<p>Mühlegasse 3 <br>3400 Burgdorf</p>
-									<p class="telephong">Telefon: 034 424 01 85</p>
-								</div>
-								<div class="img_map">
-                                    <img src="<?php echo $this->getViewFileUrl('images/maps3.jpg'); ?>" alt="" />
-								</div>
-							</li> -->
 						</ul>
 					</div>
 				</div>
@@ -69,15 +70,17 @@
 								<h3>HILFSMITTEL</h3>
 							</div>
 							<div class="hilfsmittel">
-								
+								<img src="<?php echo $imageUrl ?>" alt="<?php echo $product->getName();?>">
 								<div class="details">
 									<h4 class="product_name">
-										
+										<?php echo $product->getName();?>
 									</h4>
 									<p class="product_sku">
-										
+										Artikelnummer: <?php echo $product->getSku();?>
 									</p>
-									
+									<div class="produc_price">
+										Preis: <?php echo $priceFormatted;?>
+									</div>
 								</div>
 							</div>
 							<div class="text_content">
@@ -107,4 +110,18 @@
 	</div>
 </div>
 
+<script>
+	require([
+		'jquery'
+	], function ($) {
+		'use strict';
 
+		$(document).ready(function () {
+			window.focus();
+			window.print();
+			window.onafterprint = (event) => {
+				window.close();
+			};
+		});
+	});
+</script>
