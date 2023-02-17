@@ -1385,14 +1385,18 @@
 		display: flex;
 	}
 	.maps ul li.even { 
-		background: #f7f7f7;
 		-webkit-print-color-adjust: exact;
 	}
 	.maps ul li .address {
 		float: left;
 		width: 40%;
 		vertical-align: middle;
-		padding: 12px 20px;
+		padding: 0 20px;
+		font-size: 13px;
+	}
+
+	.maps ul li.even .address {
+		padding-left: 0;
 	}
 	.maps ul li .address h4 {
 		margin: 0 0 5px;
